@@ -1,0 +1,7 @@
+id: MMT/TUTORIAL
+narration-base: http://docs.omdoc.org/tutorial
+classpath: bin
+dependencies: MMT/urtheories MMT/LFX
+responsible: ksb
+title: Mathematician's Tutorial
+teaser: Working through the tutorial

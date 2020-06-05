@@ -1,0 +1,7 @@
+theory http://cds.omdoc.org/Tutorial?FOLEqNatDed
+HasMeta http://cds.omdoc.org/Tutorial?FOLEqNatDed http://cds.omdoc.org/urtheories?LF
+Includes http://cds.omdoc.org/Tutorial?FOLEqNatDed http://cds.omdoc.org/Tutorial?FOLNatDed
+Includes http://cds.omdoc.org/Tutorial?FOLEqNatDed http://cds.omdoc.org/Tutorial?FOLSyntax
+Includes http://cds.omdoc.org/Tutorial?FOLEqNatDed http://cds.omdoc.org/Tutorial?PropLogSyntax
+Includes http://cds.omdoc.org/Tutorial?FOLEqNatDed http://cds.omdoc.org/Tutorial?PropLogNatDed
+Includes http://cds.omdoc.org/Tutorial?FOLEqNatDed http://cds.omdoc.org/Tutorial?FOLEQSyntax

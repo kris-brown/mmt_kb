@@ -1,0 +1,152 @@
+namespace Tutorial ❚
+theory PropLogSyntax : ur:?LF =
+	prop : type ❘ # bool ❙
+
+	and 	: bool ⟶ bool ⟶ bool 	❘ # 1 ∧ 2 	prec 45 ❙ /T jwedge	❙
+	not 	: bool ⟶ bool				❘ # ¬ 1		prec 50 ❙ /T jneg	❙
+
+	or		: bool ⟶ bool ⟶ bool	❘ # 1 ∨ 2	prec 40 ❘
+			= [a,b] ¬ (¬ a ∧ ¬ b) ❙ /T jvee	❙
+	implies : bool ⟶ bool ⟶  bool ❘ # 1 ⇒ 2 prec 35 ❘
+			= [a,b] ¬ a ∨ b ❙ /T jrA	❙
+
+	iff : bool ⟶ bool ⟶ bool ❘ # 1 ⇔ 2 prec 40 ❘ = [a,b] (a ⇒ b) ∧ (b ⇒ a) ❙
+
+	true : bool ❘ # ⊤ ❙ /T jtop	❙
+	false : bool ❘ = ¬ ⊤ ❘ # ⊥ ❙ /T jbot	❙
+❚
+
+theory PropLogNatDed : ur:?LF =
+	include ?PropLogSyntax ❙
+
+	ded : bool ⟶ type ❘ # ⊦ 1 prec 1 ❙ /T jvdash	❙
+
+	andEl 	: {A,B} ⊦ A ∧ B ⟶ ⊦ A ❘ # andEl 3 ❙
+	andEr 	: {A,B} ⊦ A ∧ B ⟶ ⊦ B ❘ # andEr 3 ❙
+	andI 	: {A,B} ⊦ A ⟶ ⊦ B ⟶ ⊦ A ∧ B ❘ # andI 3 4 ❙
+
+	implI	: {A,B} (⊦ A ⟶ ⊦ B) ⟶ ⊦ A ⇒ B ❘ # implI 3 ❙
+	implE 	: {A,B} ⊦ A ⇒ B ⟶ ⊦ A ⟶ ⊦ B ❘ # implE 3 4 ❙
+
+	orIl		: {A,B} ⊦ A ⟶ ⊦ A ∨ B ❘ # orIl 3 ❙
+	orIr		: {A,B} ⊦ B ⟶ ⊦ A ∨ B ❘ # orIr 3 ❙
+	orE		: {A,B,C} ⊦ A ∨ B ⟶ (⊦ A ⟶ ⊦ C) ⟶ (⊦ B ⟶ ⊦ C) ⟶ ⊦ C ❘ # orE 4 5 6❙
+
+	notI 		: {A} (⊦ A ⟶ ⊦ ⊥) ⟶ ⊦ ¬A ❘ # notI 2 ❙
+	notE 	: {A} ⊦ ¬¬A ⟶ ⊦ A ❘ # notE 2 ❙
+
+	fallacy_1 : {A,B} ⊦ A ⇒ B
+	 ⟶ ⊦ ¬A ⇒ ¬B ❙
+
+❚
+
+theory Proofs : ?PropLogNatDed =
+	conjComm 	: {A,B} ⊦ A ∧ B ⇒ B ∧ A ❘
+						= [A,B] implI ([ab] andI (andEr ab) (andEl ab)) ❙
+❚
+
+theory FOLSyntax : ur:?LF =
+	include ?PropLogSyntax ❙
+
+	ind : type ❘ # ι ❙ /T jiota	❙
+
+	forall 	: (ι ⟶ bool) ⟶ bool ❘ # ∀ 1 prec 55 ❙ /T jforall	❙
+	exists 	: (ι ⟶ bool) ⟶ bool ❘ # ∃ 1 prec 60 ❘
+				= [P] ¬ ∀ [x] ¬ (P x)❙ /T jexists	❙
+
+	// existsUnique : ??? ❘ = ??? ❘ # ∃! 1 prec 65 ❙
+❚
+
+theory FOLEQSyntax : ur:?LF =
+  include ?FOLSyntax ❙
+	equality : ι ⟶ ι ⟶ bool ❘ # 1 ≐ 2 prec 65 ❙
+❚
+
+theory FOLNatDed : ur:?LF =
+	include ?FOLSyntax ❙
+	include ?PropLogNatDed ❙
+
+	forallI : {P} ({y : ι} ⊦ P y) ⟶ ⊦ ∀ [x] P x ❘ # forallI 2 ❙
+	forallE : {P,B} ⊦ (∀ [x] P x) ⟶ ⊦ P B ❘ # forallE 3 ❙
+	/T Everytime you write $∀ P$, somewhere a unicorn cries ❙
+
+	existsI : {P,c} ⊦ (P c) ⟶ ⊦ ∃ [x] P x ❘ # existsI 3 ❙
+	existsE : {P,B} ⊦ (∃ [x] P x) ⟶ ({c} ⊦ P c ⟶ ⊦ B) ⟶ ⊦ B ❘ # existsE 3 4 ❙
+❚
+
+theory FOLEqNatDed : ur:?LF =
+	include ?FOLNatDed ❙
+	include ?FOLEQSyntax ❙
+❚
+
+theory Booleans : ?Meta =
+	boolean : type ❙
+
+	btrue : boolean ❙
+	bfalse : boolean ❙
+
+	not : boolean ⟶ boolean ❘ = [b] if (b ≐ btrue) then bfalse else btrue ❙
+	and : boolean ⟶ boolean ⟶ boolean ❘ = [a,b] if (a ≐ btrue) then b else bfalse ❙
+❚
+
+theory BoolProofs : ?Meta =
+	include ?Booleans ❙
+	pseudoded : boolean ⟶ type ❙
+	proofs : type ❙
+	emptytype : type ❙
+	proof : proofs ❙
+
+	// pseudoded1 : pseudoded (btrue ≐≐ proofs) ❙
+	// pseudoded2 : pseudoded (bfalse ≐≐ emptytype) ❙
+
+	proof_irrelevance : ⊦ ∀[x : proofs] x ≐ proof ❙
+❚
+
+
+theory TypedSets : ?Meta =
+	set : type ⟶ type ❙
+
+	in : {T} T ⟶ set T ⟶ bool ❘ # 2 ‍∈ 3 ❙
+	subset : {T} set T ⟶ set T ⟶ bool ❘ = [T,a,b] ∀ [x] x ‍∈ a ⇒ x ‍∈ b ❘ # 2 ⊑ 3 ❙
+
+	extensionality : {T} {s : set T,t : set T} ⊦ (s ⊑ t ∧ t ⊑ s) ⇒ s ≐ t ❙
+
+	emptyset : {T} set T ❘ # ∅ %I1 ❙
+	emptyset_is_empty : {T} ⊦ ∀ [x : T] ¬ x ‍∈ ∅ ❙
+
+	fullset : {T} set T ❘ # U %I1 ❙
+	fullset_is_full : {T} ⊦ ∀ [x: T] x ‍∈ U ❙
+
+	comprehension_unique : {T, P : T ⟶ prop} ⊦ ∃! [s : set T] ∀ [x] x ‍∈ s ⇔ (P x) ❙
+
+	comprehension : {T} (T ⟶ prop) ⟶ set T ❘ =
+	[T,P] ι [s : set T] ∀ [x] x ‍∈ s ⇔ (P x) ❘ # ⟨ 2 ⟩❙
+
+	image : {T1,T2,f : T1 ⟶ T2} set T1 ⟶ set T2 ❘ # im 3 4 ❘
+		= [T1,T2,f,s]⟨ ([x : T2] ∃ [y : T1] y ‍∈ s ∧ x ≐ (f y) ) ⟩❙
+❚
+
+/T   to serve as codomain of a semantics-view from FOL ❚
+theory FOModels : ?Meta =
+  include ?Booleans ❙
+  include ?TypedSets ❙
+	individuals : type ❙
+❚
+
+
+theory ZFC : ?FOLEqNatDed =
+	set : type ❘ = ind ❙
+	in : set ⟶ set ⟶ prop ❘ # 1 ‍∈ 2 prec 80 ❙
+
+	set_exists : set ❙
+	// Skolemization of ⊦ ∃[x] true ❙
+
+	set_extensionality : ⊦ ∀[s]∀[t] (s ≐ t ⇔ (∀[x] x ‍∈ s ⇔ x ‍∈ t)) ❙
+
+	separation : {P : set ⟶ bool}set ⟶ set ❘ # < 2 | 1 > ❙
+	set_separation : {P, s : set} ⊦ ∀[x] x ‍∈ s ∧ (P x) ⇔ x ‍∈ < s | P > ❙
+	// Skolemization of  ⊦ ∀[s]∃[w] ∀[x] x ‍∈ s ∧ (P x) ⇔ x ‍∈ w ❙
+
+	emptyset : set ❘ = < set_exists | ([x] false) > ❙
+❚
+

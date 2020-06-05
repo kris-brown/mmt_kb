@@ -1,0 +1,9 @@
+dataconstructor http://cds.omdoc.org/Tutorial?FOLEQSyntax?equality
+theory http://cds.omdoc.org/Tutorial?FOLEQSyntax
+HasMeta http://cds.omdoc.org/Tutorial?FOLEQSyntax http://cds.omdoc.org/urtheories?LF
+Includes http://cds.omdoc.org/Tutorial?FOLEQSyntax http://cds.omdoc.org/Tutorial?FOLSyntax
+Includes http://cds.omdoc.org/Tutorial?FOLEQSyntax http://cds.omdoc.org/Tutorial?PropLogSyntax
+Declares http://cds.omdoc.org/Tutorial?FOLEQSyntax http://cds.omdoc.org/Tutorial?FOLEQSyntax?equality
+constant http://cds.omdoc.org/Tutorial?FOLEQSyntax?equality
+DependsOn http://cds.omdoc.org/Tutorial?FOLEQSyntax?equality?type http://cds.omdoc.org/Tutorial?FOLSyntax?ind?type
+DependsOn http://cds.omdoc.org/Tutorial?FOLEQSyntax?equality?type http://cds.omdoc.org/Tutorial?PropLogSyntax?prop?type

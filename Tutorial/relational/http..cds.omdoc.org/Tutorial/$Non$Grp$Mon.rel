@@ -1,0 +1,19 @@
+dataconstructor http://cds.omdoc.org/Tutorial?NonGrpMon?grp_viol
+theory http://cds.omdoc.org/Tutorial?NonGrpMon
+HasMeta http://cds.omdoc.org/Tutorial?NonGrpMon http://cds.omdoc.org/Tutorial?Meta
+Includes http://cds.omdoc.org/Tutorial?NonGrpMon http://cds.omdoc.org/Tutorial?Monoid
+Includes http://cds.omdoc.org/Tutorial?NonGrpMon http://cds.omdoc.org/Tutorial?SemiGroup
+Includes http://cds.omdoc.org/Tutorial?NonGrpMon http://cds.omdoc.org/Tutorial?Magma
+Declares http://cds.omdoc.org/Tutorial?NonGrpMon http://cds.omdoc.org/Tutorial?NonGrpMon?grp_viol
+constant http://cds.omdoc.org/Tutorial?NonGrpMon?grp_viol
+DependsOn http://cds.omdoc.org/Tutorial?NonGrpMon?grp_viol?type http://mathhub.info/MitM/Foundation?Logic?forall?type
+DependsOn http://cds.omdoc.org/Tutorial?NonGrpMon?grp_viol?type http://mathhub.info/MitM/Foundation?Logic?exists?type
+DependsOn http://cds.omdoc.org/Tutorial?NonGrpMon?grp_viol?type http://mathhub.info/MitM/Foundation?Logic?ded?type
+DependsOn http://cds.omdoc.org/Tutorial?NonGrpMon?grp_viol?type http://cds.omdoc.org/Tutorial?Magma?Domain?type
+DependsOn http://cds.omdoc.org/Tutorial?NonGrpMon?grp_viol?type http://mathhub.info/MitM/Foundation?Logic?prop?type
+DependsOn http://cds.omdoc.org/Tutorial?NonGrpMon?grp_viol?type http://mathhub.info/MitM/Foundation?Logic?prop?definition
+DependsOn http://cds.omdoc.org/Tutorial?NonGrpMon?grp_viol?type http://cds.omdoc.org/Tutorial?Magma?op?type
+DependsOn http://cds.omdoc.org/Tutorial?NonGrpMon?grp_viol?type http://mathhub.info/MitM/Foundation?Logic?not?type
+DependsOn http://cds.omdoc.org/Tutorial?NonGrpMon?grp_viol?type http://mathhub.info/MitM/Foundation?Logic?ded?definition
+DependsOn http://cds.omdoc.org/Tutorial?NonGrpMon?grp_viol?type http://cds.omdoc.org/Tutorial?Monoid?unit?type
+DependsOn http://cds.omdoc.org/Tutorial?NonGrpMon?grp_viol?type http://mathhub.info/MitM/Foundation?Logic?eq?type

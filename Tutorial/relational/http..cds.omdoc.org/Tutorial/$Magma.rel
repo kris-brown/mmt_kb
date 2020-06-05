@@ -1,0 +1,9 @@
+datatypeconstructor http://cds.omdoc.org/Tutorial?Magma?Domain
+dataconstructor http://cds.omdoc.org/Tutorial?Magma?op
+theory http://cds.omdoc.org/Tutorial?Magma
+HasMeta http://cds.omdoc.org/Tutorial?Magma http://cds.omdoc.org/Tutorial?Meta
+Declares http://cds.omdoc.org/Tutorial?Magma http://cds.omdoc.org/Tutorial?Magma?Domain
+constant http://cds.omdoc.org/Tutorial?Magma?Domain
+Declares http://cds.omdoc.org/Tutorial?Magma http://cds.omdoc.org/Tutorial?Magma?op
+constant http://cds.omdoc.org/Tutorial?Magma?op
+DependsOn http://cds.omdoc.org/Tutorial?Magma?op?type http://cds.omdoc.org/Tutorial?Magma?Domain?type

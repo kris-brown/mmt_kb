@@ -1,0 +1,10 @@
+document http://docs.omdoc.org/tutorial/Algebra.omdoc
+Declares http://docs.omdoc.org/tutorial/Algebra.omdoc http://cds.omdoc.org/Tutorial?Meta
+Declares http://docs.omdoc.org/tutorial/Algebra.omdoc http://cds.omdoc.org/Tutorial?Magma
+Declares http://docs.omdoc.org/tutorial/Algebra.omdoc http://cds.omdoc.org/Tutorial?SemiGroup
+Declares http://docs.omdoc.org/tutorial/Algebra.omdoc http://cds.omdoc.org/Tutorial?Monoid
+Declares http://docs.omdoc.org/tutorial/Algebra.omdoc http://cds.omdoc.org/Tutorial?NonGrpMon
+Declares http://docs.omdoc.org/tutorial/Algebra.omdoc http://cds.omdoc.org/Tutorial?Abelian
+Declares http://docs.omdoc.org/tutorial/Algebra.omdoc http://cds.omdoc.org/Tutorial?Group
+Declares http://docs.omdoc.org/tutorial/Algebra.omdoc http://cds.omdoc.org/Tutorial?CGroup
+Declares http://docs.omdoc.org/tutorial/Algebra.omdoc http://cds.omdoc.org/Tutorial?Ring

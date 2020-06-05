@@ -1,0 +1,98 @@
+namespace Tutorial ❚
+
+import mitm http://mathhub.info/MitM/Foundation ❚
+
+
+theory NatNums : ?Meta =
+    // Do I need to add an axiom saying that ∀ [n] n = O ∨ ∃ [m] n = S m ❙
+
+    NaturalNumbers : type ❘ # ℕ ❙
+    zero : ℕ ❘ # O ❙
+    successor : ℕ ⟶ ℕ ❘ # S 1 ❙
+    one : ℕ ❘ # I ❘ = S O ❙
+
+    # Domain axiom ❙
+    D : ⊦ ∀[n] n ≐ O ∨ (∃ [m : ℕ] n ≐ S m)❙
+
+    # Peano axioms ❙
+    P3 : ⊦ ¬∃[n] S n ≐ O ❙
+    P4 : ⊦ ∀[n : ℕ] ∀[m : ℕ] (S n ≐ S m) ⇒ n ≐ m ❙
+    P5 : ⊦ ∀[P : ℕ ⟶ bool] (P O ∧ (∀[n] P n ⇒ P (S n))) ⇒ (∀[n] P n) ❙
+❚
+
+theory NatPlus : ?Meta =
+    include ?NatNums ❙
+
+    plus : ℕ ⟶ ℕ ⟶ ℕ ❘ # 1 + 2 prec 400 ❙
+
+    include ☞mitm:?Strings ❙
+    include ☞mitm:?InformalProofs ❙
+
+
+    # Peano axioms ❙
+    plus_unit : ⊦ ∀[n] n + O ≐ n ❙
+    plus_def : ⊦ ∀[n] ∀[m] n + S m ≐ S (n + m) ❙
+
+    # Peano Properties ❙
+
+    plus_assoc : ⊦ ∀[x] ∀[y] ∀[z] x + (y + z) ≐ (x + y) + z ❘
+        = sketch "By induction: (x+y) + 0 = x+y = x+(y+0).
+        Then show by induction that it holds for S k.
+        1. (x+y)+ S k = S (x+y)+k     // Definition of Addition in Minimal Infinite Successor Set
+        2.            = S x+(y+k)     // Inductive hypothesis
+        3.            = x + S y+k     // Definition of Addition in Minimal Infinite Successor Set
+        4.            = x + (y + S k) // Definition of Addition in Minimal Infinite Successor Set" ❙
+
+    plus_com : ⊦ ∀[x] ∀[y] x + y ≐ y + x  ❘
+        = sketch "By induction: 0 + x = x + 0, and inductive case:
+            1. S x + y = S (x + y) // Natural Number Addition Commutativity with Successor
+            2.         = S (y + x) // inductive hypothesis
+            3.         = S y + x   // plus def" ❙
+
+❚
+
+theory NatPlusTimes : ?Meta =
+    include ?NatPlus ❙
+
+    times : ℕ ⟶ ℕ ⟶ ℕ ❘ # 1 ⋅ 2 prec 500 ❙
+
+    # Multiplication axioms ❙
+    MZero : ⊦ ∀[n] n ⋅ O ≐ O ❙
+    MDef : ⊦ ∀[n] ∀[m] n ⋅ S m ≐ n ⋅ m + n ❙
+
+    # Multiplication properties ❙
+    MOne : ⊦ ∀[n] n ⋅ I ≐ n ❙
+    MComm : ⊦ ∀[n] n ⋅ I ≐ n ❙
+    MAssoc : ⊦ ∀[x] ∀[y] ∀[z] x ⋅ (y ⋅ z) ≐ (x ⋅ y) ⋅ z ❙
+❚
+
+theory Integers : ?Meta  =
+    NaturalNumbers : type ❘ # ℤ ❙
+    zero : ℤ ❘ # O ❙
+    successor : ℤ ⟶ ℤ ❘ # S 1 ❙
+    one : ℤ ❘ # I ❘ = S O ❙
+
+    neg : ℤ ⟶ ℤ ❘ # - 1 prec 600 ❙
+    plus : ℤ ⟶ ℤ ⟶ ℤ ❘ # 1 + 2 prec 400 ❙
+    times : ℤ ⟶ ℤ ⟶ ℤ ❘ # 1 ⋅ 2 prec 400 ❙
+
+    # Domain axiom ❙
+    D =  ⊦ ∀[n] n ≐ O ∨ (∃ [m : ℤ] (n ≐ S m) ∨ (n ≐ - S m))❙
+
+    # Operator definitions ❙
+    N0 = ⊦ ∀[n : ℤ] - O ≐ O ❙
+    N1 = ⊦ ∀[n: ℤ] - - n ≐ n ❙
+    P0 : ⊦ ∀[n : ℤ] n + O ≐ n ❙
+    P1 : ⊦ ∀[n : ℤ] ∀[m : ℤ] n + S m ≐ S (n + m) ❙
+    M0 : ⊦ ∀[n : ℤ] n ⋅ O ≐ O ❙
+    M1 : ⊦ ∀[n : ℤ] ∀[m : ℤ] n ⋅ S m ≐ n ⋅ m + n ❙
+
+    # Operator properties ❙
+    PComm : ⊦ ∀[x] ∀[y] x + y ≐ y + x  ❙
+    PAssoc : ⊦ ∀[x] ∀[y] ∀[z] x + (y + z) ≐ (x + y) + z ❙
+    MOne : ⊦ ∀[n] n ⋅ I ≐ n ❙
+    MComm : ⊦ ∀[n] n ⋅ I ≐ n ❙
+    MAssoc : ⊦ ∀[x] ∀[y] ∀[z] x ⋅ (y ⋅ z) ≐ (x ⋅ y) ⋅ z ❙
+
+❚
+

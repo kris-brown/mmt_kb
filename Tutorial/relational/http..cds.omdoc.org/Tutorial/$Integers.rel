@@ -1,0 +1,173 @@
+datatypeconstructor http://cds.omdoc.org/Tutorial?Integers?NaturalNumbers
+dataconstructor http://cds.omdoc.org/Tutorial?Integers?zero
+dataconstructor http://cds.omdoc.org/Tutorial?Integers?successor
+dataconstructor http://cds.omdoc.org/Tutorial?Integers?one
+dataconstructor http://cds.omdoc.org/Tutorial?Integers?neg
+dataconstructor http://cds.omdoc.org/Tutorial?Integers?plus
+dataconstructor http://cds.omdoc.org/Tutorial?Integers?times
+datatypeconstructor http://cds.omdoc.org/Tutorial?Integers?D
+datatypeconstructor http://cds.omdoc.org/Tutorial?Integers?N0
+datatypeconstructor http://cds.omdoc.org/Tutorial?Integers?N1
+dataconstructor http://cds.omdoc.org/Tutorial?Integers?P0
+dataconstructor http://cds.omdoc.org/Tutorial?Integers?P1
+dataconstructor http://cds.omdoc.org/Tutorial?Integers?M0
+dataconstructor http://cds.omdoc.org/Tutorial?Integers?M1
+dataconstructor http://cds.omdoc.org/Tutorial?Integers?PComm
+dataconstructor http://cds.omdoc.org/Tutorial?Integers?PAssoc
+dataconstructor http://cds.omdoc.org/Tutorial?Integers?MOne
+dataconstructor http://cds.omdoc.org/Tutorial?Integers?MComm
+dataconstructor http://cds.omdoc.org/Tutorial?Integers?MAssoc
+theory http://cds.omdoc.org/Tutorial?Integers
+HasMeta http://cds.omdoc.org/Tutorial?Integers http://cds.omdoc.org/Tutorial?Meta
+Declares http://cds.omdoc.org/Tutorial?Integers http://cds.omdoc.org/Tutorial?Integers?NaturalNumbers
+constant http://cds.omdoc.org/Tutorial?Integers?NaturalNumbers
+Declares http://cds.omdoc.org/Tutorial?Integers http://cds.omdoc.org/Tutorial?Integers?zero
+constant http://cds.omdoc.org/Tutorial?Integers?zero
+DependsOn http://cds.omdoc.org/Tutorial?Integers?zero?type http://cds.omdoc.org/Tutorial?Integers?NaturalNumbers?type
+Declares http://cds.omdoc.org/Tutorial?Integers http://cds.omdoc.org/Tutorial?Integers?successor
+constant http://cds.omdoc.org/Tutorial?Integers?successor
+DependsOn http://cds.omdoc.org/Tutorial?Integers?successor?type http://cds.omdoc.org/Tutorial?Integers?NaturalNumbers?type
+Declares http://cds.omdoc.org/Tutorial?Integers http://cds.omdoc.org/Tutorial?Integers?one
+constant http://cds.omdoc.org/Tutorial?Integers?one
+DependsOn http://cds.omdoc.org/Tutorial?Integers?one?type http://cds.omdoc.org/Tutorial?Integers?NaturalNumbers?type
+DependsOn http://cds.omdoc.org/Tutorial?Integers?one?definition http://cds.omdoc.org/Tutorial?Integers?NaturalNumbers?type
+DependsOn http://cds.omdoc.org/Tutorial?Integers?one?definition http://cds.omdoc.org/Tutorial?Integers?successor?type
+DependsOn http://cds.omdoc.org/Tutorial?Integers?one?definition http://cds.omdoc.org/Tutorial?Integers?zero?type
+Declares http://cds.omdoc.org/Tutorial?Integers http://cds.omdoc.org/Tutorial?Integers?neg
+constant http://cds.omdoc.org/Tutorial?Integers?neg
+DependsOn http://cds.omdoc.org/Tutorial?Integers?neg?type http://cds.omdoc.org/Tutorial?Integers?NaturalNumbers?type
+Declares http://cds.omdoc.org/Tutorial?Integers http://cds.omdoc.org/Tutorial?Integers?plus
+constant http://cds.omdoc.org/Tutorial?Integers?plus
+DependsOn http://cds.omdoc.org/Tutorial?Integers?plus?type http://cds.omdoc.org/Tutorial?Integers?NaturalNumbers?type
+Declares http://cds.omdoc.org/Tutorial?Integers http://cds.omdoc.org/Tutorial?Integers?times
+constant http://cds.omdoc.org/Tutorial?Integers?times
+DependsOn http://cds.omdoc.org/Tutorial?Integers?times?type http://cds.omdoc.org/Tutorial?Integers?NaturalNumbers?type
+Declares http://cds.omdoc.org/Tutorial?Integers http://cds.omdoc.org/Tutorial?Integers?D
+constant http://cds.omdoc.org/Tutorial?Integers?D
+DependsOn http://cds.omdoc.org/Tutorial?Integers?D?definition http://cds.omdoc.org/Tutorial?Integers?NaturalNumbers?type
+DependsOn http://cds.omdoc.org/Tutorial?Integers?D?definition http://cds.omdoc.org/Tutorial?Integers?successor?type
+DependsOn http://cds.omdoc.org/Tutorial?Integers?D?definition http://mathhub.info/MitM/Foundation?Logic?forall?type
+DependsOn http://cds.omdoc.org/Tutorial?Integers?D?definition http://mathhub.info/MitM/Foundation?Logic?exists?type
+DependsOn http://cds.omdoc.org/Tutorial?Integers?D?definition http://mathhub.info/MitM/Foundation?Logic?ded?type
+DependsOn http://cds.omdoc.org/Tutorial?Integers?D?definition http://mathhub.info/MitM/Foundation?Logic?prop?type
+DependsOn http://cds.omdoc.org/Tutorial?Integers?D?definition http://cds.omdoc.org/Tutorial?Integers?neg?type
+DependsOn http://cds.omdoc.org/Tutorial?Integers?D?definition http://mathhub.info/MitM/Foundation?Logic?prop?definition
+DependsOn http://cds.omdoc.org/Tutorial?Integers?D?definition http://cds.omdoc.org/Tutorial?Integers?zero?type
+DependsOn http://cds.omdoc.org/Tutorial?Integers?D?definition http://mathhub.info/MitM/Foundation?Logic?eq?type
+DependsOn http://cds.omdoc.org/Tutorial?Integers?D?definition http://mathhub.info/MitM/Foundation?Logic?or?type
+Declares http://cds.omdoc.org/Tutorial?Integers http://cds.omdoc.org/Tutorial?Integers?N0
+constant http://cds.omdoc.org/Tutorial?Integers?N0
+DependsOn http://cds.omdoc.org/Tutorial?Integers?N0?definition http://cds.omdoc.org/Tutorial?Integers?NaturalNumbers?type
+DependsOn http://cds.omdoc.org/Tutorial?Integers?N0?definition http://mathhub.info/MitM/Foundation?Logic?forall?type
+DependsOn http://cds.omdoc.org/Tutorial?Integers?N0?definition http://mathhub.info/MitM/Foundation?Logic?ded?type
+DependsOn http://cds.omdoc.org/Tutorial?Integers?N0?definition http://mathhub.info/MitM/Foundation?Logic?prop?type
+DependsOn http://cds.omdoc.org/Tutorial?Integers?N0?definition http://cds.omdoc.org/Tutorial?Integers?neg?type
+DependsOn http://cds.omdoc.org/Tutorial?Integers?N0?definition http://mathhub.info/MitM/Foundation?Logic?prop?definition
+DependsOn http://cds.omdoc.org/Tutorial?Integers?N0?definition http://cds.omdoc.org/Tutorial?Integers?zero?type
+DependsOn http://cds.omdoc.org/Tutorial?Integers?N0?definition http://mathhub.info/MitM/Foundation?Logic?eq?type
+Declares http://cds.omdoc.org/Tutorial?Integers http://cds.omdoc.org/Tutorial?Integers?N1
+constant http://cds.omdoc.org/Tutorial?Integers?N1
+DependsOn http://cds.omdoc.org/Tutorial?Integers?N1?definition http://cds.omdoc.org/Tutorial?Integers?NaturalNumbers?type
+DependsOn http://cds.omdoc.org/Tutorial?Integers?N1?definition http://mathhub.info/MitM/Foundation?Logic?forall?type
+DependsOn http://cds.omdoc.org/Tutorial?Integers?N1?definition http://mathhub.info/MitM/Foundation?Logic?ded?type
+DependsOn http://cds.omdoc.org/Tutorial?Integers?N1?definition http://mathhub.info/MitM/Foundation?Logic?prop?type
+DependsOn http://cds.omdoc.org/Tutorial?Integers?N1?definition http://cds.omdoc.org/Tutorial?Integers?neg?type
+DependsOn http://cds.omdoc.org/Tutorial?Integers?N1?definition http://mathhub.info/MitM/Foundation?Logic?prop?definition
+DependsOn http://cds.omdoc.org/Tutorial?Integers?N1?definition http://mathhub.info/MitM/Foundation?Logic?eq?type
+Declares http://cds.omdoc.org/Tutorial?Integers http://cds.omdoc.org/Tutorial?Integers?P0
+constant http://cds.omdoc.org/Tutorial?Integers?P0
+DependsOn http://cds.omdoc.org/Tutorial?Integers?P0?type http://cds.omdoc.org/Tutorial?Integers?NaturalNumbers?type
+DependsOn http://cds.omdoc.org/Tutorial?Integers?P0?type http://cds.omdoc.org/Tutorial?Integers?plus?type
+DependsOn http://cds.omdoc.org/Tutorial?Integers?P0?type http://mathhub.info/MitM/Foundation?Logic?forall?type
+DependsOn http://cds.omdoc.org/Tutorial?Integers?P0?type http://mathhub.info/MitM/Foundation?Logic?ded?type
+DependsOn http://cds.omdoc.org/Tutorial?Integers?P0?type http://mathhub.info/MitM/Foundation?Logic?prop?type
+DependsOn http://cds.omdoc.org/Tutorial?Integers?P0?type http://mathhub.info/MitM/Foundation?Logic?prop?definition
+DependsOn http://cds.omdoc.org/Tutorial?Integers?P0?type http://mathhub.info/MitM/Foundation?Logic?ded?definition
+DependsOn http://cds.omdoc.org/Tutorial?Integers?P0?type http://cds.omdoc.org/Tutorial?Integers?zero?type
+DependsOn http://cds.omdoc.org/Tutorial?Integers?P0?type http://mathhub.info/MitM/Foundation?Logic?eq?type
+Declares http://cds.omdoc.org/Tutorial?Integers http://cds.omdoc.org/Tutorial?Integers?P1
+constant http://cds.omdoc.org/Tutorial?Integers?P1
+DependsOn http://cds.omdoc.org/Tutorial?Integers?P1?type http://cds.omdoc.org/Tutorial?Integers?NaturalNumbers?type
+DependsOn http://cds.omdoc.org/Tutorial?Integers?P1?type http://cds.omdoc.org/Tutorial?Integers?plus?type
+DependsOn http://cds.omdoc.org/Tutorial?Integers?P1?type http://cds.omdoc.org/Tutorial?Integers?successor?type
+DependsOn http://cds.omdoc.org/Tutorial?Integers?P1?type http://mathhub.info/MitM/Foundation?Logic?forall?type
+DependsOn http://cds.omdoc.org/Tutorial?Integers?P1?type http://mathhub.info/MitM/Foundation?Logic?ded?type
+DependsOn http://cds.omdoc.org/Tutorial?Integers?P1?type http://mathhub.info/MitM/Foundation?Logic?prop?type
+DependsOn http://cds.omdoc.org/Tutorial?Integers?P1?type http://mathhub.info/MitM/Foundation?Logic?prop?definition
+DependsOn http://cds.omdoc.org/Tutorial?Integers?P1?type http://mathhub.info/MitM/Foundation?Logic?ded?definition
+DependsOn http://cds.omdoc.org/Tutorial?Integers?P1?type http://mathhub.info/MitM/Foundation?Logic?eq?type
+Declares http://cds.omdoc.org/Tutorial?Integers http://cds.omdoc.org/Tutorial?Integers?M0
+constant http://cds.omdoc.org/Tutorial?Integers?M0
+DependsOn http://cds.omdoc.org/Tutorial?Integers?M0?type http://cds.omdoc.org/Tutorial?Integers?NaturalNumbers?type
+DependsOn http://cds.omdoc.org/Tutorial?Integers?M0?type http://mathhub.info/MitM/Foundation?Logic?forall?type
+DependsOn http://cds.omdoc.org/Tutorial?Integers?M0?type http://mathhub.info/MitM/Foundation?Logic?ded?type
+DependsOn http://cds.omdoc.org/Tutorial?Integers?M0?type http://mathhub.info/MitM/Foundation?Logic?prop?type
+DependsOn http://cds.omdoc.org/Tutorial?Integers?M0?type http://mathhub.info/MitM/Foundation?Logic?prop?definition
+DependsOn http://cds.omdoc.org/Tutorial?Integers?M0?type http://mathhub.info/MitM/Foundation?Logic?ded?definition
+DependsOn http://cds.omdoc.org/Tutorial?Integers?M0?type http://cds.omdoc.org/Tutorial?Integers?zero?type
+DependsOn http://cds.omdoc.org/Tutorial?Integers?M0?type http://cds.omdoc.org/Tutorial?Integers?times?type
+DependsOn http://cds.omdoc.org/Tutorial?Integers?M0?type http://mathhub.info/MitM/Foundation?Logic?eq?type
+Declares http://cds.omdoc.org/Tutorial?Integers http://cds.omdoc.org/Tutorial?Integers?M1
+constant http://cds.omdoc.org/Tutorial?Integers?M1
+DependsOn http://cds.omdoc.org/Tutorial?Integers?M1?type http://cds.omdoc.org/Tutorial?Integers?NaturalNumbers?type
+DependsOn http://cds.omdoc.org/Tutorial?Integers?M1?type http://cds.omdoc.org/Tutorial?Integers?plus?type
+DependsOn http://cds.omdoc.org/Tutorial?Integers?M1?type http://cds.omdoc.org/Tutorial?Integers?successor?type
+DependsOn http://cds.omdoc.org/Tutorial?Integers?M1?type http://mathhub.info/MitM/Foundation?Logic?forall?type
+DependsOn http://cds.omdoc.org/Tutorial?Integers?M1?type http://mathhub.info/MitM/Foundation?Logic?ded?type
+DependsOn http://cds.omdoc.org/Tutorial?Integers?M1?type http://mathhub.info/MitM/Foundation?Logic?prop?type
+DependsOn http://cds.omdoc.org/Tutorial?Integers?M1?type http://mathhub.info/MitM/Foundation?Logic?prop?definition
+DependsOn http://cds.omdoc.org/Tutorial?Integers?M1?type http://mathhub.info/MitM/Foundation?Logic?ded?definition
+DependsOn http://cds.omdoc.org/Tutorial?Integers?M1?type http://cds.omdoc.org/Tutorial?Integers?times?type
+DependsOn http://cds.omdoc.org/Tutorial?Integers?M1?type http://mathhub.info/MitM/Foundation?Logic?eq?type
+Declares http://cds.omdoc.org/Tutorial?Integers http://cds.omdoc.org/Tutorial?Integers?PComm
+constant http://cds.omdoc.org/Tutorial?Integers?PComm
+DependsOn http://cds.omdoc.org/Tutorial?Integers?PComm?type http://cds.omdoc.org/Tutorial?Integers?NaturalNumbers?type
+DependsOn http://cds.omdoc.org/Tutorial?Integers?PComm?type http://cds.omdoc.org/Tutorial?Integers?plus?type
+DependsOn http://cds.omdoc.org/Tutorial?Integers?PComm?type http://mathhub.info/MitM/Foundation?Logic?forall?type
+DependsOn http://cds.omdoc.org/Tutorial?Integers?PComm?type http://mathhub.info/MitM/Foundation?Logic?ded?type
+DependsOn http://cds.omdoc.org/Tutorial?Integers?PComm?type http://mathhub.info/MitM/Foundation?Logic?prop?type
+DependsOn http://cds.omdoc.org/Tutorial?Integers?PComm?type http://mathhub.info/MitM/Foundation?Logic?prop?definition
+DependsOn http://cds.omdoc.org/Tutorial?Integers?PComm?type http://mathhub.info/MitM/Foundation?Logic?ded?definition
+DependsOn http://cds.omdoc.org/Tutorial?Integers?PComm?type http://mathhub.info/MitM/Foundation?Logic?eq?type
+Declares http://cds.omdoc.org/Tutorial?Integers http://cds.omdoc.org/Tutorial?Integers?PAssoc
+constant http://cds.omdoc.org/Tutorial?Integers?PAssoc
+DependsOn http://cds.omdoc.org/Tutorial?Integers?PAssoc?type http://cds.omdoc.org/Tutorial?Integers?NaturalNumbers?type
+DependsOn http://cds.omdoc.org/Tutorial?Integers?PAssoc?type http://cds.omdoc.org/Tutorial?Integers?plus?type
+DependsOn http://cds.omdoc.org/Tutorial?Integers?PAssoc?type http://mathhub.info/MitM/Foundation?Logic?forall?type
+DependsOn http://cds.omdoc.org/Tutorial?Integers?PAssoc?type http://mathhub.info/MitM/Foundation?Logic?ded?type
+DependsOn http://cds.omdoc.org/Tutorial?Integers?PAssoc?type http://mathhub.info/MitM/Foundation?Logic?prop?type
+DependsOn http://cds.omdoc.org/Tutorial?Integers?PAssoc?type http://mathhub.info/MitM/Foundation?Logic?prop?definition
+DependsOn http://cds.omdoc.org/Tutorial?Integers?PAssoc?type http://mathhub.info/MitM/Foundation?Logic?ded?definition
+DependsOn http://cds.omdoc.org/Tutorial?Integers?PAssoc?type http://mathhub.info/MitM/Foundation?Logic?eq?type
+Declares http://cds.omdoc.org/Tutorial?Integers http://cds.omdoc.org/Tutorial?Integers?MOne
+constant http://cds.omdoc.org/Tutorial?Integers?MOne
+DependsOn http://cds.omdoc.org/Tutorial?Integers?MOne?type http://cds.omdoc.org/Tutorial?Integers?NaturalNumbers?type
+DependsOn http://cds.omdoc.org/Tutorial?Integers?MOne?type http://mathhub.info/MitM/Foundation?Logic?forall?type
+DependsOn http://cds.omdoc.org/Tutorial?Integers?MOne?type http://mathhub.info/MitM/Foundation?Logic?ded?type
+DependsOn http://cds.omdoc.org/Tutorial?Integers?MOne?type http://mathhub.info/MitM/Foundation?Logic?prop?type
+DependsOn http://cds.omdoc.org/Tutorial?Integers?MOne?type http://mathhub.info/MitM/Foundation?Logic?prop?definition
+DependsOn http://cds.omdoc.org/Tutorial?Integers?MOne?type http://mathhub.info/MitM/Foundation?Logic?ded?definition
+DependsOn http://cds.omdoc.org/Tutorial?Integers?MOne?type http://cds.omdoc.org/Tutorial?Integers?times?type
+DependsOn http://cds.omdoc.org/Tutorial?Integers?MOne?type http://cds.omdoc.org/Tutorial?Integers?one?type
+DependsOn http://cds.omdoc.org/Tutorial?Integers?MOne?type http://mathhub.info/MitM/Foundation?Logic?eq?type
+Declares http://cds.omdoc.org/Tutorial?Integers http://cds.omdoc.org/Tutorial?Integers?MComm
+constant http://cds.omdoc.org/Tutorial?Integers?MComm
+DependsOn http://cds.omdoc.org/Tutorial?Integers?MComm?type http://cds.omdoc.org/Tutorial?Integers?NaturalNumbers?type
+DependsOn http://cds.omdoc.org/Tutorial?Integers?MComm?type http://mathhub.info/MitM/Foundation?Logic?forall?type
+DependsOn http://cds.omdoc.org/Tutorial?Integers?MComm?type http://mathhub.info/MitM/Foundation?Logic?ded?type
+DependsOn http://cds.omdoc.org/Tutorial?Integers?MComm?type http://mathhub.info/MitM/Foundation?Logic?prop?type
+DependsOn http://cds.omdoc.org/Tutorial?Integers?MComm?type http://mathhub.info/MitM/Foundation?Logic?prop?definition
+DependsOn http://cds.omdoc.org/Tutorial?Integers?MComm?type http://mathhub.info/MitM/Foundation?Logic?ded?definition
+DependsOn http://cds.omdoc.org/Tutorial?Integers?MComm?type http://cds.omdoc.org/Tutorial?Integers?times?type
+DependsOn http://cds.omdoc.org/Tutorial?Integers?MComm?type http://cds.omdoc.org/Tutorial?Integers?one?type
+DependsOn http://cds.omdoc.org/Tutorial?Integers?MComm?type http://mathhub.info/MitM/Foundation?Logic?eq?type
+Declares http://cds.omdoc.org/Tutorial?Integers http://cds.omdoc.org/Tutorial?Integers?MAssoc
+constant http://cds.omdoc.org/Tutorial?Integers?MAssoc
+DependsOn http://cds.omdoc.org/Tutorial?Integers?MAssoc?type http://cds.omdoc.org/Tutorial?Integers?NaturalNumbers?type
+DependsOn http://cds.omdoc.org/Tutorial?Integers?MAssoc?type http://mathhub.info/MitM/Foundation?Logic?forall?type
+DependsOn http://cds.omdoc.org/Tutorial?Integers?MAssoc?type http://mathhub.info/MitM/Foundation?Logic?ded?type
+DependsOn http://cds.omdoc.org/Tutorial?Integers?MAssoc?type http://mathhub.info/MitM/Foundation?Logic?prop?type
+DependsOn http://cds.omdoc.org/Tutorial?Integers?MAssoc?type http://mathhub.info/MitM/Foundation?Logic?prop?definition
+DependsOn http://cds.omdoc.org/Tutorial?Integers?MAssoc?type http://mathhub.info/MitM/Foundation?Logic?ded?definition
+DependsOn http://cds.omdoc.org/Tutorial?Integers?MAssoc?type http://cds.omdoc.org/Tutorial?Integers?times?type
+DependsOn http://cds.omdoc.org/Tutorial?Integers?MAssoc?type http://mathhub.info/MitM/Foundation?Logic?eq?type

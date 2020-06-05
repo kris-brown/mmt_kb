@@ -1,0 +1,72 @@
+namespace Tutorial ❚
+
+view NatPlusIsMonoid : ?Monoid → ?NatPlus =
+	Domain = ℕ ❙
+	op = plus ❙
+	unit = zero ❙
+	assoc = plus_assoc ❙
+	unit_axiom_r = plus_unit ❙
+	unit_axiom_l = sketch "Combine plus_unit + plus_com." ❙
+❚
+
+
+view NatPlusTimesIsPlusMonoid : ?Monoid → ?NatPlusTimes =
+	Domain = ℕ ❙
+	op = plus ❙
+	unit = zero ❙
+	assoc = plus_assoc ❙
+	unit_axiom_r = plus_unit ❙
+	unit_axiom_l = sketch "Combine plus_unit + plus_com." ❙
+❚
+
+
+view NatPlusTimesIsMonoid : ?Monoid → ?NatPlusTimes =
+	Domain = ℕ ❙
+	op = times ❙
+	unit = one ❙
+	assoc = MAssoc ❙
+	unit_axiom_r = MOne ❙
+	unit_axiom_l = sketch "Combine MOne + mul commutativity." ❙
+❚
+
+view NatPlusTimesIsNonGrpMon : ?NonGrpMon → ?NatPlusTimes =
+	Domain = ℕ ❙
+	op = times ❙
+	unit = one ❙
+	assoc = MAssoc ❙
+	unit_axiom_r = MOne ❙
+	unit_axiom_l = sketch "Combine MOne + mul commutativity." ❙
+❚
+
+
+view opposite : ?Monoid → ?Monoid =
+    Domain = Domain ❙
+    op = [a,b] b ∘ a ❙
+	unit = unit ❙
+    assoc = sketch "From associativity." ❙
+    unit_axiom_r = unit_axiom_l ❙
+    unit_axiom_l = unit_axiom_r ❙
+❚
+
+view propsemantics : ?PropLogSyntax -> ?Booleans =
+	prop = boolean ❙
+	true = btrue ❙
+
+	not = ☞?Booleans?not ❙
+	/T the backtick ` tells MMT to expect a URI ❙
+	and = ☞?Booleans?and ❙
+❚
+
+view ndsemantics : ?PropLogNatDed -> ?BoolProofs =
+	include ?propsemantics ❙
+	prop = boolean ❙
+	ded = pseudoded ❙
+❚
+
+
+view FOLSemantics : ?FOLSyntax -> ?FOModels =
+	include ?propsemantics ❙
+	prop = boolean ❙ /T should not be necessary, but currently is ❙
+	ind = individuals ❙
+	forall = [P : individuals ⟶ boolean] if (bfalse ‍∈ (im P U)) then bfalse else btrue ❙
+❚

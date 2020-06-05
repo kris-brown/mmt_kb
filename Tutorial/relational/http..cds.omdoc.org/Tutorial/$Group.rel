@@ -1,0 +1,63 @@
+dataconstructor http://cds.omdoc.org/Tutorial?Group?inverse_axiom
+dataconstructor http://cds.omdoc.org/Tutorial?Group?inverse_thm
+dataconstructor http://cds.omdoc.org/Tutorial?Group?inverse
+theory http://cds.omdoc.org/Tutorial?Group
+HasMeta http://cds.omdoc.org/Tutorial?Group http://cds.omdoc.org/Tutorial?Meta
+Includes http://cds.omdoc.org/Tutorial?Group http://cds.omdoc.org/Tutorial?Monoid
+Includes http://cds.omdoc.org/Tutorial?Group http://cds.omdoc.org/Tutorial?SemiGroup
+Includes http://cds.omdoc.org/Tutorial?Group http://cds.omdoc.org/Tutorial?Magma
+Declares http://cds.omdoc.org/Tutorial?Group http://cds.omdoc.org/Tutorial?Group?inverse_axiom
+constant http://cds.omdoc.org/Tutorial?Group?inverse_axiom
+DependsOn http://cds.omdoc.org/Tutorial?Group?inverse_axiom?type http://mathhub.info/MitM/Foundation?Logic?forall?type
+DependsOn http://cds.omdoc.org/Tutorial?Group?inverse_axiom?type http://mathhub.info/MitM/Foundation?Logic?exists?type
+DependsOn http://cds.omdoc.org/Tutorial?Group?inverse_axiom?type http://mathhub.info/MitM/Foundation?Logic?ded?type
+DependsOn http://cds.omdoc.org/Tutorial?Group?inverse_axiom?type http://cds.omdoc.org/Tutorial?Magma?Domain?type
+DependsOn http://cds.omdoc.org/Tutorial?Group?inverse_axiom?type http://mathhub.info/MitM/Foundation?Logic?prop?type
+DependsOn http://cds.omdoc.org/Tutorial?Group?inverse_axiom?type http://mathhub.info/MitM/Foundation?Logic?prop?definition
+DependsOn http://cds.omdoc.org/Tutorial?Group?inverse_axiom?type http://cds.omdoc.org/Tutorial?Magma?op?type
+DependsOn http://cds.omdoc.org/Tutorial?Group?inverse_axiom?type http://mathhub.info/MitM/Foundation?Logic?ded?definition
+DependsOn http://cds.omdoc.org/Tutorial?Group?inverse_axiom?type http://cds.omdoc.org/Tutorial?Monoid?unit?type
+DependsOn http://cds.omdoc.org/Tutorial?Group?inverse_axiom?type http://mathhub.info/MitM/Foundation?Logic?eq?type
+Declares http://cds.omdoc.org/Tutorial?Group http://cds.omdoc.org/Tutorial?Group?inverse_thm
+constant http://cds.omdoc.org/Tutorial?Group?inverse_thm
+DependsOn http://cds.omdoc.org/Tutorial?Group?inverse_thm?type http://mathhub.info/MitM/Foundation?Logic?ded?type
+DependsOn http://cds.omdoc.org/Tutorial?Group?inverse_thm?type http://cds.omdoc.org/Tutorial?Magma?Domain?type
+DependsOn http://cds.omdoc.org/Tutorial?Group?inverse_thm?type http://mathhub.info/MitM/Foundation?Logic?prop?type
+DependsOn http://cds.omdoc.org/Tutorial?Group?inverse_thm?type http://mathhub.info/MitM/Foundation?Logic?prop?definition
+DependsOn http://cds.omdoc.org/Tutorial?Group?inverse_thm?type http://cds.omdoc.org/Tutorial?Magma?op?type
+DependsOn http://cds.omdoc.org/Tutorial?Group?inverse_thm?type http://mathhub.info/MitM/Foundation?Logic?exists_unique?type
+DependsOn http://cds.omdoc.org/Tutorial?Group?inverse_thm?type http://mathhub.info/MitM/Foundation?Logic?ded?definition
+DependsOn http://cds.omdoc.org/Tutorial?Group?inverse_thm?type http://mathhub.info/MitM/Foundation?Logic?exists_unique?definition
+DependsOn http://cds.omdoc.org/Tutorial?Group?inverse_thm?type http://cds.omdoc.org/Tutorial?Monoid?unit?type
+DependsOn http://cds.omdoc.org/Tutorial?Group?inverse_thm?type http://mathhub.info/MitM/Foundation?Logic?eq?type
+DependsOn http://cds.omdoc.org/Tutorial?Group?inverse_thm?definition http://mathhub.info/MitM/Foundation?Logic?unique?type
+DependsOn http://cds.omdoc.org/Tutorial?Group?inverse_thm?definition http://mathhub.info/MitM/Foundation?Logic?prop?type
+DependsOn http://cds.omdoc.org/Tutorial?Group?inverse_thm?definition http://cds.omdoc.org/Tutorial?Magma?op?type
+DependsOn http://cds.omdoc.org/Tutorial?Group?inverse_thm?definition http://mathhub.info/MitM/Foundation?Logic?ded?definition
+DependsOn http://cds.omdoc.org/Tutorial?Group?inverse_thm?definition http://mathhub.info/MitM/Foundation?Logic?exists_unique?definition
+DependsOn http://cds.omdoc.org/Tutorial?Group?inverse_thm?definition http://mathhub.info/MitM/Foundation?InformalProofs?proofsketch?type
+DependsOn http://cds.omdoc.org/Tutorial?Group?inverse_thm?definition http://cds.omdoc.org/Tutorial?Monoid?unit?type
+DependsOn http://cds.omdoc.org/Tutorial?Group?inverse_thm?definition http://cds.omdoc.org/urtheories?Ded?DED?type
+DependsOn http://cds.omdoc.org/Tutorial?Group?inverse_thm?definition http://mathhub.info/MitM/Foundation?Logic?eq?type
+DependsOn http://cds.omdoc.org/Tutorial?Group?inverse_thm?definition http://cds.omdoc.org/urtheories?Bool?BOOL?type
+DependsOn http://cds.omdoc.org/Tutorial?Group?inverse_thm?definition http://mathhub.info/MitM/Foundation?Logic?ded?type
+DependsOn http://cds.omdoc.org/Tutorial?Group?inverse_thm?definition http://mathhub.info/MitM/Foundation?Logic?exists?type
+DependsOn http://cds.omdoc.org/Tutorial?Group?inverse_thm?definition http://cds.omdoc.org/Tutorial?Magma?Domain?type
+DependsOn http://cds.omdoc.org/Tutorial?Group?inverse_thm?definition http://mathhub.info/MitM/Foundation?Logic?prop?definition
+DependsOn http://cds.omdoc.org/Tutorial?Group?inverse_thm?definition http://mathhub.info/MitM/Foundation?Logic?and?type
+DependsOn http://cds.omdoc.org/Tutorial?Group?inverse_thm?definition http://mathhub.info/MitM/Foundation?Strings?string?type
+Declares http://cds.omdoc.org/Tutorial?Group http://cds.omdoc.org/Tutorial?Group?inverse
+constant http://cds.omdoc.org/Tutorial?Group?inverse
+DependsOn http://cds.omdoc.org/Tutorial?Group?inverse?type http://cds.omdoc.org/Tutorial?Magma?Domain?type
+DependsOn http://cds.omdoc.org/Tutorial?Group?inverse?definition http://mathhub.info/MitM/Foundation?Logic?ded?type
+DependsOn http://cds.omdoc.org/Tutorial?Group?inverse?definition http://mathhub.info/MitM/Foundation?DescriptionOperator?that?type
+DependsOn http://cds.omdoc.org/Tutorial?Group?inverse?definition http://cds.omdoc.org/Tutorial?Magma?Domain?type
+DependsOn http://cds.omdoc.org/Tutorial?Group?inverse?definition http://mathhub.info/MitM/Foundation?Logic?prop?type
+DependsOn http://cds.omdoc.org/Tutorial?Group?inverse?definition http://mathhub.info/MitM/Foundation?Logic?prop?definition
+DependsOn http://cds.omdoc.org/Tutorial?Group?inverse?definition http://cds.omdoc.org/Tutorial?Magma?op?type
+DependsOn http://cds.omdoc.org/Tutorial?Group?inverse?definition http://mathhub.info/MitM/Foundation?Logic?exists_unique?type
+DependsOn http://cds.omdoc.org/Tutorial?Group?inverse?definition http://mathhub.info/MitM/Foundation?Logic?ded?definition
+DependsOn http://cds.omdoc.org/Tutorial?Group?inverse?definition http://mathhub.info/MitM/Foundation?Logic?exists_unique?definition
+DependsOn http://cds.omdoc.org/Tutorial?Group?inverse?definition http://cds.omdoc.org/Tutorial?Monoid?unit?type
+DependsOn http://cds.omdoc.org/Tutorial?Group?inverse?definition http://mathhub.info/MitM/Foundation?Logic?eq?type
+DependsOn http://cds.omdoc.org/Tutorial?Group?inverse?definition http://mathhub.info/MitM/Foundation?InformalProofs?trivial?type

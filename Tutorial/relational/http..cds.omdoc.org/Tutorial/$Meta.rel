@@ -1,0 +1,6 @@
+theory http://cds.omdoc.org/Tutorial?Meta
+HasMeta http://cds.omdoc.org/Tutorial?Meta http://mathhub.info/MitM/Foundation?Logic
+Includes http://cds.omdoc.org/Tutorial?Meta http://mathhub.info/MitM/Foundation?DescriptionOperator
+Includes http://cds.omdoc.org/Tutorial?Meta http://mathhub.info/MitM/Foundation?OptionType
+Includes http://cds.omdoc.org/Tutorial?Meta http://mathhub.info/MitM/Foundation?Strings
+Includes http://cds.omdoc.org/Tutorial?Meta http://mathhub.info/MitM/Foundation?InformalProofs

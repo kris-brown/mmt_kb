@@ -1,0 +1,56 @@
+datatypeconstructor http://cds.omdoc.org/Tutorial?ZFC?set
+dataconstructor http://cds.omdoc.org/Tutorial?ZFC?in
+dataconstructor http://cds.omdoc.org/Tutorial?ZFC?set_exists
+dataconstructor http://cds.omdoc.org/Tutorial?ZFC?set_extensionality
+dataconstructor http://cds.omdoc.org/Tutorial?ZFC?separation
+dataconstructor http://cds.omdoc.org/Tutorial?ZFC?set_separation
+dataconstructor http://cds.omdoc.org/Tutorial?ZFC?emptyset
+theory http://cds.omdoc.org/Tutorial?ZFC
+HasMeta http://cds.omdoc.org/Tutorial?ZFC http://cds.omdoc.org/Tutorial?FOLEqNatDed
+Declares http://cds.omdoc.org/Tutorial?ZFC http://cds.omdoc.org/Tutorial?ZFC?set
+constant http://cds.omdoc.org/Tutorial?ZFC?set
+DependsOn http://cds.omdoc.org/Tutorial?ZFC?set?definition http://cds.omdoc.org/Tutorial?FOLSyntax?ind?type
+Declares http://cds.omdoc.org/Tutorial?ZFC http://cds.omdoc.org/Tutorial?ZFC?in
+constant http://cds.omdoc.org/Tutorial?ZFC?in
+DependsOn http://cds.omdoc.org/Tutorial?ZFC?in?type http://cds.omdoc.org/Tutorial?ZFC?set?type
+DependsOn http://cds.omdoc.org/Tutorial?ZFC?in?type http://cds.omdoc.org/Tutorial?PropLogSyntax?prop?type
+Declares http://cds.omdoc.org/Tutorial?ZFC http://cds.omdoc.org/Tutorial?ZFC?set_exists
+constant http://cds.omdoc.org/Tutorial?ZFC?set_exists
+DependsOn http://cds.omdoc.org/Tutorial?ZFC?set_exists?type http://cds.omdoc.org/Tutorial?ZFC?set?type
+DependsOn http://cds.omdoc.org/Tutorial?ZFC?set_exists?type http://cds.omdoc.org/Tutorial?ZFC?set?definition
+Declares http://cds.omdoc.org/Tutorial?ZFC http://cds.omdoc.org/Tutorial?ZFC?set_extensionality
+constant http://cds.omdoc.org/Tutorial?ZFC?set_extensionality
+DependsOn http://cds.omdoc.org/Tutorial?ZFC?set_extensionality?type http://cds.omdoc.org/Tutorial?PropLogSyntax?iff?type
+DependsOn http://cds.omdoc.org/Tutorial?ZFC?set_extensionality?type http://cds.omdoc.org/Tutorial?ZFC?set?type
+DependsOn http://cds.omdoc.org/Tutorial?ZFC?set_extensionality?type http://cds.omdoc.org/Tutorial?FOLSyntax?ind?type
+DependsOn http://cds.omdoc.org/Tutorial?ZFC?set_extensionality?type http://cds.omdoc.org/Tutorial?PropLogNatDed?ded?type
+DependsOn http://cds.omdoc.org/Tutorial?ZFC?set_extensionality?type http://cds.omdoc.org/Tutorial?FOLSyntax?forall?type
+DependsOn http://cds.omdoc.org/Tutorial?ZFC?set_extensionality?type http://cds.omdoc.org/Tutorial?ZFC?in?type
+DependsOn http://cds.omdoc.org/Tutorial?ZFC?set_extensionality?type http://cds.omdoc.org/Tutorial?PropLogSyntax?prop?type
+DependsOn http://cds.omdoc.org/Tutorial?ZFC?set_extensionality?type http://cds.omdoc.org/Tutorial?FOLEQSyntax?equality?type
+Declares http://cds.omdoc.org/Tutorial?ZFC http://cds.omdoc.org/Tutorial?ZFC?separation
+constant http://cds.omdoc.org/Tutorial?ZFC?separation
+DependsOn http://cds.omdoc.org/Tutorial?ZFC?separation?type http://cds.omdoc.org/Tutorial?ZFC?set?type
+DependsOn http://cds.omdoc.org/Tutorial?ZFC?separation?type http://cds.omdoc.org/Tutorial?PropLogSyntax?prop?type
+Declares http://cds.omdoc.org/Tutorial?ZFC http://cds.omdoc.org/Tutorial?ZFC?set_separation
+constant http://cds.omdoc.org/Tutorial?ZFC?set_separation
+DependsOn http://cds.omdoc.org/Tutorial?ZFC?set_separation?type http://cds.omdoc.org/Tutorial?PropLogSyntax?iff?type
+DependsOn http://cds.omdoc.org/Tutorial?ZFC?set_separation?type http://cds.omdoc.org/Tutorial?ZFC?set?type
+DependsOn http://cds.omdoc.org/Tutorial?ZFC?set_separation?type http://cds.omdoc.org/Tutorial?FOLSyntax?ind?type
+DependsOn http://cds.omdoc.org/Tutorial?ZFC?set_separation?type http://cds.omdoc.org/Tutorial?ZFC?separation?type
+DependsOn http://cds.omdoc.org/Tutorial?ZFC?set_separation?type http://cds.omdoc.org/Tutorial?FOLSyntax?forall?type
+DependsOn http://cds.omdoc.org/Tutorial?ZFC?set_separation?type http://cds.omdoc.org/Tutorial?PropLogNatDed?ded?type
+DependsOn http://cds.omdoc.org/Tutorial?ZFC?set_separation?type http://cds.omdoc.org/Tutorial?ZFC?set?definition
+DependsOn http://cds.omdoc.org/Tutorial?ZFC?set_separation?type http://cds.omdoc.org/Tutorial?ZFC?in?type
+DependsOn http://cds.omdoc.org/Tutorial?ZFC?set_separation?type http://cds.omdoc.org/Tutorial?PropLogSyntax?and?type
+DependsOn http://cds.omdoc.org/Tutorial?ZFC?set_separation?type http://cds.omdoc.org/Tutorial?PropLogSyntax?prop?type
+Declares http://cds.omdoc.org/Tutorial?ZFC http://cds.omdoc.org/Tutorial?ZFC?emptyset
+constant http://cds.omdoc.org/Tutorial?ZFC?emptyset
+DependsOn http://cds.omdoc.org/Tutorial?ZFC?emptyset?type http://cds.omdoc.org/Tutorial?ZFC?set?type
+DependsOn http://cds.omdoc.org/Tutorial?ZFC?emptyset?type http://cds.omdoc.org/Tutorial?ZFC?set?definition
+DependsOn http://cds.omdoc.org/Tutorial?ZFC?emptyset?definition http://cds.omdoc.org/Tutorial?ZFC?set?type
+DependsOn http://cds.omdoc.org/Tutorial?ZFC?emptyset?definition http://cds.omdoc.org/Tutorial?ZFC?separation?type
+DependsOn http://cds.omdoc.org/Tutorial?ZFC?emptyset?definition http://cds.omdoc.org/Tutorial?ZFC?set?definition
+DependsOn http://cds.omdoc.org/Tutorial?ZFC?emptyset?definition http://cds.omdoc.org/Tutorial?PropLogSyntax?prop?type
+DependsOn http://cds.omdoc.org/Tutorial?ZFC?emptyset?definition http://cds.omdoc.org/Tutorial?ZFC?set_exists?type
+DependsOn http://cds.omdoc.org/Tutorial?ZFC?emptyset?definition http://cds.omdoc.org/Tutorial?PropLogSyntax?false?type

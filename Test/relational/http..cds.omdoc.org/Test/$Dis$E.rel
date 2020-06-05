@@ -1,0 +1,8 @@
+datatypeconstructor http://cds.omdoc.org/Test?DisE?[http://cds.omdoc.org/Test?D]/DSort
+HasDomain http://cds.omdoc.org/Test?DisE http://cds.omdoc.org/Test?D
+HasCodomain http://cds.omdoc.org/Test?DisE http://cds.omdoc.org/Test?E
+view http://cds.omdoc.org/Test?DisE
+HasViewFrom http://cds.omdoc.org/Test?E http://cds.omdoc.org/Test?D
+Declares http://cds.omdoc.org/Test?DisE http://cds.omdoc.org/Test?DisE?[http://cds.omdoc.org/Test?D]/DSort
+constant http://cds.omdoc.org/Test?DisE?[http://cds.omdoc.org/Test?D]/DSort
+DependsOn http://cds.omdoc.org/Test?DisE?[http://cds.omdoc.org/Test?D]/DSort?definition http://cds.omdoc.org/Test?E?ESort?type

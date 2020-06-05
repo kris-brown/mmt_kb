@@ -1,0 +1,32 @@
+dataconstructor http://cds.omdoc.org/Tutorial?Monoid?unit
+dataconstructor http://cds.omdoc.org/Tutorial?Monoid?unit_axiom_r
+dataconstructor http://cds.omdoc.org/Tutorial?Monoid?unit_axiom_l
+theory http://cds.omdoc.org/Tutorial?Monoid
+HasMeta http://cds.omdoc.org/Tutorial?Monoid http://cds.omdoc.org/Tutorial?Meta
+Includes http://cds.omdoc.org/Tutorial?Monoid http://cds.omdoc.org/Tutorial?SemiGroup
+Includes http://cds.omdoc.org/Tutorial?Monoid http://cds.omdoc.org/Tutorial?Magma
+Declares http://cds.omdoc.org/Tutorial?Monoid http://cds.omdoc.org/Tutorial?Monoid?unit
+constant http://cds.omdoc.org/Tutorial?Monoid?unit
+DependsOn http://cds.omdoc.org/Tutorial?Monoid?unit?type http://cds.omdoc.org/Tutorial?Magma?Domain?type
+Declares http://cds.omdoc.org/Tutorial?Monoid http://cds.omdoc.org/Tutorial?Monoid?unit_axiom_r
+constant http://cds.omdoc.org/Tutorial?Monoid?unit_axiom_r
+DependsOn http://cds.omdoc.org/Tutorial?Monoid?unit_axiom_r?type http://mathhub.info/MitM/Foundation?Logic?forall?type
+DependsOn http://cds.omdoc.org/Tutorial?Monoid?unit_axiom_r?type http://mathhub.info/MitM/Foundation?Logic?ded?type
+DependsOn http://cds.omdoc.org/Tutorial?Monoid?unit_axiom_r?type http://cds.omdoc.org/Tutorial?Magma?Domain?type
+DependsOn http://cds.omdoc.org/Tutorial?Monoid?unit_axiom_r?type http://mathhub.info/MitM/Foundation?Logic?prop?type
+DependsOn http://cds.omdoc.org/Tutorial?Monoid?unit_axiom_r?type http://mathhub.info/MitM/Foundation?Logic?prop?definition
+DependsOn http://cds.omdoc.org/Tutorial?Monoid?unit_axiom_r?type http://cds.omdoc.org/Tutorial?Magma?op?type
+DependsOn http://cds.omdoc.org/Tutorial?Monoid?unit_axiom_r?type http://mathhub.info/MitM/Foundation?Logic?ded?definition
+DependsOn http://cds.omdoc.org/Tutorial?Monoid?unit_axiom_r?type http://cds.omdoc.org/Tutorial?Monoid?unit?type
+DependsOn http://cds.omdoc.org/Tutorial?Monoid?unit_axiom_r?type http://mathhub.info/MitM/Foundation?Logic?eq?type
+Declares http://cds.omdoc.org/Tutorial?Monoid http://cds.omdoc.org/Tutorial?Monoid?unit_axiom_l
+constant http://cds.omdoc.org/Tutorial?Monoid?unit_axiom_l
+DependsOn http://cds.omdoc.org/Tutorial?Monoid?unit_axiom_l?type http://mathhub.info/MitM/Foundation?Logic?forall?type
+DependsOn http://cds.omdoc.org/Tutorial?Monoid?unit_axiom_l?type http://mathhub.info/MitM/Foundation?Logic?ded?type
+DependsOn http://cds.omdoc.org/Tutorial?Monoid?unit_axiom_l?type http://cds.omdoc.org/Tutorial?Magma?Domain?type
+DependsOn http://cds.omdoc.org/Tutorial?Monoid?unit_axiom_l?type http://mathhub.info/MitM/Foundation?Logic?prop?type
+DependsOn http://cds.omdoc.org/Tutorial?Monoid?unit_axiom_l?type http://mathhub.info/MitM/Foundation?Logic?prop?definition
+DependsOn http://cds.omdoc.org/Tutorial?Monoid?unit_axiom_l?type http://cds.omdoc.org/Tutorial?Magma?op?type
+DependsOn http://cds.omdoc.org/Tutorial?Monoid?unit_axiom_l?type http://mathhub.info/MitM/Foundation?Logic?ded?definition
+DependsOn http://cds.omdoc.org/Tutorial?Monoid?unit_axiom_l?type http://cds.omdoc.org/Tutorial?Monoid?unit?type
+DependsOn http://cds.omdoc.org/Tutorial?Monoid?unit_axiom_l?type http://mathhub.info/MitM/Foundation?Logic?eq?type

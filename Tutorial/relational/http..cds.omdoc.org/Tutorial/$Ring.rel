@@ -1,0 +1,98 @@
+dataconstructor http://cds.omdoc.org/Tutorial?Ring?a/[http://cds.omdoc.org/Tutorial?Group]/inverse_axiom
+dataconstructor http://cds.omdoc.org/Tutorial?Ring?a/[http://cds.omdoc.org/Tutorial?Group]/inverse_thm
+dataconstructor http://cds.omdoc.org/Tutorial?Ring?a/[http://cds.omdoc.org/Tutorial?Group]/inverse
+dataconstructor http://cds.omdoc.org/Tutorial?Ring?a/[http://cds.omdoc.org/Tutorial?Monoid]/unit
+dataconstructor http://cds.omdoc.org/Tutorial?Ring?a/[http://cds.omdoc.org/Tutorial?Monoid]/unit_axiom_r
+dataconstructor http://cds.omdoc.org/Tutorial?Ring?a/[http://cds.omdoc.org/Tutorial?Monoid]/unit_axiom_l
+dataconstructor http://cds.omdoc.org/Tutorial?Ring?a/[http://cds.omdoc.org/Tutorial?SemiGroup]/assoc
+datatypeconstructor http://cds.omdoc.org/Tutorial?Ring?a/[http://cds.omdoc.org/Tutorial?Magma]/Domain
+dataconstructor http://cds.omdoc.org/Tutorial?Ring?a/[http://cds.omdoc.org/Tutorial?Magma]/op
+dataconstructor http://cds.omdoc.org/Tutorial?Ring?a/[http://cds.omdoc.org/Tutorial?Abelian]/abelian
+dataconstructor http://cds.omdoc.org/Tutorial?Ring?m/[http://cds.omdoc.org/Tutorial?SemiGroup]/assoc
+datatypeconstructor http://cds.omdoc.org/Tutorial?Ring?m/[http://cds.omdoc.org/Tutorial?Magma]/Domain
+dataconstructor http://cds.omdoc.org/Tutorial?Ring?m/[http://cds.omdoc.org/Tutorial?Magma]/op
+dataconstructor http://cds.omdoc.org/Tutorial?Ring?m/unit
+dataconstructor http://cds.omdoc.org/Tutorial?Ring?m/unit_axiom_r
+dataconstructor http://cds.omdoc.org/Tutorial?Ring?m/unit_axiom_l
+dataconstructor http://cds.omdoc.org/Tutorial?Ring?distributive
+theory http://cds.omdoc.org/Tutorial?Ring
+HasMeta http://cds.omdoc.org/Tutorial?Ring http://cds.omdoc.org/Tutorial?Meta
+Declares http://cds.omdoc.org/Tutorial?Ring http://cds.omdoc.org/Tutorial?Ring?a
+HasDomain http://cds.omdoc.org/Tutorial?Ring?a http://cds.omdoc.org/Tutorial?CGroup
+HasCodomain http://cds.omdoc.org/Tutorial?Ring?a http://cds.omdoc.org/Tutorial?Ring
+structure http://cds.omdoc.org/Tutorial?Ring?a
+Declares http://cds.omdoc.org/Tutorial?Ring http://cds.omdoc.org/Tutorial?Ring?a/[http://cds.omdoc.org/Tutorial?Group]
+HasDomain http://cds.omdoc.org/Tutorial?Ring?a/[http://cds.omdoc.org/Tutorial?Group] http://cds.omdoc.org/Tutorial?Group
+HasCodomain http://cds.omdoc.org/Tutorial?Ring?a/[http://cds.omdoc.org/Tutorial?Group] http://cds.omdoc.org/Tutorial?Ring
+structure http://cds.omdoc.org/Tutorial?Ring?a/[http://cds.omdoc.org/Tutorial?Group]
+Declares http://cds.omdoc.org/Tutorial?Ring http://cds.omdoc.org/Tutorial?Ring?a/[http://cds.omdoc.org/Tutorial?Group]/inverse_axiom
+constant http://cds.omdoc.org/Tutorial?Ring?a/[http://cds.omdoc.org/Tutorial?Group]/inverse_axiom
+Declares http://cds.omdoc.org/Tutorial?Ring http://cds.omdoc.org/Tutorial?Ring?a/[http://cds.omdoc.org/Tutorial?Group]/inverse_thm
+constant http://cds.omdoc.org/Tutorial?Ring?a/[http://cds.omdoc.org/Tutorial?Group]/inverse_thm
+Declares http://cds.omdoc.org/Tutorial?Ring http://cds.omdoc.org/Tutorial?Ring?a/[http://cds.omdoc.org/Tutorial?Group]/inverse
+constant http://cds.omdoc.org/Tutorial?Ring?a/[http://cds.omdoc.org/Tutorial?Group]/inverse
+Declares http://cds.omdoc.org/Tutorial?Ring http://cds.omdoc.org/Tutorial?Ring?a/[http://cds.omdoc.org/Tutorial?Monoid]
+HasDomain http://cds.omdoc.org/Tutorial?Ring?a/[http://cds.omdoc.org/Tutorial?Monoid] http://cds.omdoc.org/Tutorial?Monoid
+HasCodomain http://cds.omdoc.org/Tutorial?Ring?a/[http://cds.omdoc.org/Tutorial?Monoid] http://cds.omdoc.org/Tutorial?Ring
+structure http://cds.omdoc.org/Tutorial?Ring?a/[http://cds.omdoc.org/Tutorial?Monoid]
+Declares http://cds.omdoc.org/Tutorial?Ring http://cds.omdoc.org/Tutorial?Ring?a/[http://cds.omdoc.org/Tutorial?Monoid]/unit
+constant http://cds.omdoc.org/Tutorial?Ring?a/[http://cds.omdoc.org/Tutorial?Monoid]/unit
+Declares http://cds.omdoc.org/Tutorial?Ring http://cds.omdoc.org/Tutorial?Ring?a/[http://cds.omdoc.org/Tutorial?Monoid]/unit_axiom_r
+constant http://cds.omdoc.org/Tutorial?Ring?a/[http://cds.omdoc.org/Tutorial?Monoid]/unit_axiom_r
+Declares http://cds.omdoc.org/Tutorial?Ring http://cds.omdoc.org/Tutorial?Ring?a/[http://cds.omdoc.org/Tutorial?Monoid]/unit_axiom_l
+constant http://cds.omdoc.org/Tutorial?Ring?a/[http://cds.omdoc.org/Tutorial?Monoid]/unit_axiom_l
+Declares http://cds.omdoc.org/Tutorial?Ring http://cds.omdoc.org/Tutorial?Ring?a/[http://cds.omdoc.org/Tutorial?SemiGroup]
+HasDomain http://cds.omdoc.org/Tutorial?Ring?a/[http://cds.omdoc.org/Tutorial?SemiGroup] http://cds.omdoc.org/Tutorial?SemiGroup
+HasCodomain http://cds.omdoc.org/Tutorial?Ring?a/[http://cds.omdoc.org/Tutorial?SemiGroup] http://cds.omdoc.org/Tutorial?Ring
+structure http://cds.omdoc.org/Tutorial?Ring?a/[http://cds.omdoc.org/Tutorial?SemiGroup]
+Declares http://cds.omdoc.org/Tutorial?Ring http://cds.omdoc.org/Tutorial?Ring?a/[http://cds.omdoc.org/Tutorial?SemiGroup]/assoc
+constant http://cds.omdoc.org/Tutorial?Ring?a/[http://cds.omdoc.org/Tutorial?SemiGroup]/assoc
+Declares http://cds.omdoc.org/Tutorial?Ring http://cds.omdoc.org/Tutorial?Ring?a/[http://cds.omdoc.org/Tutorial?Magma]
+HasDomain http://cds.omdoc.org/Tutorial?Ring?a/[http://cds.omdoc.org/Tutorial?Magma] http://cds.omdoc.org/Tutorial?Magma
+HasCodomain http://cds.omdoc.org/Tutorial?Ring?a/[http://cds.omdoc.org/Tutorial?Magma] http://cds.omdoc.org/Tutorial?Ring
+structure http://cds.omdoc.org/Tutorial?Ring?a/[http://cds.omdoc.org/Tutorial?Magma]
+Declares http://cds.omdoc.org/Tutorial?Ring http://cds.omdoc.org/Tutorial?Ring?a/[http://cds.omdoc.org/Tutorial?Magma]/Domain
+constant http://cds.omdoc.org/Tutorial?Ring?a/[http://cds.omdoc.org/Tutorial?Magma]/Domain
+Declares http://cds.omdoc.org/Tutorial?Ring http://cds.omdoc.org/Tutorial?Ring?a/[http://cds.omdoc.org/Tutorial?Magma]/op
+constant http://cds.omdoc.org/Tutorial?Ring?a/[http://cds.omdoc.org/Tutorial?Magma]/op
+Declares http://cds.omdoc.org/Tutorial?Ring http://cds.omdoc.org/Tutorial?Ring?a/[http://cds.omdoc.org/Tutorial?Abelian]
+HasDomain http://cds.omdoc.org/Tutorial?Ring?a/[http://cds.omdoc.org/Tutorial?Abelian] http://cds.omdoc.org/Tutorial?Abelian
+HasCodomain http://cds.omdoc.org/Tutorial?Ring?a/[http://cds.omdoc.org/Tutorial?Abelian] http://cds.omdoc.org/Tutorial?Ring
+structure http://cds.omdoc.org/Tutorial?Ring?a/[http://cds.omdoc.org/Tutorial?Abelian]
+Declares http://cds.omdoc.org/Tutorial?Ring http://cds.omdoc.org/Tutorial?Ring?a/[http://cds.omdoc.org/Tutorial?Abelian]/abelian
+constant http://cds.omdoc.org/Tutorial?Ring?a/[http://cds.omdoc.org/Tutorial?Abelian]/abelian
+Declares http://cds.omdoc.org/Tutorial?Ring http://cds.omdoc.org/Tutorial?Ring?m
+HasDomain http://cds.omdoc.org/Tutorial?Ring?m http://cds.omdoc.org/Tutorial?Monoid
+HasCodomain http://cds.omdoc.org/Tutorial?Ring?m http://cds.omdoc.org/Tutorial?Ring
+structure http://cds.omdoc.org/Tutorial?Ring?m
+Declares http://cds.omdoc.org/Tutorial?Ring http://cds.omdoc.org/Tutorial?Ring?m/[http://cds.omdoc.org/Tutorial?SemiGroup]
+HasDomain http://cds.omdoc.org/Tutorial?Ring?m/[http://cds.omdoc.org/Tutorial?SemiGroup] http://cds.omdoc.org/Tutorial?SemiGroup
+HasCodomain http://cds.omdoc.org/Tutorial?Ring?m/[http://cds.omdoc.org/Tutorial?SemiGroup] http://cds.omdoc.org/Tutorial?Ring
+structure http://cds.omdoc.org/Tutorial?Ring?m/[http://cds.omdoc.org/Tutorial?SemiGroup]
+Declares http://cds.omdoc.org/Tutorial?Ring http://cds.omdoc.org/Tutorial?Ring?m/[http://cds.omdoc.org/Tutorial?SemiGroup]/assoc
+constant http://cds.omdoc.org/Tutorial?Ring?m/[http://cds.omdoc.org/Tutorial?SemiGroup]/assoc
+Declares http://cds.omdoc.org/Tutorial?Ring http://cds.omdoc.org/Tutorial?Ring?m/[http://cds.omdoc.org/Tutorial?Magma]
+HasDomain http://cds.omdoc.org/Tutorial?Ring?m/[http://cds.omdoc.org/Tutorial?Magma] http://cds.omdoc.org/Tutorial?Magma
+HasCodomain http://cds.omdoc.org/Tutorial?Ring?m/[http://cds.omdoc.org/Tutorial?Magma] http://cds.omdoc.org/Tutorial?Ring
+structure http://cds.omdoc.org/Tutorial?Ring?m/[http://cds.omdoc.org/Tutorial?Magma]
+Declares http://cds.omdoc.org/Tutorial?Ring http://cds.omdoc.org/Tutorial?Ring?m/[http://cds.omdoc.org/Tutorial?Magma]/Domain
+constant http://cds.omdoc.org/Tutorial?Ring?m/[http://cds.omdoc.org/Tutorial?Magma]/Domain
+Declares http://cds.omdoc.org/Tutorial?Ring http://cds.omdoc.org/Tutorial?Ring?m/[http://cds.omdoc.org/Tutorial?Magma]/op
+constant http://cds.omdoc.org/Tutorial?Ring?m/[http://cds.omdoc.org/Tutorial?Magma]/op
+Declares http://cds.omdoc.org/Tutorial?Ring http://cds.omdoc.org/Tutorial?Ring?m/unit
+constant http://cds.omdoc.org/Tutorial?Ring?m/unit
+Declares http://cds.omdoc.org/Tutorial?Ring http://cds.omdoc.org/Tutorial?Ring?m/unit_axiom_r
+constant http://cds.omdoc.org/Tutorial?Ring?m/unit_axiom_r
+Declares http://cds.omdoc.org/Tutorial?Ring http://cds.omdoc.org/Tutorial?Ring?m/unit_axiom_l
+constant http://cds.omdoc.org/Tutorial?Ring?m/unit_axiom_l
+Declares http://cds.omdoc.org/Tutorial?Ring http://cds.omdoc.org/Tutorial?Ring?distributive
+constant http://cds.omdoc.org/Tutorial?Ring?distributive
+DependsOn http://cds.omdoc.org/Tutorial?Ring?distributive?type http://mathhub.info/MitM/Foundation?Logic?forall?type
+DependsOn http://cds.omdoc.org/Tutorial?Ring?distributive?type http://mathhub.info/MitM/Foundation?Logic?ded?type
+DependsOn http://cds.omdoc.org/Tutorial?Ring?distributive?type http://cds.omdoc.org/Tutorial?Ring?m/[http://cds.omdoc.org/Tutorial?Magma]/op?type
+DependsOn http://cds.omdoc.org/Tutorial?Ring?distributive?type http://mathhub.info/MitM/Foundation?Logic?prop?type
+DependsOn http://cds.omdoc.org/Tutorial?Ring?distributive?type http://mathhub.info/MitM/Foundation?Logic?prop?definition
+DependsOn http://cds.omdoc.org/Tutorial?Ring?distributive?type http://cds.omdoc.org/Tutorial?Ring?a/[http://cds.omdoc.org/Tutorial?Magma]/Domain?type
+DependsOn http://cds.omdoc.org/Tutorial?Ring?distributive?type http://mathhub.info/MitM/Foundation?Logic?ded?definition
+DependsOn http://cds.omdoc.org/Tutorial?Ring?distributive?type http://cds.omdoc.org/Tutorial?Ring?a/[http://cds.omdoc.org/Tutorial?Magma]/op?type
+DependsOn http://cds.omdoc.org/Tutorial?Ring?distributive?type http://mathhub.info/MitM/Foundation?Logic?eq?type

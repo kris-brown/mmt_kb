@@ -1,0 +1,1 @@
+In the MMT shell, run `file Tutorial/build-omdoc.msl` to build the project.

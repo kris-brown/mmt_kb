@@ -1,0 +1,45 @@
+namespace Tutorial ❚
+
+import mitm http://mathhub.info/MitM/Foundation ❚
+
+theory SimplyTypedLambdaCalculus : mitm:?Logic =
+	tp : type ❙
+	arrow : tp ⟶ tp ⟶ tp ❘ # 1 ⟹ 2 prec 1 ❙
+
+	expression : tp ⟶ type  ❘ # exp 1 ❙
+
+	application : {α,β}exp α ⟹ β ⟶ exp α ⟶ exp β ❘ # 3 @ 4 ❙
+
+	lambda : {α,β} (exp α ⟶ exp β) ⟶ exp α ⟹ β ❘ # λ 3 ❙
+
+	// α : tp ❙
+	// β : tp ❙
+	// f : exp α ⇒ β ❙
+	// a : exp α ❙
+
+	// b : exp β ❘ = f @ a ❙
+	// g : exp α ⇒ β ❘ = λ [x] f @ x ❙
+❚
+
+theory Reduction : mitm:?Logic =
+	include ?SimplyTypedLambdaCalculus ❙
+
+	beta_red : {α} exp α ⟶ exp α ⟶ bool ❘ # 2 →β 3 ❙
+	beta_ax : {α,β,F : exp α ⟶ exp β, A : exp α} ⊦ ((λ[x] F x) @ A) →β (F A) ❙
+
+	eta_red : {α} exp α ⟶ exp α ⟶ bool ❘ # 2 →η 3 ❙
+	eta_ax : {α,β,F : exp α ⟹ β} ⊦ (λ [x] (F @ x)) →η F ❙
+
+	red : {α} exp α ⟶ exp α ⟶ bool ❘ # 2 → 3 ❙
+	red_beta : {α,A1 : exp α,A2} ⊦ (A1 →β A2) ⟶ ⊦ A1 → A2 ❙
+	red_eta : {α,A1 : exp α,A2} ⊦ (A1 →η A2) ⟶ ⊦ A1 → A2 ❙
+	red_app : {α,β,N1 : exp α,N2,M : exp α ⟹ β} ⊦ N1 → N2 ⟶ ⊦ (M @ N1) → (M @ N2) ❙
+	red_app_fn : {α,β,N : exp α,M1 : exp α ⟹ β,M2} ⊦ M1 → M2 ⟶ ⊦ (M1 @ N) → (M2 @ N) ❙
+	red_abstr : {α,β,M1 : exp β, M2}⊦ M1 → M2 ⟶ ⊦ (λ [x:exp α]M1) → (λ[x:exp α]M2) ❙
+
+	red_refl : {α,A : exp α} ⊦ A → A ❙
+	red_trans : {α, A : exp α, B, C} ⊦ A → B ⟶ ⊦ B → C ⟶ ⊦ A → C ❙
+
+	red_eq : {α, A : exp α, B} ⊦ A → B ⟶ ⊦ A ≐ B ❙
+
+❚

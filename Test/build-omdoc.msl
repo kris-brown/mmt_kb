@@ -1,0 +1,12 @@
+server on 8090
+
+log console
+log html build.html
+log+ archive
+log+ mmt-omdoc
+
+mathpath archive ../MMT/urtheories
+mathpath archive ../MitM/Foundation
+mathpath archive .
+
+build TEST mmt-omdoc Basic.mmt

@@ -1,0 +1,7 @@
+datatypeconstructor http://cds.omdoc.org/Tutorial?FOModels?individuals
+theory http://cds.omdoc.org/Tutorial?FOModels
+HasMeta http://cds.omdoc.org/Tutorial?FOModels http://cds.omdoc.org/Tutorial?Meta
+Includes http://cds.omdoc.org/Tutorial?FOModels http://cds.omdoc.org/Tutorial?Booleans
+Includes http://cds.omdoc.org/Tutorial?FOModels http://cds.omdoc.org/Tutorial?TypedSets
+Declares http://cds.omdoc.org/Tutorial?FOModels http://cds.omdoc.org/Tutorial?FOModels?individuals
+constant http://cds.omdoc.org/Tutorial?FOModels?individuals

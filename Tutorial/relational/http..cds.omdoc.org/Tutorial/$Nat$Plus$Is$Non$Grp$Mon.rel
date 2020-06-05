@@ -1,0 +1,53 @@
+datatypeconstructor http://cds.omdoc.org/Tutorial?NatPlusIsNonGrpMon?[http://cds.omdoc.org/Tutorial?Magma]/Domain
+dataconstructor http://cds.omdoc.org/Tutorial?NatPlusIsNonGrpMon?[http://cds.omdoc.org/Tutorial?Magma]/op
+dataconstructor http://cds.omdoc.org/Tutorial?NatPlusIsNonGrpMon?[http://cds.omdoc.org/Tutorial?Monoid]/unit
+dataconstructor http://cds.omdoc.org/Tutorial?NatPlusIsNonGrpMon?[http://cds.omdoc.org/Tutorial?SemiGroup]/assoc
+dataconstructor http://cds.omdoc.org/Tutorial?NatPlusIsNonGrpMon?[http://cds.omdoc.org/Tutorial?Monoid]/unit_axiom_r
+dataconstructor http://cds.omdoc.org/Tutorial?NatPlusIsNonGrpMon?[http://cds.omdoc.org/Tutorial?Monoid]/unit_axiom_l
+HasDomain http://cds.omdoc.org/Tutorial?NatPlusIsNonGrpMon http://cds.omdoc.org/Tutorial?NonGrpMon
+HasCodomain http://cds.omdoc.org/Tutorial?NatPlusIsNonGrpMon http://cds.omdoc.org/Tutorial?NatPlus
+view http://cds.omdoc.org/Tutorial?NatPlusIsNonGrpMon
+HasViewFrom http://cds.omdoc.org/Tutorial?NatPlus http://cds.omdoc.org/Tutorial?NonGrpMon
+Declares http://cds.omdoc.org/Tutorial?NatPlusIsNonGrpMon http://cds.omdoc.org/Tutorial?NatPlusIsNonGrpMon?[http://cds.omdoc.org/Tutorial?Magma]/Domain
+constant http://cds.omdoc.org/Tutorial?NatPlusIsNonGrpMon?[http://cds.omdoc.org/Tutorial?Magma]/Domain
+DependsOn http://cds.omdoc.org/Tutorial?NatPlusIsNonGrpMon?[http://cds.omdoc.org/Tutorial?Magma]/Domain?definition http://cds.omdoc.org/Tutorial?NatNums?NaturalNumbers?type
+Declares http://cds.omdoc.org/Tutorial?NatPlusIsNonGrpMon http://cds.omdoc.org/Tutorial?NatPlusIsNonGrpMon?[http://cds.omdoc.org/Tutorial?Magma]/op
+constant http://cds.omdoc.org/Tutorial?NatPlusIsNonGrpMon?[http://cds.omdoc.org/Tutorial?Magma]/op
+DependsOn http://cds.omdoc.org/Tutorial?NatPlusIsNonGrpMon?[http://cds.omdoc.org/Tutorial?Magma]/op?definition http://cds.omdoc.org/Tutorial?NatPlus?plus?type
+DependsOn http://cds.omdoc.org/Tutorial?NatPlusIsNonGrpMon?[http://cds.omdoc.org/Tutorial?Magma]/op?definition http://cds.omdoc.org/Tutorial?NatNums?NaturalNumbers?type
+Declares http://cds.omdoc.org/Tutorial?NatPlusIsNonGrpMon http://cds.omdoc.org/Tutorial?NatPlusIsNonGrpMon?[http://cds.omdoc.org/Tutorial?Monoid]/unit
+constant http://cds.omdoc.org/Tutorial?NatPlusIsNonGrpMon?[http://cds.omdoc.org/Tutorial?Monoid]/unit
+DependsOn http://cds.omdoc.org/Tutorial?NatPlusIsNonGrpMon?[http://cds.omdoc.org/Tutorial?Monoid]/unit?definition http://cds.omdoc.org/Tutorial?NatNums?NaturalNumbers?type
+DependsOn http://cds.omdoc.org/Tutorial?NatPlusIsNonGrpMon?[http://cds.omdoc.org/Tutorial?Monoid]/unit?definition http://cds.omdoc.org/Tutorial?NatNums?zero?type
+Declares http://cds.omdoc.org/Tutorial?NatPlusIsNonGrpMon http://cds.omdoc.org/Tutorial?NatPlusIsNonGrpMon?[http://cds.omdoc.org/Tutorial?SemiGroup]/assoc
+constant http://cds.omdoc.org/Tutorial?NatPlusIsNonGrpMon?[http://cds.omdoc.org/Tutorial?SemiGroup]/assoc
+DependsOn http://cds.omdoc.org/Tutorial?NatPlusIsNonGrpMon?[http://cds.omdoc.org/Tutorial?SemiGroup]/assoc?definition http://mathhub.info/MitM/Foundation?Logic?ded?type
+DependsOn http://cds.omdoc.org/Tutorial?NatPlusIsNonGrpMon?[http://cds.omdoc.org/Tutorial?SemiGroup]/assoc?definition http://cds.omdoc.org/Tutorial?NatPlus?plus_assoc?type
+Declares http://cds.omdoc.org/Tutorial?NatPlusIsNonGrpMon http://cds.omdoc.org/Tutorial?NatPlusIsNonGrpMon?[http://cds.omdoc.org/Tutorial?Monoid]/unit_axiom_r
+constant http://cds.omdoc.org/Tutorial?NatPlusIsNonGrpMon?[http://cds.omdoc.org/Tutorial?Monoid]/unit_axiom_r
+DependsOn http://cds.omdoc.org/Tutorial?NatPlusIsNonGrpMon?[http://cds.omdoc.org/Tutorial?Monoid]/unit_axiom_r?definition http://cds.omdoc.org/urtheories?Bool?BOOL?type
+DependsOn http://cds.omdoc.org/Tutorial?NatPlusIsNonGrpMon?[http://cds.omdoc.org/Tutorial?Monoid]/unit_axiom_r?definition http://cds.omdoc.org/Tutorial?NatPlus?plus?type
+DependsOn http://cds.omdoc.org/Tutorial?NatPlusIsNonGrpMon?[http://cds.omdoc.org/Tutorial?Monoid]/unit_axiom_r?definition http://cds.omdoc.org/Tutorial?NatPlus?plus_unit?type
+DependsOn http://cds.omdoc.org/Tutorial?NatPlusIsNonGrpMon?[http://cds.omdoc.org/Tutorial?Monoid]/unit_axiom_r?definition http://mathhub.info/MitM/Foundation?Logic?forall?type
+DependsOn http://cds.omdoc.org/Tutorial?NatPlusIsNonGrpMon?[http://cds.omdoc.org/Tutorial?Monoid]/unit_axiom_r?definition http://cds.omdoc.org/Tutorial?NatNums?NaturalNumbers?type
+DependsOn http://cds.omdoc.org/Tutorial?NatPlusIsNonGrpMon?[http://cds.omdoc.org/Tutorial?Monoid]/unit_axiom_r?definition http://mathhub.info/MitM/Foundation?Logic?ded?type
+DependsOn http://cds.omdoc.org/Tutorial?NatPlusIsNonGrpMon?[http://cds.omdoc.org/Tutorial?Monoid]/unit_axiom_r?definition http://mathhub.info/MitM/Foundation?Logic?prop?definition
+DependsOn http://cds.omdoc.org/Tutorial?NatPlusIsNonGrpMon?[http://cds.omdoc.org/Tutorial?Monoid]/unit_axiom_r?definition http://mathhub.info/MitM/Foundation?Logic?prop?type
+DependsOn http://cds.omdoc.org/Tutorial?NatPlusIsNonGrpMon?[http://cds.omdoc.org/Tutorial?Monoid]/unit_axiom_r?definition http://cds.omdoc.org/Tutorial?NatNums?zero?type
+DependsOn http://cds.omdoc.org/Tutorial?NatPlusIsNonGrpMon?[http://cds.omdoc.org/Tutorial?Monoid]/unit_axiom_r?definition http://cds.omdoc.org/urtheories?Ded?DED?type
+DependsOn http://cds.omdoc.org/Tutorial?NatPlusIsNonGrpMon?[http://cds.omdoc.org/Tutorial?Monoid]/unit_axiom_r?definition http://mathhub.info/MitM/Foundation?Logic?eq?type
+Declares http://cds.omdoc.org/Tutorial?NatPlusIsNonGrpMon http://cds.omdoc.org/Tutorial?NatPlusIsNonGrpMon?[http://cds.omdoc.org/Tutorial?Monoid]/unit_axiom_l
+constant http://cds.omdoc.org/Tutorial?NatPlusIsNonGrpMon?[http://cds.omdoc.org/Tutorial?Monoid]/unit_axiom_l
+DependsOn http://cds.omdoc.org/Tutorial?NatPlusIsNonGrpMon?[http://cds.omdoc.org/Tutorial?Monoid]/unit_axiom_l?definition http://cds.omdoc.org/urtheories?Bool?BOOL?type
+DependsOn http://cds.omdoc.org/Tutorial?NatPlusIsNonGrpMon?[http://cds.omdoc.org/Tutorial?Monoid]/unit_axiom_l?definition http://cds.omdoc.org/Tutorial?NatPlus?plus?type
+DependsOn http://cds.omdoc.org/Tutorial?NatPlusIsNonGrpMon?[http://cds.omdoc.org/Tutorial?Monoid]/unit_axiom_l?definition http://mathhub.info/MitM/Foundation?Logic?forall?type
+DependsOn http://cds.omdoc.org/Tutorial?NatPlusIsNonGrpMon?[http://cds.omdoc.org/Tutorial?Monoid]/unit_axiom_l?definition http://cds.omdoc.org/Tutorial?NatNums?NaturalNumbers?type
+DependsOn http://cds.omdoc.org/Tutorial?NatPlusIsNonGrpMon?[http://cds.omdoc.org/Tutorial?Monoid]/unit_axiom_l?definition http://mathhub.info/MitM/Foundation?Logic?ded?type
+DependsOn http://cds.omdoc.org/Tutorial?NatPlusIsNonGrpMon?[http://cds.omdoc.org/Tutorial?Monoid]/unit_axiom_l?definition http://mathhub.info/MitM/Foundation?Logic?prop?type
+DependsOn http://cds.omdoc.org/Tutorial?NatPlusIsNonGrpMon?[http://cds.omdoc.org/Tutorial?Monoid]/unit_axiom_l?definition http://mathhub.info/MitM/Foundation?Logic?prop?definition
+DependsOn http://cds.omdoc.org/Tutorial?NatPlusIsNonGrpMon?[http://cds.omdoc.org/Tutorial?Monoid]/unit_axiom_l?definition http://cds.omdoc.org/Tutorial?NatNums?zero?type
+DependsOn http://cds.omdoc.org/Tutorial?NatPlusIsNonGrpMon?[http://cds.omdoc.org/Tutorial?Monoid]/unit_axiom_l?definition http://mathhub.info/MitM/Foundation?Logic?ded?definition
+DependsOn http://cds.omdoc.org/Tutorial?NatPlusIsNonGrpMon?[http://cds.omdoc.org/Tutorial?Monoid]/unit_axiom_l?definition http://mathhub.info/MitM/Foundation?InformalProofs?proofsketch?type
+DependsOn http://cds.omdoc.org/Tutorial?NatPlusIsNonGrpMon?[http://cds.omdoc.org/Tutorial?Monoid]/unit_axiom_l?definition http://cds.omdoc.org/urtheories?Ded?DED?type
+DependsOn http://cds.omdoc.org/Tutorial?NatPlusIsNonGrpMon?[http://cds.omdoc.org/Tutorial?Monoid]/unit_axiom_l?definition http://mathhub.info/MitM/Foundation?Logic?eq?type
+DependsOn http://cds.omdoc.org/Tutorial?NatPlusIsNonGrpMon?[http://cds.omdoc.org/Tutorial?Monoid]/unit_axiom_l?definition http://mathhub.info/MitM/Foundation?Strings?string?type

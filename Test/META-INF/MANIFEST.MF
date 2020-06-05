@@ -1,0 +1,7 @@
+id: TEST
+narration-base: http://docs.omdoc.org/test
+classpath: bin
+dependencies: MMT/urtheories MMT/LFX
+responsible: ksb
+title: Just a test with fake theories
+teaser: For debugging downstream applications

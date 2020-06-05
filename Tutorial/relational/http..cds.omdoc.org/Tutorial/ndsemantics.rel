@@ -1,0 +1,15 @@
+datatypeconstructor http://cds.omdoc.org/Tutorial?ndsemantics?[http://cds.omdoc.org/Tutorial?PropLogSyntax]/prop
+datatypeconstructor http://cds.omdoc.org/Tutorial?ndsemantics?[http://cds.omdoc.org/Tutorial?PropLogNatDed]/ded
+HasDomain http://cds.omdoc.org/Tutorial?ndsemantics http://cds.omdoc.org/Tutorial?PropLogNatDed
+HasCodomain http://cds.omdoc.org/Tutorial?ndsemantics http://cds.omdoc.org/Tutorial?BoolProofs
+view http://cds.omdoc.org/Tutorial?ndsemantics
+HasViewFrom http://cds.omdoc.org/Tutorial?BoolProofs http://cds.omdoc.org/Tutorial?PropLogNatDed
+Includes http://cds.omdoc.org/Tutorial?ndsemantics http://cds.omdoc.org/Tutorial?PropLogSyntax
+Includes http://cds.omdoc.org/Tutorial?ndsemantics http://cds.omdoc.org/urtheories?LF
+Declares http://cds.omdoc.org/Tutorial?ndsemantics http://cds.omdoc.org/Tutorial?ndsemantics?[http://cds.omdoc.org/Tutorial?PropLogSyntax]/prop
+constant http://cds.omdoc.org/Tutorial?ndsemantics?[http://cds.omdoc.org/Tutorial?PropLogSyntax]/prop
+DependsOn http://cds.omdoc.org/Tutorial?ndsemantics?[http://cds.omdoc.org/Tutorial?PropLogSyntax]/prop?definition http://cds.omdoc.org/Tutorial?Booleans?boolean?type
+Declares http://cds.omdoc.org/Tutorial?ndsemantics http://cds.omdoc.org/Tutorial?ndsemantics?[http://cds.omdoc.org/Tutorial?PropLogNatDed]/ded
+constant http://cds.omdoc.org/Tutorial?ndsemantics?[http://cds.omdoc.org/Tutorial?PropLogNatDed]/ded
+DependsOn http://cds.omdoc.org/Tutorial?ndsemantics?[http://cds.omdoc.org/Tutorial?PropLogNatDed]/ded?definition http://cds.omdoc.org/Tutorial?BoolProofs?pseudoded?type
+DependsOn http://cds.omdoc.org/Tutorial?ndsemantics?[http://cds.omdoc.org/Tutorial?PropLogNatDed]/ded?definition http://cds.omdoc.org/Tutorial?Booleans?boolean?type

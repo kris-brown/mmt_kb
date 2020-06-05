@@ -1,0 +1,75 @@
+datatypeconstructor http://cds.omdoc.org/Tutorial?PropLogNatDed?ded
+dataconstructor http://cds.omdoc.org/Tutorial?PropLogNatDed?andEl
+dataconstructor http://cds.omdoc.org/Tutorial?PropLogNatDed?andEr
+dataconstructor http://cds.omdoc.org/Tutorial?PropLogNatDed?andI
+dataconstructor http://cds.omdoc.org/Tutorial?PropLogNatDed?implI
+dataconstructor http://cds.omdoc.org/Tutorial?PropLogNatDed?implE
+dataconstructor http://cds.omdoc.org/Tutorial?PropLogNatDed?orIl
+dataconstructor http://cds.omdoc.org/Tutorial?PropLogNatDed?orIr
+dataconstructor http://cds.omdoc.org/Tutorial?PropLogNatDed?orE
+dataconstructor http://cds.omdoc.org/Tutorial?PropLogNatDed?notI
+dataconstructor http://cds.omdoc.org/Tutorial?PropLogNatDed?notE
+dataconstructor http://cds.omdoc.org/Tutorial?PropLogNatDed?fallacy_1
+theory http://cds.omdoc.org/Tutorial?PropLogNatDed
+HasMeta http://cds.omdoc.org/Tutorial?PropLogNatDed http://cds.omdoc.org/urtheories?LF
+Includes http://cds.omdoc.org/Tutorial?PropLogNatDed http://cds.omdoc.org/Tutorial?PropLogSyntax
+Declares http://cds.omdoc.org/Tutorial?PropLogNatDed http://cds.omdoc.org/Tutorial?PropLogNatDed?ded
+constant http://cds.omdoc.org/Tutorial?PropLogNatDed?ded
+DependsOn http://cds.omdoc.org/Tutorial?PropLogNatDed?ded?type http://cds.omdoc.org/Tutorial?PropLogSyntax?prop?type
+Declares http://cds.omdoc.org/Tutorial?PropLogNatDed http://cds.omdoc.org/Tutorial?PropLogNatDed?andEl
+constant http://cds.omdoc.org/Tutorial?PropLogNatDed?andEl
+DependsOn http://cds.omdoc.org/Tutorial?PropLogNatDed?andEl?type http://cds.omdoc.org/Tutorial?PropLogNatDed?ded?type
+DependsOn http://cds.omdoc.org/Tutorial?PropLogNatDed?andEl?type http://cds.omdoc.org/Tutorial?PropLogSyntax?and?type
+DependsOn http://cds.omdoc.org/Tutorial?PropLogNatDed?andEl?type http://cds.omdoc.org/Tutorial?PropLogSyntax?prop?type
+Declares http://cds.omdoc.org/Tutorial?PropLogNatDed http://cds.omdoc.org/Tutorial?PropLogNatDed?andEr
+constant http://cds.omdoc.org/Tutorial?PropLogNatDed?andEr
+DependsOn http://cds.omdoc.org/Tutorial?PropLogNatDed?andEr?type http://cds.omdoc.org/Tutorial?PropLogNatDed?ded?type
+DependsOn http://cds.omdoc.org/Tutorial?PropLogNatDed?andEr?type http://cds.omdoc.org/Tutorial?PropLogSyntax?and?type
+DependsOn http://cds.omdoc.org/Tutorial?PropLogNatDed?andEr?type http://cds.omdoc.org/Tutorial?PropLogSyntax?prop?type
+Declares http://cds.omdoc.org/Tutorial?PropLogNatDed http://cds.omdoc.org/Tutorial?PropLogNatDed?andI
+constant http://cds.omdoc.org/Tutorial?PropLogNatDed?andI
+DependsOn http://cds.omdoc.org/Tutorial?PropLogNatDed?andI?type http://cds.omdoc.org/Tutorial?PropLogNatDed?ded?type
+DependsOn http://cds.omdoc.org/Tutorial?PropLogNatDed?andI?type http://cds.omdoc.org/Tutorial?PropLogSyntax?and?type
+DependsOn http://cds.omdoc.org/Tutorial?PropLogNatDed?andI?type http://cds.omdoc.org/Tutorial?PropLogSyntax?prop?type
+Declares http://cds.omdoc.org/Tutorial?PropLogNatDed http://cds.omdoc.org/Tutorial?PropLogNatDed?implI
+constant http://cds.omdoc.org/Tutorial?PropLogNatDed?implI
+DependsOn http://cds.omdoc.org/Tutorial?PropLogNatDed?implI?type http://cds.omdoc.org/Tutorial?PropLogNatDed?ded?type
+DependsOn http://cds.omdoc.org/Tutorial?PropLogNatDed?implI?type http://cds.omdoc.org/Tutorial?PropLogSyntax?implies?type
+DependsOn http://cds.omdoc.org/Tutorial?PropLogNatDed?implI?type http://cds.omdoc.org/Tutorial?PropLogSyntax?prop?type
+Declares http://cds.omdoc.org/Tutorial?PropLogNatDed http://cds.omdoc.org/Tutorial?PropLogNatDed?implE
+constant http://cds.omdoc.org/Tutorial?PropLogNatDed?implE
+DependsOn http://cds.omdoc.org/Tutorial?PropLogNatDed?implE?type http://cds.omdoc.org/Tutorial?PropLogNatDed?ded?type
+DependsOn http://cds.omdoc.org/Tutorial?PropLogNatDed?implE?type http://cds.omdoc.org/Tutorial?PropLogSyntax?implies?type
+DependsOn http://cds.omdoc.org/Tutorial?PropLogNatDed?implE?type http://cds.omdoc.org/Tutorial?PropLogSyntax?prop?type
+Declares http://cds.omdoc.org/Tutorial?PropLogNatDed http://cds.omdoc.org/Tutorial?PropLogNatDed?orIl
+constant http://cds.omdoc.org/Tutorial?PropLogNatDed?orIl
+DependsOn http://cds.omdoc.org/Tutorial?PropLogNatDed?orIl?type http://cds.omdoc.org/Tutorial?PropLogSyntax?or?type
+DependsOn http://cds.omdoc.org/Tutorial?PropLogNatDed?orIl?type http://cds.omdoc.org/Tutorial?PropLogNatDed?ded?type
+DependsOn http://cds.omdoc.org/Tutorial?PropLogNatDed?orIl?type http://cds.omdoc.org/Tutorial?PropLogSyntax?prop?type
+Declares http://cds.omdoc.org/Tutorial?PropLogNatDed http://cds.omdoc.org/Tutorial?PropLogNatDed?orIr
+constant http://cds.omdoc.org/Tutorial?PropLogNatDed?orIr
+DependsOn http://cds.omdoc.org/Tutorial?PropLogNatDed?orIr?type http://cds.omdoc.org/Tutorial?PropLogSyntax?or?type
+DependsOn http://cds.omdoc.org/Tutorial?PropLogNatDed?orIr?type http://cds.omdoc.org/Tutorial?PropLogNatDed?ded?type
+DependsOn http://cds.omdoc.org/Tutorial?PropLogNatDed?orIr?type http://cds.omdoc.org/Tutorial?PropLogSyntax?prop?type
+Declares http://cds.omdoc.org/Tutorial?PropLogNatDed http://cds.omdoc.org/Tutorial?PropLogNatDed?orE
+constant http://cds.omdoc.org/Tutorial?PropLogNatDed?orE
+DependsOn http://cds.omdoc.org/Tutorial?PropLogNatDed?orE?type http://cds.omdoc.org/Tutorial?PropLogSyntax?or?type
+DependsOn http://cds.omdoc.org/Tutorial?PropLogNatDed?orE?type http://cds.omdoc.org/Tutorial?PropLogNatDed?ded?type
+DependsOn http://cds.omdoc.org/Tutorial?PropLogNatDed?orE?type http://cds.omdoc.org/Tutorial?PropLogSyntax?prop?type
+Declares http://cds.omdoc.org/Tutorial?PropLogNatDed http://cds.omdoc.org/Tutorial?PropLogNatDed?notI
+constant http://cds.omdoc.org/Tutorial?PropLogNatDed?notI
+DependsOn http://cds.omdoc.org/Tutorial?PropLogNatDed?notI?type http://cds.omdoc.org/Tutorial?PropLogSyntax?not?type
+DependsOn http://cds.omdoc.org/Tutorial?PropLogNatDed?notI?type http://cds.omdoc.org/Tutorial?PropLogNatDed?ded?type
+DependsOn http://cds.omdoc.org/Tutorial?PropLogNatDed?notI?type http://cds.omdoc.org/Tutorial?PropLogSyntax?prop?type
+DependsOn http://cds.omdoc.org/Tutorial?PropLogNatDed?notI?type http://cds.omdoc.org/Tutorial?PropLogSyntax?false?type
+Declares http://cds.omdoc.org/Tutorial?PropLogNatDed http://cds.omdoc.org/Tutorial?PropLogNatDed?notE
+constant http://cds.omdoc.org/Tutorial?PropLogNatDed?notE
+DependsOn http://cds.omdoc.org/Tutorial?PropLogNatDed?notE?type http://cds.omdoc.org/Tutorial?PropLogSyntax?not?type
+DependsOn http://cds.omdoc.org/Tutorial?PropLogNatDed?notE?type http://cds.omdoc.org/Tutorial?PropLogNatDed?ded?type
+DependsOn http://cds.omdoc.org/Tutorial?PropLogNatDed?notE?type http://cds.omdoc.org/Tutorial?PropLogSyntax?prop?type
+Declares http://cds.omdoc.org/Tutorial?PropLogNatDed http://cds.omdoc.org/Tutorial?PropLogNatDed?fallacy_1
+constant http://cds.omdoc.org/Tutorial?PropLogNatDed?fallacy_1
+DependsOn http://cds.omdoc.org/Tutorial?PropLogNatDed?fallacy_1?type http://cds.omdoc.org/Tutorial?PropLogSyntax?not?type
+DependsOn http://cds.omdoc.org/Tutorial?PropLogNatDed?fallacy_1?type http://cds.omdoc.org/Tutorial?PropLogNatDed?ded?type
+DependsOn http://cds.omdoc.org/Tutorial?PropLogNatDed?fallacy_1?type http://cds.omdoc.org/Tutorial?PropLogSyntax?implies?type
+DependsOn http://cds.omdoc.org/Tutorial?PropLogNatDed?fallacy_1?type http://cds.omdoc.org/Tutorial?PropLogSyntax?prop?type

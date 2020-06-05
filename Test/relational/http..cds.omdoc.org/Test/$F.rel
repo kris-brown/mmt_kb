@@ -1,0 +1,26 @@
+datatypeconstructor http://cds.omdoc.org/Test?F?b/[http://cds.omdoc.org/Test?A]/ASort
+datatypeconstructor http://cds.omdoc.org/Test?F?b/BSort
+datatypeconstructor http://cds.omdoc.org/Test?F?x/XSort
+datatypeconstructor http://cds.omdoc.org/Test?F?FSort
+theory http://cds.omdoc.org/Test?F
+HasMeta http://cds.omdoc.org/Test?F http://cds.omdoc.org/Test?Meta
+Declares http://cds.omdoc.org/Test?F http://cds.omdoc.org/Test?F?b
+HasDomain http://cds.omdoc.org/Test?F?b http://cds.omdoc.org/Test?B
+HasCodomain http://cds.omdoc.org/Test?F?b http://cds.omdoc.org/Test?F
+structure http://cds.omdoc.org/Test?F?b
+Declares http://cds.omdoc.org/Test?F http://cds.omdoc.org/Test?F?b/[http://cds.omdoc.org/Test?A]
+HasDomain http://cds.omdoc.org/Test?F?b/[http://cds.omdoc.org/Test?A] http://cds.omdoc.org/Test?A
+HasCodomain http://cds.omdoc.org/Test?F?b/[http://cds.omdoc.org/Test?A] http://cds.omdoc.org/Test?F
+structure http://cds.omdoc.org/Test?F?b/[http://cds.omdoc.org/Test?A]
+Declares http://cds.omdoc.org/Test?F http://cds.omdoc.org/Test?F?b/[http://cds.omdoc.org/Test?A]/ASort
+constant http://cds.omdoc.org/Test?F?b/[http://cds.omdoc.org/Test?A]/ASort
+Declares http://cds.omdoc.org/Test?F http://cds.omdoc.org/Test?F?b/BSort
+constant http://cds.omdoc.org/Test?F?b/BSort
+Declares http://cds.omdoc.org/Test?F http://cds.omdoc.org/Test?F?x
+HasDomain http://cds.omdoc.org/Test?F?x http://cds.omdoc.org/Test?X
+HasCodomain http://cds.omdoc.org/Test?F?x http://cds.omdoc.org/Test?F
+structure http://cds.omdoc.org/Test?F?x
+Declares http://cds.omdoc.org/Test?F http://cds.omdoc.org/Test?F?x/XSort
+constant http://cds.omdoc.org/Test?F?x/XSort
+Declares http://cds.omdoc.org/Test?F http://cds.omdoc.org/Test?F?FSort
+constant http://cds.omdoc.org/Test?F?FSort

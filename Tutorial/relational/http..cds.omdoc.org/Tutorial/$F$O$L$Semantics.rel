@@ -1,0 +1,28 @@
+datatypeconstructor http://cds.omdoc.org/Tutorial?FOLSemantics?[http://cds.omdoc.org/Tutorial?PropLogSyntax]/prop
+datatypeconstructor http://cds.omdoc.org/Tutorial?FOLSemantics?[http://cds.omdoc.org/Tutorial?FOLSyntax]/ind
+dataconstructor http://cds.omdoc.org/Tutorial?FOLSemantics?[http://cds.omdoc.org/Tutorial?FOLSyntax]/forall
+HasDomain http://cds.omdoc.org/Tutorial?FOLSemantics http://cds.omdoc.org/Tutorial?FOLSyntax
+HasCodomain http://cds.omdoc.org/Tutorial?FOLSemantics http://cds.omdoc.org/Tutorial?FOModels
+view http://cds.omdoc.org/Tutorial?FOLSemantics
+HasViewFrom http://cds.omdoc.org/Tutorial?FOModels http://cds.omdoc.org/Tutorial?FOLSyntax
+Includes http://cds.omdoc.org/Tutorial?FOLSemantics http://cds.omdoc.org/Tutorial?PropLogSyntax
+Includes http://cds.omdoc.org/Tutorial?FOLSemantics http://cds.omdoc.org/urtheories?LF
+Declares http://cds.omdoc.org/Tutorial?FOLSemantics http://cds.omdoc.org/Tutorial?FOLSemantics?[http://cds.omdoc.org/Tutorial?PropLogSyntax]/prop
+constant http://cds.omdoc.org/Tutorial?FOLSemantics?[http://cds.omdoc.org/Tutorial?PropLogSyntax]/prop
+DependsOn http://cds.omdoc.org/Tutorial?FOLSemantics?[http://cds.omdoc.org/Tutorial?PropLogSyntax]/prop?definition http://cds.omdoc.org/Tutorial?Booleans?boolean?type
+Declares http://cds.omdoc.org/Tutorial?FOLSemantics http://cds.omdoc.org/Tutorial?FOLSemantics?[http://cds.omdoc.org/Tutorial?FOLSyntax]/ind
+constant http://cds.omdoc.org/Tutorial?FOLSemantics?[http://cds.omdoc.org/Tutorial?FOLSyntax]/ind
+DependsOn http://cds.omdoc.org/Tutorial?FOLSemantics?[http://cds.omdoc.org/Tutorial?FOLSyntax]/ind?definition http://cds.omdoc.org/Tutorial?FOModels?individuals?type
+Declares http://cds.omdoc.org/Tutorial?FOLSemantics http://cds.omdoc.org/Tutorial?FOLSemantics?[http://cds.omdoc.org/Tutorial?FOLSyntax]/forall
+constant http://cds.omdoc.org/Tutorial?FOLSemantics?[http://cds.omdoc.org/Tutorial?FOLSyntax]/forall
+DependsOn http://cds.omdoc.org/Tutorial?FOLSemantics?[http://cds.omdoc.org/Tutorial?FOLSyntax]/forall?definition http://cds.omdoc.org/Tutorial?TypedSets?set?type
+DependsOn http://cds.omdoc.org/Tutorial?FOLSemantics?[http://cds.omdoc.org/Tutorial?FOLSyntax]/forall?definition http://cds.omdoc.org/Tutorial?Booleans?boolean?type
+DependsOn http://cds.omdoc.org/Tutorial?FOLSemantics?[http://cds.omdoc.org/Tutorial?FOLSyntax]/forall?definition http://cds.omdoc.org/Tutorial?TypedSets?image?type
+DependsOn http://cds.omdoc.org/Tutorial?FOLSemantics?[http://cds.omdoc.org/Tutorial?FOLSyntax]/forall?definition http://mathhub.info/MitM/Foundation?DescriptionOperator?if_then_else?type
+DependsOn http://cds.omdoc.org/Tutorial?FOLSemantics?[http://cds.omdoc.org/Tutorial?FOLSyntax]/forall?definition http://cds.omdoc.org/Tutorial?TypedSets?fullset?type
+DependsOn http://cds.omdoc.org/Tutorial?FOLSemantics?[http://cds.omdoc.org/Tutorial?FOLSyntax]/forall?definition http://cds.omdoc.org/Tutorial?Booleans?bfalse?type
+DependsOn http://cds.omdoc.org/Tutorial?FOLSemantics?[http://cds.omdoc.org/Tutorial?FOLSyntax]/forall?definition http://mathhub.info/MitM/Foundation?Logic?prop?type
+DependsOn http://cds.omdoc.org/Tutorial?FOLSemantics?[http://cds.omdoc.org/Tutorial?FOLSyntax]/forall?definition http://mathhub.info/MitM/Foundation?Logic?prop?definition
+DependsOn http://cds.omdoc.org/Tutorial?FOLSemantics?[http://cds.omdoc.org/Tutorial?FOLSyntax]/forall?definition http://cds.omdoc.org/Tutorial?FOModels?individuals?type
+DependsOn http://cds.omdoc.org/Tutorial?FOLSemantics?[http://cds.omdoc.org/Tutorial?FOLSyntax]/forall?definition http://cds.omdoc.org/Tutorial?TypedSets?in?type
+DependsOn http://cds.omdoc.org/Tutorial?FOLSemantics?[http://cds.omdoc.org/Tutorial?FOLSyntax]/forall?definition http://cds.omdoc.org/Tutorial?Booleans?btrue?type

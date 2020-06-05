@@ -1,0 +1,9 @@
+document http://docs.omdoc.org/tutorial/Views.omdoc
+Declares http://docs.omdoc.org/tutorial/Views.omdoc http://cds.omdoc.org/Tutorial?NatPlusIsMonoid
+Declares http://docs.omdoc.org/tutorial/Views.omdoc http://cds.omdoc.org/Tutorial?NatPlusTimesIsPlusMonoid
+Declares http://docs.omdoc.org/tutorial/Views.omdoc http://cds.omdoc.org/Tutorial?NatPlusTimesIsMonoid
+Declares http://docs.omdoc.org/tutorial/Views.omdoc http://cds.omdoc.org/Tutorial?NatPlusTimesIsNonGrpMon
+Declares http://docs.omdoc.org/tutorial/Views.omdoc http://cds.omdoc.org/Tutorial?opposite
+Declares http://docs.omdoc.org/tutorial/Views.omdoc http://cds.omdoc.org/Tutorial?propsemantics
+Declares http://docs.omdoc.org/tutorial/Views.omdoc http://cds.omdoc.org/Tutorial?ndsemantics
+Declares http://docs.omdoc.org/tutorial/Views.omdoc http://cds.omdoc.org/Tutorial?FOLSemantics

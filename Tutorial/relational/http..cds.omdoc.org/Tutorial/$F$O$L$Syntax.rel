@@ -1,0 +1,20 @@
+datatypeconstructor http://cds.omdoc.org/Tutorial?FOLSyntax?ind
+dataconstructor http://cds.omdoc.org/Tutorial?FOLSyntax?forall
+dataconstructor http://cds.omdoc.org/Tutorial?FOLSyntax?exists
+theory http://cds.omdoc.org/Tutorial?FOLSyntax
+HasMeta http://cds.omdoc.org/Tutorial?FOLSyntax http://cds.omdoc.org/urtheories?LF
+Includes http://cds.omdoc.org/Tutorial?FOLSyntax http://cds.omdoc.org/Tutorial?PropLogSyntax
+Declares http://cds.omdoc.org/Tutorial?FOLSyntax http://cds.omdoc.org/Tutorial?FOLSyntax?ind
+constant http://cds.omdoc.org/Tutorial?FOLSyntax?ind
+Declares http://cds.omdoc.org/Tutorial?FOLSyntax http://cds.omdoc.org/Tutorial?FOLSyntax?forall
+constant http://cds.omdoc.org/Tutorial?FOLSyntax?forall
+DependsOn http://cds.omdoc.org/Tutorial?FOLSyntax?forall?type http://cds.omdoc.org/Tutorial?FOLSyntax?ind?type
+DependsOn http://cds.omdoc.org/Tutorial?FOLSyntax?forall?type http://cds.omdoc.org/Tutorial?PropLogSyntax?prop?type
+Declares http://cds.omdoc.org/Tutorial?FOLSyntax http://cds.omdoc.org/Tutorial?FOLSyntax?exists
+constant http://cds.omdoc.org/Tutorial?FOLSyntax?exists
+DependsOn http://cds.omdoc.org/Tutorial?FOLSyntax?exists?type http://cds.omdoc.org/Tutorial?FOLSyntax?ind?type
+DependsOn http://cds.omdoc.org/Tutorial?FOLSyntax?exists?type http://cds.omdoc.org/Tutorial?PropLogSyntax?prop?type
+DependsOn http://cds.omdoc.org/Tutorial?FOLSyntax?exists?definition http://cds.omdoc.org/Tutorial?PropLogSyntax?not?type
+DependsOn http://cds.omdoc.org/Tutorial?FOLSyntax?exists?definition http://cds.omdoc.org/Tutorial?FOLSyntax?ind?type
+DependsOn http://cds.omdoc.org/Tutorial?FOLSyntax?exists?definition http://cds.omdoc.org/Tutorial?FOLSyntax?forall?type
+DependsOn http://cds.omdoc.org/Tutorial?FOLSyntax?exists?definition http://cds.omdoc.org/Tutorial?PropLogSyntax?prop?type

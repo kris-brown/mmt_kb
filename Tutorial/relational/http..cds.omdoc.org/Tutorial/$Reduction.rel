@@ -1,0 +1,139 @@
+dataconstructor http://cds.omdoc.org/Tutorial?Reduction?beta_red
+dataconstructor http://cds.omdoc.org/Tutorial?Reduction?beta_ax
+dataconstructor http://cds.omdoc.org/Tutorial?Reduction?eta_red
+dataconstructor http://cds.omdoc.org/Tutorial?Reduction?eta_ax
+dataconstructor http://cds.omdoc.org/Tutorial?Reduction?red
+dataconstructor http://cds.omdoc.org/Tutorial?Reduction?red_beta
+dataconstructor http://cds.omdoc.org/Tutorial?Reduction?red_eta
+dataconstructor http://cds.omdoc.org/Tutorial?Reduction?red_app
+dataconstructor http://cds.omdoc.org/Tutorial?Reduction?red_app_fn
+dataconstructor http://cds.omdoc.org/Tutorial?Reduction?red_abstr
+dataconstructor http://cds.omdoc.org/Tutorial?Reduction?red_refl
+dataconstructor http://cds.omdoc.org/Tutorial?Reduction?red_trans
+dataconstructor http://cds.omdoc.org/Tutorial?Reduction?red_eq
+theory http://cds.omdoc.org/Tutorial?Reduction
+HasMeta http://cds.omdoc.org/Tutorial?Reduction http://mathhub.info/MitM/Foundation?Logic
+Includes http://cds.omdoc.org/Tutorial?Reduction http://cds.omdoc.org/Tutorial?SimplyTypedLambdaCalculus
+Declares http://cds.omdoc.org/Tutorial?Reduction http://cds.omdoc.org/Tutorial?Reduction?beta_red
+constant http://cds.omdoc.org/Tutorial?Reduction?beta_red
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?beta_red?type http://cds.omdoc.org/Tutorial?SimplyTypedLambdaCalculus?tp?type
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?beta_red?type http://cds.omdoc.org/Tutorial?SimplyTypedLambdaCalculus?expression?type
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?beta_red?type http://mathhub.info/MitM/Foundation?Logic?prop?type
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?beta_red?type http://mathhub.info/MitM/Foundation?Logic?prop?definition
+Declares http://cds.omdoc.org/Tutorial?Reduction http://cds.omdoc.org/Tutorial?Reduction?beta_ax
+constant http://cds.omdoc.org/Tutorial?Reduction?beta_ax
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?beta_ax?type http://cds.omdoc.org/Tutorial?SimplyTypedLambdaCalculus?tp?type
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?beta_ax?type http://cds.omdoc.org/Tutorial?Reduction?beta_red?type
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?beta_ax?type http://mathhub.info/MitM/Foundation?Logic?ded?type
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?beta_ax?type http://cds.omdoc.org/Tutorial?SimplyTypedLambdaCalculus?expression?type
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?beta_ax?type http://cds.omdoc.org/Tutorial?SimplyTypedLambdaCalculus?arrow?type
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?beta_ax?type http://mathhub.info/MitM/Foundation?Logic?prop?type
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?beta_ax?type http://mathhub.info/MitM/Foundation?Logic?prop?definition
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?beta_ax?type http://cds.omdoc.org/Tutorial?SimplyTypedLambdaCalculus?lambda?type
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?beta_ax?type http://mathhub.info/MitM/Foundation?Logic?ded?definition
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?beta_ax?type http://cds.omdoc.org/Tutorial?SimplyTypedLambdaCalculus?application?type
+Declares http://cds.omdoc.org/Tutorial?Reduction http://cds.omdoc.org/Tutorial?Reduction?eta_red
+constant http://cds.omdoc.org/Tutorial?Reduction?eta_red
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?eta_red?type http://cds.omdoc.org/Tutorial?SimplyTypedLambdaCalculus?tp?type
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?eta_red?type http://cds.omdoc.org/Tutorial?SimplyTypedLambdaCalculus?expression?type
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?eta_red?type http://mathhub.info/MitM/Foundation?Logic?prop?type
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?eta_red?type http://mathhub.info/MitM/Foundation?Logic?prop?definition
+Declares http://cds.omdoc.org/Tutorial?Reduction http://cds.omdoc.org/Tutorial?Reduction?eta_ax
+constant http://cds.omdoc.org/Tutorial?Reduction?eta_ax
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?eta_ax?type http://cds.omdoc.org/Tutorial?SimplyTypedLambdaCalculus?tp?type
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?eta_ax?type http://cds.omdoc.org/Tutorial?SimplyTypedLambdaCalculus?arrow?type
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?eta_ax?type http://mathhub.info/MitM/Foundation?Logic?ded?type
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?eta_ax?type http://cds.omdoc.org/Tutorial?SimplyTypedLambdaCalculus?expression?type
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?eta_ax?type http://cds.omdoc.org/Tutorial?Reduction?eta_red?type
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?eta_ax?type http://mathhub.info/MitM/Foundation?Logic?prop?type
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?eta_ax?type http://mathhub.info/MitM/Foundation?Logic?prop?definition
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?eta_ax?type http://cds.omdoc.org/Tutorial?SimplyTypedLambdaCalculus?lambda?type
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?eta_ax?type http://mathhub.info/MitM/Foundation?Logic?ded?definition
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?eta_ax?type http://cds.omdoc.org/Tutorial?SimplyTypedLambdaCalculus?application?type
+Declares http://cds.omdoc.org/Tutorial?Reduction http://cds.omdoc.org/Tutorial?Reduction?red
+constant http://cds.omdoc.org/Tutorial?Reduction?red
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?red?type http://cds.omdoc.org/Tutorial?SimplyTypedLambdaCalculus?tp?type
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?red?type http://cds.omdoc.org/Tutorial?SimplyTypedLambdaCalculus?expression?type
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?red?type http://mathhub.info/MitM/Foundation?Logic?prop?type
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?red?type http://mathhub.info/MitM/Foundation?Logic?prop?definition
+Declares http://cds.omdoc.org/Tutorial?Reduction http://cds.omdoc.org/Tutorial?Reduction?red_beta
+constant http://cds.omdoc.org/Tutorial?Reduction?red_beta
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?red_beta?type http://cds.omdoc.org/Tutorial?SimplyTypedLambdaCalculus?tp?type
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?red_beta?type http://cds.omdoc.org/Tutorial?Reduction?beta_red?type
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?red_beta?type http://mathhub.info/MitM/Foundation?Logic?ded?type
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?red_beta?type http://cds.omdoc.org/Tutorial?SimplyTypedLambdaCalculus?expression?type
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?red_beta?type http://mathhub.info/MitM/Foundation?Logic?prop?type
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?red_beta?type http://mathhub.info/MitM/Foundation?Logic?prop?definition
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?red_beta?type http://cds.omdoc.org/Tutorial?Reduction?red?type
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?red_beta?type http://mathhub.info/MitM/Foundation?Logic?ded?definition
+Declares http://cds.omdoc.org/Tutorial?Reduction http://cds.omdoc.org/Tutorial?Reduction?red_eta
+constant http://cds.omdoc.org/Tutorial?Reduction?red_eta
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?red_eta?type http://cds.omdoc.org/Tutorial?SimplyTypedLambdaCalculus?tp?type
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?red_eta?type http://mathhub.info/MitM/Foundation?Logic?ded?type
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?red_eta?type http://cds.omdoc.org/Tutorial?SimplyTypedLambdaCalculus?expression?type
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?red_eta?type http://cds.omdoc.org/Tutorial?Reduction?eta_red?type
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?red_eta?type http://mathhub.info/MitM/Foundation?Logic?prop?type
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?red_eta?type http://mathhub.info/MitM/Foundation?Logic?prop?definition
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?red_eta?type http://cds.omdoc.org/Tutorial?Reduction?red?type
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?red_eta?type http://mathhub.info/MitM/Foundation?Logic?ded?definition
+Declares http://cds.omdoc.org/Tutorial?Reduction http://cds.omdoc.org/Tutorial?Reduction?red_app
+constant http://cds.omdoc.org/Tutorial?Reduction?red_app
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?red_app?type http://cds.omdoc.org/Tutorial?SimplyTypedLambdaCalculus?tp?type
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?red_app?type http://cds.omdoc.org/Tutorial?SimplyTypedLambdaCalculus?arrow?type
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?red_app?type http://mathhub.info/MitM/Foundation?Logic?ded?type
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?red_app?type http://cds.omdoc.org/Tutorial?SimplyTypedLambdaCalculus?expression?type
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?red_app?type http://mathhub.info/MitM/Foundation?Logic?prop?type
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?red_app?type http://mathhub.info/MitM/Foundation?Logic?prop?definition
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?red_app?type http://cds.omdoc.org/Tutorial?Reduction?red?type
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?red_app?type http://mathhub.info/MitM/Foundation?Logic?ded?definition
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?red_app?type http://cds.omdoc.org/Tutorial?SimplyTypedLambdaCalculus?application?type
+Declares http://cds.omdoc.org/Tutorial?Reduction http://cds.omdoc.org/Tutorial?Reduction?red_app_fn
+constant http://cds.omdoc.org/Tutorial?Reduction?red_app_fn
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?red_app_fn?type http://cds.omdoc.org/Tutorial?SimplyTypedLambdaCalculus?tp?type
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?red_app_fn?type http://cds.omdoc.org/Tutorial?SimplyTypedLambdaCalculus?arrow?type
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?red_app_fn?type http://mathhub.info/MitM/Foundation?Logic?ded?type
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?red_app_fn?type http://cds.omdoc.org/Tutorial?SimplyTypedLambdaCalculus?expression?type
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?red_app_fn?type http://mathhub.info/MitM/Foundation?Logic?prop?type
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?red_app_fn?type http://mathhub.info/MitM/Foundation?Logic?prop?definition
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?red_app_fn?type http://cds.omdoc.org/Tutorial?Reduction?red?type
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?red_app_fn?type http://mathhub.info/MitM/Foundation?Logic?ded?definition
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?red_app_fn?type http://cds.omdoc.org/Tutorial?SimplyTypedLambdaCalculus?application?type
+Declares http://cds.omdoc.org/Tutorial?Reduction http://cds.omdoc.org/Tutorial?Reduction?red_abstr
+constant http://cds.omdoc.org/Tutorial?Reduction?red_abstr
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?red_abstr?type http://cds.omdoc.org/Tutorial?SimplyTypedLambdaCalculus?tp?type
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?red_abstr?type http://cds.omdoc.org/Tutorial?SimplyTypedLambdaCalculus?arrow?type
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?red_abstr?type http://mathhub.info/MitM/Foundation?Logic?ded?type
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?red_abstr?type http://cds.omdoc.org/Tutorial?SimplyTypedLambdaCalculus?expression?type
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?red_abstr?type http://mathhub.info/MitM/Foundation?Logic?prop?type
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?red_abstr?type http://mathhub.info/MitM/Foundation?Logic?prop?definition
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?red_abstr?type http://cds.omdoc.org/Tutorial?Reduction?red?type
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?red_abstr?type http://cds.omdoc.org/Tutorial?SimplyTypedLambdaCalculus?lambda?type
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?red_abstr?type http://mathhub.info/MitM/Foundation?Logic?ded?definition
+Declares http://cds.omdoc.org/Tutorial?Reduction http://cds.omdoc.org/Tutorial?Reduction?red_refl
+constant http://cds.omdoc.org/Tutorial?Reduction?red_refl
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?red_refl?type http://cds.omdoc.org/Tutorial?SimplyTypedLambdaCalculus?tp?type
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?red_refl?type http://mathhub.info/MitM/Foundation?Logic?ded?type
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?red_refl?type http://cds.omdoc.org/Tutorial?SimplyTypedLambdaCalculus?expression?type
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?red_refl?type http://mathhub.info/MitM/Foundation?Logic?prop?type
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?red_refl?type http://mathhub.info/MitM/Foundation?Logic?prop?definition
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?red_refl?type http://cds.omdoc.org/Tutorial?Reduction?red?type
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?red_refl?type http://mathhub.info/MitM/Foundation?Logic?ded?definition
+Declares http://cds.omdoc.org/Tutorial?Reduction http://cds.omdoc.org/Tutorial?Reduction?red_trans
+constant http://cds.omdoc.org/Tutorial?Reduction?red_trans
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?red_trans?type http://cds.omdoc.org/Tutorial?SimplyTypedLambdaCalculus?tp?type
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?red_trans?type http://mathhub.info/MitM/Foundation?Logic?ded?type
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?red_trans?type http://cds.omdoc.org/Tutorial?SimplyTypedLambdaCalculus?expression?type
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?red_trans?type http://mathhub.info/MitM/Foundation?Logic?prop?type
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?red_trans?type http://mathhub.info/MitM/Foundation?Logic?prop?definition
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?red_trans?type http://cds.omdoc.org/Tutorial?Reduction?red?type
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?red_trans?type http://mathhub.info/MitM/Foundation?Logic?ded?definition
+Declares http://cds.omdoc.org/Tutorial?Reduction http://cds.omdoc.org/Tutorial?Reduction?red_eq
+constant http://cds.omdoc.org/Tutorial?Reduction?red_eq
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?red_eq?type http://cds.omdoc.org/Tutorial?SimplyTypedLambdaCalculus?tp?type
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?red_eq?type http://mathhub.info/MitM/Foundation?Logic?ded?type
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?red_eq?type http://cds.omdoc.org/Tutorial?SimplyTypedLambdaCalculus?expression?type
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?red_eq?type http://mathhub.info/MitM/Foundation?Logic?prop?type
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?red_eq?type http://mathhub.info/MitM/Foundation?Logic?prop?definition
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?red_eq?type http://cds.omdoc.org/Tutorial?Reduction?red?type
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?red_eq?type http://mathhub.info/MitM/Foundation?Logic?ded?definition
+DependsOn http://cds.omdoc.org/Tutorial?Reduction?red_eq?type http://mathhub.info/MitM/Foundation?Logic?eq?type

@@ -1,0 +1,109 @@
+datatypeconstructor http://cds.omdoc.org/Tutorial?TypedSets?set
+dataconstructor http://cds.omdoc.org/Tutorial?TypedSets?in
+dataconstructor http://cds.omdoc.org/Tutorial?TypedSets?subset
+dataconstructor http://cds.omdoc.org/Tutorial?TypedSets?extensionality
+dataconstructor http://cds.omdoc.org/Tutorial?TypedSets?emptyset
+dataconstructor http://cds.omdoc.org/Tutorial?TypedSets?emptyset_is_empty
+dataconstructor http://cds.omdoc.org/Tutorial?TypedSets?fullset
+dataconstructor http://cds.omdoc.org/Tutorial?TypedSets?fullset_is_full
+dataconstructor http://cds.omdoc.org/Tutorial?TypedSets?comprehension_unique
+dataconstructor http://cds.omdoc.org/Tutorial?TypedSets?comprehension
+dataconstructor http://cds.omdoc.org/Tutorial?TypedSets?image
+theory http://cds.omdoc.org/Tutorial?TypedSets
+HasMeta http://cds.omdoc.org/Tutorial?TypedSets http://cds.omdoc.org/Tutorial?Meta
+Declares http://cds.omdoc.org/Tutorial?TypedSets http://cds.omdoc.org/Tutorial?TypedSets?set
+constant http://cds.omdoc.org/Tutorial?TypedSets?set
+Declares http://cds.omdoc.org/Tutorial?TypedSets http://cds.omdoc.org/Tutorial?TypedSets?in
+constant http://cds.omdoc.org/Tutorial?TypedSets?in
+DependsOn http://cds.omdoc.org/Tutorial?TypedSets?in?type http://cds.omdoc.org/Tutorial?TypedSets?set?type
+DependsOn http://cds.omdoc.org/Tutorial?TypedSets?in?type http://mathhub.info/MitM/Foundation?Logic?prop?type
+DependsOn http://cds.omdoc.org/Tutorial?TypedSets?in?type http://mathhub.info/MitM/Foundation?Logic?prop?definition
+Declares http://cds.omdoc.org/Tutorial?TypedSets http://cds.omdoc.org/Tutorial?TypedSets?subset
+constant http://cds.omdoc.org/Tutorial?TypedSets?subset
+DependsOn http://cds.omdoc.org/Tutorial?TypedSets?subset?type http://cds.omdoc.org/Tutorial?TypedSets?set?type
+DependsOn http://cds.omdoc.org/Tutorial?TypedSets?subset?type http://mathhub.info/MitM/Foundation?Logic?prop?type
+DependsOn http://cds.omdoc.org/Tutorial?TypedSets?subset?type http://mathhub.info/MitM/Foundation?Logic?prop?definition
+DependsOn http://cds.omdoc.org/Tutorial?TypedSets?subset?definition http://cds.omdoc.org/Tutorial?TypedSets?set?type
+DependsOn http://cds.omdoc.org/Tutorial?TypedSets?subset?definition http://mathhub.info/MitM/Foundation?Logic?implies?type
+DependsOn http://cds.omdoc.org/Tutorial?TypedSets?subset?definition http://mathhub.info/MitM/Foundation?Logic?forall?type
+DependsOn http://cds.omdoc.org/Tutorial?TypedSets?subset?definition http://mathhub.info/MitM/Foundation?Logic?prop?type
+DependsOn http://cds.omdoc.org/Tutorial?TypedSets?subset?definition http://mathhub.info/MitM/Foundation?Logic?prop?definition
+DependsOn http://cds.omdoc.org/Tutorial?TypedSets?subset?definition http://cds.omdoc.org/Tutorial?TypedSets?in?type
+Declares http://cds.omdoc.org/Tutorial?TypedSets http://cds.omdoc.org/Tutorial?TypedSets?extensionality
+constant http://cds.omdoc.org/Tutorial?TypedSets?extensionality
+DependsOn http://cds.omdoc.org/Tutorial?TypedSets?extensionality?type http://cds.omdoc.org/Tutorial?TypedSets?set?type
+DependsOn http://cds.omdoc.org/Tutorial?TypedSets?extensionality?type http://mathhub.info/MitM/Foundation?Logic?implies?type
+DependsOn http://cds.omdoc.org/Tutorial?TypedSets?extensionality?type http://mathhub.info/MitM/Foundation?Logic?ded?type
+DependsOn http://cds.omdoc.org/Tutorial?TypedSets?extensionality?type http://mathhub.info/MitM/Foundation?Logic?prop?definition
+DependsOn http://cds.omdoc.org/Tutorial?TypedSets?extensionality?type http://mathhub.info/MitM/Foundation?Logic?prop?type
+DependsOn http://cds.omdoc.org/Tutorial?TypedSets?extensionality?type http://mathhub.info/MitM/Foundation?Logic?ded?definition
+DependsOn http://cds.omdoc.org/Tutorial?TypedSets?extensionality?type http://cds.omdoc.org/Tutorial?TypedSets?subset?type
+DependsOn http://cds.omdoc.org/Tutorial?TypedSets?extensionality?type http://mathhub.info/MitM/Foundation?Logic?eq?type
+DependsOn http://cds.omdoc.org/Tutorial?TypedSets?extensionality?type http://mathhub.info/MitM/Foundation?Logic?and?type
+Declares http://cds.omdoc.org/Tutorial?TypedSets http://cds.omdoc.org/Tutorial?TypedSets?emptyset
+constant http://cds.omdoc.org/Tutorial?TypedSets?emptyset
+DependsOn http://cds.omdoc.org/Tutorial?TypedSets?emptyset?type http://cds.omdoc.org/Tutorial?TypedSets?set?type
+Declares http://cds.omdoc.org/Tutorial?TypedSets http://cds.omdoc.org/Tutorial?TypedSets?emptyset_is_empty
+constant http://cds.omdoc.org/Tutorial?TypedSets?emptyset_is_empty
+DependsOn http://cds.omdoc.org/Tutorial?TypedSets?emptyset_is_empty?type http://cds.omdoc.org/Tutorial?TypedSets?set?type
+DependsOn http://cds.omdoc.org/Tutorial?TypedSets?emptyset_is_empty?type http://mathhub.info/MitM/Foundation?Logic?ded?type
+DependsOn http://cds.omdoc.org/Tutorial?TypedSets?emptyset_is_empty?type http://mathhub.info/MitM/Foundation?Logic?forall?type
+DependsOn http://cds.omdoc.org/Tutorial?TypedSets?emptyset_is_empty?type http://cds.omdoc.org/Tutorial?TypedSets?emptyset?type
+DependsOn http://cds.omdoc.org/Tutorial?TypedSets?emptyset_is_empty?type http://mathhub.info/MitM/Foundation?Logic?prop?type
+DependsOn http://cds.omdoc.org/Tutorial?TypedSets?emptyset_is_empty?type http://mathhub.info/MitM/Foundation?Logic?prop?definition
+DependsOn http://cds.omdoc.org/Tutorial?TypedSets?emptyset_is_empty?type http://mathhub.info/MitM/Foundation?Logic?not?type
+DependsOn http://cds.omdoc.org/Tutorial?TypedSets?emptyset_is_empty?type http://mathhub.info/MitM/Foundation?Logic?ded?definition
+DependsOn http://cds.omdoc.org/Tutorial?TypedSets?emptyset_is_empty?type http://cds.omdoc.org/Tutorial?TypedSets?in?type
+Declares http://cds.omdoc.org/Tutorial?TypedSets http://cds.omdoc.org/Tutorial?TypedSets?fullset
+constant http://cds.omdoc.org/Tutorial?TypedSets?fullset
+DependsOn http://cds.omdoc.org/Tutorial?TypedSets?fullset?type http://cds.omdoc.org/Tutorial?TypedSets?set?type
+Declares http://cds.omdoc.org/Tutorial?TypedSets http://cds.omdoc.org/Tutorial?TypedSets?fullset_is_full
+constant http://cds.omdoc.org/Tutorial?TypedSets?fullset_is_full
+DependsOn http://cds.omdoc.org/Tutorial?TypedSets?fullset_is_full?type http://cds.omdoc.org/Tutorial?TypedSets?set?type
+DependsOn http://cds.omdoc.org/Tutorial?TypedSets?fullset_is_full?type http://mathhub.info/MitM/Foundation?Logic?ded?type
+DependsOn http://cds.omdoc.org/Tutorial?TypedSets?fullset_is_full?type http://mathhub.info/MitM/Foundation?Logic?forall?type
+DependsOn http://cds.omdoc.org/Tutorial?TypedSets?fullset_is_full?type http://cds.omdoc.org/Tutorial?TypedSets?fullset?type
+DependsOn http://cds.omdoc.org/Tutorial?TypedSets?fullset_is_full?type http://mathhub.info/MitM/Foundation?Logic?prop?type
+DependsOn http://cds.omdoc.org/Tutorial?TypedSets?fullset_is_full?type http://mathhub.info/MitM/Foundation?Logic?prop?definition
+DependsOn http://cds.omdoc.org/Tutorial?TypedSets?fullset_is_full?type http://mathhub.info/MitM/Foundation?Logic?ded?definition
+DependsOn http://cds.omdoc.org/Tutorial?TypedSets?fullset_is_full?type http://cds.omdoc.org/Tutorial?TypedSets?in?type
+Declares http://cds.omdoc.org/Tutorial?TypedSets http://cds.omdoc.org/Tutorial?TypedSets?comprehension_unique
+constant http://cds.omdoc.org/Tutorial?TypedSets?comprehension_unique
+DependsOn http://cds.omdoc.org/Tutorial?TypedSets?comprehension_unique?type http://cds.omdoc.org/Tutorial?TypedSets?set?type
+DependsOn http://cds.omdoc.org/Tutorial?TypedSets?comprehension_unique?type http://mathhub.info/MitM/Foundation?Logic?ded?type
+DependsOn http://cds.omdoc.org/Tutorial?TypedSets?comprehension_unique?type http://mathhub.info/MitM/Foundation?Logic?forall?type
+DependsOn http://cds.omdoc.org/Tutorial?TypedSets?comprehension_unique?type http://mathhub.info/MitM/Foundation?Logic?prop?type
+DependsOn http://cds.omdoc.org/Tutorial?TypedSets?comprehension_unique?type http://mathhub.info/MitM/Foundation?Logic?prop?definition
+DependsOn http://cds.omdoc.org/Tutorial?TypedSets?comprehension_unique?type http://mathhub.info/MitM/Foundation?Logic?iff?type
+DependsOn http://cds.omdoc.org/Tutorial?TypedSets?comprehension_unique?type http://mathhub.info/MitM/Foundation?Logic?exists_unique?type
+DependsOn http://cds.omdoc.org/Tutorial?TypedSets?comprehension_unique?type http://mathhub.info/MitM/Foundation?Logic?ded?definition
+DependsOn http://cds.omdoc.org/Tutorial?TypedSets?comprehension_unique?type http://mathhub.info/MitM/Foundation?Logic?exists_unique?definition
+DependsOn http://cds.omdoc.org/Tutorial?TypedSets?comprehension_unique?type http://cds.omdoc.org/Tutorial?TypedSets?in?type
+Declares http://cds.omdoc.org/Tutorial?TypedSets http://cds.omdoc.org/Tutorial?TypedSets?comprehension
+constant http://cds.omdoc.org/Tutorial?TypedSets?comprehension
+DependsOn http://cds.omdoc.org/Tutorial?TypedSets?comprehension?type http://cds.omdoc.org/Tutorial?TypedSets?set?type
+DependsOn http://cds.omdoc.org/Tutorial?TypedSets?comprehension?type http://mathhub.info/MitM/Foundation?Logic?prop?type
+DependsOn http://cds.omdoc.org/Tutorial?TypedSets?comprehension?type http://mathhub.info/MitM/Foundation?Logic?prop?definition
+DependsOn http://cds.omdoc.org/Tutorial?TypedSets?comprehension?definition http://cds.omdoc.org/Tutorial?TypedSets?set?type
+DependsOn http://cds.omdoc.org/Tutorial?TypedSets?comprehension?definition http://mathhub.info/MitM/Foundation?Logic?ded?type
+DependsOn http://cds.omdoc.org/Tutorial?TypedSets?comprehension?definition http://mathhub.info/MitM/Foundation?Logic?forall?type
+DependsOn http://cds.omdoc.org/Tutorial?TypedSets?comprehension?definition http://mathhub.info/MitM/Foundation?DescriptionOperator?that?type
+DependsOn http://cds.omdoc.org/Tutorial?TypedSets?comprehension?definition http://mathhub.info/MitM/Foundation?Logic?prop?type
+DependsOn http://cds.omdoc.org/Tutorial?TypedSets?comprehension?definition http://mathhub.info/MitM/Foundation?Logic?prop?definition
+DependsOn http://cds.omdoc.org/Tutorial?TypedSets?comprehension?definition http://mathhub.info/MitM/Foundation?Logic?iff?type
+DependsOn http://cds.omdoc.org/Tutorial?TypedSets?comprehension?definition http://mathhub.info/MitM/Foundation?Logic?exists_unique?type
+DependsOn http://cds.omdoc.org/Tutorial?TypedSets?comprehension?definition http://mathhub.info/MitM/Foundation?Logic?ded?definition
+DependsOn http://cds.omdoc.org/Tutorial?TypedSets?comprehension?definition http://mathhub.info/MitM/Foundation?Logic?exists_unique?definition
+DependsOn http://cds.omdoc.org/Tutorial?TypedSets?comprehension?definition http://cds.omdoc.org/Tutorial?TypedSets?in?type
+DependsOn http://cds.omdoc.org/Tutorial?TypedSets?comprehension?definition http://mathhub.info/MitM/Foundation?InformalProofs?trivial?type
+Declares http://cds.omdoc.org/Tutorial?TypedSets http://cds.omdoc.org/Tutorial?TypedSets?image
+constant http://cds.omdoc.org/Tutorial?TypedSets?image
+DependsOn http://cds.omdoc.org/Tutorial?TypedSets?image?type http://cds.omdoc.org/Tutorial?TypedSets?set?type
+DependsOn http://cds.omdoc.org/Tutorial?TypedSets?image?definition http://cds.omdoc.org/Tutorial?TypedSets?set?type
+DependsOn http://cds.omdoc.org/Tutorial?TypedSets?image?definition http://mathhub.info/MitM/Foundation?Logic?exists?type
+DependsOn http://cds.omdoc.org/Tutorial?TypedSets?image?definition http://mathhub.info/MitM/Foundation?Logic?prop?type
+DependsOn http://cds.omdoc.org/Tutorial?TypedSets?image?definition http://mathhub.info/MitM/Foundation?Logic?prop?definition
+DependsOn http://cds.omdoc.org/Tutorial?TypedSets?image?definition http://mathhub.info/MitM/Foundation?Logic?eq?type
+DependsOn http://cds.omdoc.org/Tutorial?TypedSets?image?definition http://cds.omdoc.org/Tutorial?TypedSets?in?type
+DependsOn http://cds.omdoc.org/Tutorial?TypedSets?image?definition http://mathhub.info/MitM/Foundation?Logic?and?type
+DependsOn http://cds.omdoc.org/Tutorial?TypedSets?image?definition http://cds.omdoc.org/Tutorial?TypedSets?comprehension?type

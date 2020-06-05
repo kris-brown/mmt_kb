@@ -1,0 +1,45 @@
+datatypeconstructor http://cds.omdoc.org/Tutorial?PropLogSyntax?prop
+dataconstructor http://cds.omdoc.org/Tutorial?PropLogSyntax?and
+dataconstructor http://cds.omdoc.org/Tutorial?PropLogSyntax?not
+dataconstructor http://cds.omdoc.org/Tutorial?PropLogSyntax?or
+dataconstructor http://cds.omdoc.org/Tutorial?PropLogSyntax?implies
+dataconstructor http://cds.omdoc.org/Tutorial?PropLogSyntax?iff
+dataconstructor http://cds.omdoc.org/Tutorial?PropLogSyntax?true
+dataconstructor http://cds.omdoc.org/Tutorial?PropLogSyntax?false
+theory http://cds.omdoc.org/Tutorial?PropLogSyntax
+HasMeta http://cds.omdoc.org/Tutorial?PropLogSyntax http://cds.omdoc.org/urtheories?LF
+Declares http://cds.omdoc.org/Tutorial?PropLogSyntax http://cds.omdoc.org/Tutorial?PropLogSyntax?prop
+constant http://cds.omdoc.org/Tutorial?PropLogSyntax?prop
+Declares http://cds.omdoc.org/Tutorial?PropLogSyntax http://cds.omdoc.org/Tutorial?PropLogSyntax?and
+constant http://cds.omdoc.org/Tutorial?PropLogSyntax?and
+DependsOn http://cds.omdoc.org/Tutorial?PropLogSyntax?and?type http://cds.omdoc.org/Tutorial?PropLogSyntax?prop?type
+Declares http://cds.omdoc.org/Tutorial?PropLogSyntax http://cds.omdoc.org/Tutorial?PropLogSyntax?not
+constant http://cds.omdoc.org/Tutorial?PropLogSyntax?not
+DependsOn http://cds.omdoc.org/Tutorial?PropLogSyntax?not?type http://cds.omdoc.org/Tutorial?PropLogSyntax?prop?type
+Declares http://cds.omdoc.org/Tutorial?PropLogSyntax http://cds.omdoc.org/Tutorial?PropLogSyntax?or
+constant http://cds.omdoc.org/Tutorial?PropLogSyntax?or
+DependsOn http://cds.omdoc.org/Tutorial?PropLogSyntax?or?type http://cds.omdoc.org/Tutorial?PropLogSyntax?prop?type
+DependsOn http://cds.omdoc.org/Tutorial?PropLogSyntax?or?definition http://cds.omdoc.org/Tutorial?PropLogSyntax?not?type
+DependsOn http://cds.omdoc.org/Tutorial?PropLogSyntax?or?definition http://cds.omdoc.org/Tutorial?PropLogSyntax?and?type
+DependsOn http://cds.omdoc.org/Tutorial?PropLogSyntax?or?definition http://cds.omdoc.org/Tutorial?PropLogSyntax?prop?type
+Declares http://cds.omdoc.org/Tutorial?PropLogSyntax http://cds.omdoc.org/Tutorial?PropLogSyntax?implies
+constant http://cds.omdoc.org/Tutorial?PropLogSyntax?implies
+DependsOn http://cds.omdoc.org/Tutorial?PropLogSyntax?implies?type http://cds.omdoc.org/Tutorial?PropLogSyntax?prop?type
+DependsOn http://cds.omdoc.org/Tutorial?PropLogSyntax?implies?definition http://cds.omdoc.org/Tutorial?PropLogSyntax?or?type
+DependsOn http://cds.omdoc.org/Tutorial?PropLogSyntax?implies?definition http://cds.omdoc.org/Tutorial?PropLogSyntax?not?type
+DependsOn http://cds.omdoc.org/Tutorial?PropLogSyntax?implies?definition http://cds.omdoc.org/Tutorial?PropLogSyntax?prop?type
+Declares http://cds.omdoc.org/Tutorial?PropLogSyntax http://cds.omdoc.org/Tutorial?PropLogSyntax?iff
+constant http://cds.omdoc.org/Tutorial?PropLogSyntax?iff
+DependsOn http://cds.omdoc.org/Tutorial?PropLogSyntax?iff?type http://cds.omdoc.org/Tutorial?PropLogSyntax?prop?type
+DependsOn http://cds.omdoc.org/Tutorial?PropLogSyntax?iff?definition http://cds.omdoc.org/Tutorial?PropLogSyntax?implies?type
+DependsOn http://cds.omdoc.org/Tutorial?PropLogSyntax?iff?definition http://cds.omdoc.org/Tutorial?PropLogSyntax?and?type
+DependsOn http://cds.omdoc.org/Tutorial?PropLogSyntax?iff?definition http://cds.omdoc.org/Tutorial?PropLogSyntax?prop?type
+Declares http://cds.omdoc.org/Tutorial?PropLogSyntax http://cds.omdoc.org/Tutorial?PropLogSyntax?true
+constant http://cds.omdoc.org/Tutorial?PropLogSyntax?true
+DependsOn http://cds.omdoc.org/Tutorial?PropLogSyntax?true?type http://cds.omdoc.org/Tutorial?PropLogSyntax?prop?type
+Declares http://cds.omdoc.org/Tutorial?PropLogSyntax http://cds.omdoc.org/Tutorial?PropLogSyntax?false
+constant http://cds.omdoc.org/Tutorial?PropLogSyntax?false
+DependsOn http://cds.omdoc.org/Tutorial?PropLogSyntax?false?type http://cds.omdoc.org/Tutorial?PropLogSyntax?prop?type
+DependsOn http://cds.omdoc.org/Tutorial?PropLogSyntax?false?definition http://cds.omdoc.org/Tutorial?PropLogSyntax?not?type
+DependsOn http://cds.omdoc.org/Tutorial?PropLogSyntax?false?definition http://cds.omdoc.org/Tutorial?PropLogSyntax?prop?type
+DependsOn http://cds.omdoc.org/Tutorial?PropLogSyntax?false?definition http://cds.omdoc.org/Tutorial?PropLogSyntax?true?type

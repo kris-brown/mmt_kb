@@ -1,0 +1,12 @@
+document http://docs.omdoc.org/test/Basic.omdoc
+Declares http://docs.omdoc.org/test/Basic.omdoc http://cds.omdoc.org/Test?Meta
+Declares http://docs.omdoc.org/test/Basic.omdoc http://cds.omdoc.org/Test?A
+Declares http://docs.omdoc.org/test/Basic.omdoc http://cds.omdoc.org/Test?X
+Declares http://docs.omdoc.org/test/Basic.omdoc http://cds.omdoc.org/Test?B
+Declares http://docs.omdoc.org/test/Basic.omdoc http://cds.omdoc.org/Test?C
+Declares http://docs.omdoc.org/test/Basic.omdoc http://cds.omdoc.org/Test?D
+Declares http://docs.omdoc.org/test/Basic.omdoc http://cds.omdoc.org/Test?AisD
+Declares http://docs.omdoc.org/test/Basic.omdoc http://cds.omdoc.org/Test?E
+Declares http://docs.omdoc.org/test/Basic.omdoc http://cds.omdoc.org/Test?DisE
+Declares http://docs.omdoc.org/test/Basic.omdoc http://cds.omdoc.org/Test?F
+Declares http://docs.omdoc.org/test/Basic.omdoc http://cds.omdoc.org/Test?G

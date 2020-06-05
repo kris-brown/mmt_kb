@@ -1,0 +1,33 @@
+datatypeconstructor http://cds.omdoc.org/Test?G?f/b/[http://cds.omdoc.org/Test?A]/ASort
+datatypeconstructor http://cds.omdoc.org/Test?G?f/b/BSort
+datatypeconstructor http://cds.omdoc.org/Test?G?f/x/XSort
+datatypeconstructor http://cds.omdoc.org/Test?G?f/FSort
+datatypeconstructor http://cds.omdoc.org/Test?G?GSort
+theory http://cds.omdoc.org/Test?G
+HasMeta http://cds.omdoc.org/Test?G http://cds.omdoc.org/Test?Meta
+Declares http://cds.omdoc.org/Test?G http://cds.omdoc.org/Test?G?f
+HasDomain http://cds.omdoc.org/Test?G?f http://cds.omdoc.org/Test?F
+HasCodomain http://cds.omdoc.org/Test?G?f http://cds.omdoc.org/Test?G
+structure http://cds.omdoc.org/Test?G?f
+Declares http://cds.omdoc.org/Test?G http://cds.omdoc.org/Test?G?f/b
+HasDomain http://cds.omdoc.org/Test?G?f/b http://cds.omdoc.org/Test?B
+HasCodomain http://cds.omdoc.org/Test?G?f/b http://cds.omdoc.org/Test?G
+structure http://cds.omdoc.org/Test?G?f/b
+Declares http://cds.omdoc.org/Test?G http://cds.omdoc.org/Test?G?f/b/[http://cds.omdoc.org/Test?A]
+HasDomain http://cds.omdoc.org/Test?G?f/b/[http://cds.omdoc.org/Test?A] http://cds.omdoc.org/Test?A
+HasCodomain http://cds.omdoc.org/Test?G?f/b/[http://cds.omdoc.org/Test?A] http://cds.omdoc.org/Test?G
+structure http://cds.omdoc.org/Test?G?f/b/[http://cds.omdoc.org/Test?A]
+Declares http://cds.omdoc.org/Test?G http://cds.omdoc.org/Test?G?f/b/[http://cds.omdoc.org/Test?A]/ASort
+constant http://cds.omdoc.org/Test?G?f/b/[http://cds.omdoc.org/Test?A]/ASort
+Declares http://cds.omdoc.org/Test?G http://cds.omdoc.org/Test?G?f/b/BSort
+constant http://cds.omdoc.org/Test?G?f/b/BSort
+Declares http://cds.omdoc.org/Test?G http://cds.omdoc.org/Test?G?f/x
+HasDomain http://cds.omdoc.org/Test?G?f/x http://cds.omdoc.org/Test?X
+HasCodomain http://cds.omdoc.org/Test?G?f/x http://cds.omdoc.org/Test?G
+structure http://cds.omdoc.org/Test?G?f/x
+Declares http://cds.omdoc.org/Test?G http://cds.omdoc.org/Test?G?f/x/XSort
+constant http://cds.omdoc.org/Test?G?f/x/XSort
+Declares http://cds.omdoc.org/Test?G http://cds.omdoc.org/Test?G?f/FSort
+constant http://cds.omdoc.org/Test?G?f/FSort
+Declares http://cds.omdoc.org/Test?G http://cds.omdoc.org/Test?G?GSort
+constant http://cds.omdoc.org/Test?G?GSort

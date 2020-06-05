@@ -1,0 +1,7 @@
+theory http://cds.omdoc.org/Tutorial?CGroup
+HasMeta http://cds.omdoc.org/Tutorial?CGroup http://cds.omdoc.org/Tutorial?Meta
+Includes http://cds.omdoc.org/Tutorial?CGroup http://cds.omdoc.org/Tutorial?Group
+Includes http://cds.omdoc.org/Tutorial?CGroup http://cds.omdoc.org/Tutorial?Monoid
+Includes http://cds.omdoc.org/Tutorial?CGroup http://cds.omdoc.org/Tutorial?SemiGroup
+Includes http://cds.omdoc.org/Tutorial?CGroup http://cds.omdoc.org/Tutorial?Magma
+Includes http://cds.omdoc.org/Tutorial?CGroup http://cds.omdoc.org/Tutorial?Abelian

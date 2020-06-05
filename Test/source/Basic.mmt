@@ -1,0 +1,71 @@
+namespace Test ❚
+
+import mitm http://mathhub.info/MitM/Foundation ❚
+
+theory Meta : mitm:?Logic =
+  include ☞mitm:?DescriptionOperator ❙
+  include ☞mitm:?Strings ❙
+  include ☞mitm:?InformalProofs ❙
+❚
+
+theory A :  ?Meta =
+    /T DOCSTRING ❙
+    ASort : type ❘ # A ❙
+
+
+❚
+
+theory X :  ?Meta =
+    XSort : type ❘ # X ❙
+❚
+
+theory B : ?Meta =
+	include ?A ❙
+    BSort : type ❘ # B ❙
+❚
+
+theory C : ?Meta =
+	structure a1 : ?A =
+	    ASort # AC1Sort❙
+	❚
+	structure a2 : ?A =
+	    ASort # AC2Sort❙
+	❚
+	CSort : type ❘ # C ❙
+❚
+
+theory D :  ?Meta =
+    DSort : type ❘ # D ❙
+❚
+
+view AisD : ?A → ?D =
+    ASort = DSort❙
+❚
+
+theory E : ?Meta =
+	ESort : type ❘ # E ❙
+❚
+
+view DisE : ?D → ?E =
+    DSort = ESort❙
+❚
+
+theory F : ?Meta =
+	structure b : ?B =
+	    ASort # AFSort❙
+	❚
+	structure x : ?X =
+	    XSort # XFSort❙
+	❚
+	FSort : type ❘ # F ❙
+❚
+
+theory G : ?Meta =
+    /T Informal❙
+	structure f : ?F =
+	    FSort # FGSort ❙
+	❚
+	GSort : type ❘ # G ❙
+
+❚
+

@@ -1,0 +1,6 @@
+datatypeconstructor http://cds.omdoc.org/Test?B?BSort
+theory http://cds.omdoc.org/Test?B
+HasMeta http://cds.omdoc.org/Test?B http://cds.omdoc.org/Test?Meta
+Includes http://cds.omdoc.org/Test?B http://cds.omdoc.org/Test?A
+Declares http://cds.omdoc.org/Test?B http://cds.omdoc.org/Test?B?BSort
+constant http://cds.omdoc.org/Test?B?BSort

@@ -1,0 +1,14 @@
+dataconstructor http://cds.omdoc.org/Tutorial?SemiGroup?assoc
+theory http://cds.omdoc.org/Tutorial?SemiGroup
+HasMeta http://cds.omdoc.org/Tutorial?SemiGroup http://cds.omdoc.org/Tutorial?Meta
+Includes http://cds.omdoc.org/Tutorial?SemiGroup http://cds.omdoc.org/Tutorial?Magma
+Declares http://cds.omdoc.org/Tutorial?SemiGroup http://cds.omdoc.org/Tutorial?SemiGroup?assoc
+constant http://cds.omdoc.org/Tutorial?SemiGroup?assoc
+DependsOn http://cds.omdoc.org/Tutorial?SemiGroup?assoc?type http://mathhub.info/MitM/Foundation?Logic?forall?type
+DependsOn http://cds.omdoc.org/Tutorial?SemiGroup?assoc?type http://mathhub.info/MitM/Foundation?Logic?ded?type
+DependsOn http://cds.omdoc.org/Tutorial?SemiGroup?assoc?type http://cds.omdoc.org/Tutorial?Magma?Domain?type
+DependsOn http://cds.omdoc.org/Tutorial?SemiGroup?assoc?type http://mathhub.info/MitM/Foundation?Logic?prop?type
+DependsOn http://cds.omdoc.org/Tutorial?SemiGroup?assoc?type http://mathhub.info/MitM/Foundation?Logic?prop?definition
+DependsOn http://cds.omdoc.org/Tutorial?SemiGroup?assoc?type http://cds.omdoc.org/Tutorial?Magma?op?type
+DependsOn http://cds.omdoc.org/Tutorial?SemiGroup?assoc?type http://mathhub.info/MitM/Foundation?Logic?ded?definition
+DependsOn http://cds.omdoc.org/Tutorial?SemiGroup?assoc?type http://mathhub.info/MitM/Foundation?Logic?eq?type

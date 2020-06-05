@@ -1,0 +1,5 @@
+document http://docs.omdoc.org/tutorial/Numbers.omdoc
+Declares http://docs.omdoc.org/tutorial/Numbers.omdoc http://cds.omdoc.org/Tutorial?NatNums
+Declares http://docs.omdoc.org/tutorial/Numbers.omdoc http://cds.omdoc.org/Tutorial?NatPlus
+Declares http://docs.omdoc.org/tutorial/Numbers.omdoc http://cds.omdoc.org/Tutorial?NatPlusTimes
+Declares http://docs.omdoc.org/tutorial/Numbers.omdoc http://cds.omdoc.org/Tutorial?Integers

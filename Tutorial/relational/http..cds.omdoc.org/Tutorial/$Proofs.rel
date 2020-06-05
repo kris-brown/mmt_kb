@@ -1,0 +1,18 @@
+dataconstructor http://cds.omdoc.org/Tutorial?Proofs?conjComm
+theory http://cds.omdoc.org/Tutorial?Proofs
+HasMeta http://cds.omdoc.org/Tutorial?Proofs http://cds.omdoc.org/Tutorial?PropLogNatDed
+Declares http://cds.omdoc.org/Tutorial?Proofs http://cds.omdoc.org/Tutorial?Proofs?conjComm
+constant http://cds.omdoc.org/Tutorial?Proofs?conjComm
+DependsOn http://cds.omdoc.org/Tutorial?Proofs?conjComm?type http://cds.omdoc.org/Tutorial?PropLogNatDed?ded?type
+DependsOn http://cds.omdoc.org/Tutorial?Proofs?conjComm?type http://cds.omdoc.org/Tutorial?PropLogSyntax?implies?type
+DependsOn http://cds.omdoc.org/Tutorial?Proofs?conjComm?type http://cds.omdoc.org/Tutorial?PropLogSyntax?and?type
+DependsOn http://cds.omdoc.org/Tutorial?Proofs?conjComm?type http://cds.omdoc.org/Tutorial?PropLogSyntax?prop?type
+DependsOn http://cds.omdoc.org/Tutorial?Proofs?conjComm?definition http://cds.omdoc.org/Tutorial?PropLogSyntax?not?type
+DependsOn http://cds.omdoc.org/Tutorial?Proofs?conjComm?definition http://cds.omdoc.org/Tutorial?PropLogNatDed?ded?type
+DependsOn http://cds.omdoc.org/Tutorial?Proofs?conjComm?definition http://cds.omdoc.org/Tutorial?PropLogNatDed?andEr?type
+DependsOn http://cds.omdoc.org/Tutorial?Proofs?conjComm?definition http://cds.omdoc.org/Tutorial?PropLogSyntax?implies?type
+DependsOn http://cds.omdoc.org/Tutorial?Proofs?conjComm?definition http://cds.omdoc.org/Tutorial?PropLogNatDed?andI?type
+DependsOn http://cds.omdoc.org/Tutorial?Proofs?conjComm?definition http://cds.omdoc.org/Tutorial?PropLogSyntax?and?type
+DependsOn http://cds.omdoc.org/Tutorial?Proofs?conjComm?definition http://cds.omdoc.org/Tutorial?PropLogSyntax?prop?type
+DependsOn http://cds.omdoc.org/Tutorial?Proofs?conjComm?definition http://cds.omdoc.org/Tutorial?PropLogNatDed?andEl?type
+DependsOn http://cds.omdoc.org/Tutorial?Proofs?conjComm?definition http://cds.omdoc.org/Tutorial?PropLogNatDed?implI?type

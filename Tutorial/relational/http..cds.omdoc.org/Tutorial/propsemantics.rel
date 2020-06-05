@@ -1,0 +1,23 @@
+datatypeconstructor http://cds.omdoc.org/Tutorial?propsemantics?[http://cds.omdoc.org/Tutorial?PropLogSyntax]/prop
+dataconstructor http://cds.omdoc.org/Tutorial?propsemantics?[http://cds.omdoc.org/Tutorial?PropLogSyntax]/true
+dataconstructor http://cds.omdoc.org/Tutorial?propsemantics?[http://cds.omdoc.org/Tutorial?PropLogSyntax]/not
+dataconstructor http://cds.omdoc.org/Tutorial?propsemantics?[http://cds.omdoc.org/Tutorial?PropLogSyntax]/and
+HasDomain http://cds.omdoc.org/Tutorial?propsemantics http://cds.omdoc.org/Tutorial?PropLogSyntax
+HasCodomain http://cds.omdoc.org/Tutorial?propsemantics http://cds.omdoc.org/Tutorial?Booleans
+view http://cds.omdoc.org/Tutorial?propsemantics
+HasViewFrom http://cds.omdoc.org/Tutorial?Booleans http://cds.omdoc.org/Tutorial?PropLogSyntax
+Declares http://cds.omdoc.org/Tutorial?propsemantics http://cds.omdoc.org/Tutorial?propsemantics?[http://cds.omdoc.org/Tutorial?PropLogSyntax]/prop
+constant http://cds.omdoc.org/Tutorial?propsemantics?[http://cds.omdoc.org/Tutorial?PropLogSyntax]/prop
+DependsOn http://cds.omdoc.org/Tutorial?propsemantics?[http://cds.omdoc.org/Tutorial?PropLogSyntax]/prop?definition http://cds.omdoc.org/Tutorial?Booleans?boolean?type
+Declares http://cds.omdoc.org/Tutorial?propsemantics http://cds.omdoc.org/Tutorial?propsemantics?[http://cds.omdoc.org/Tutorial?PropLogSyntax]/true
+constant http://cds.omdoc.org/Tutorial?propsemantics?[http://cds.omdoc.org/Tutorial?PropLogSyntax]/true
+DependsOn http://cds.omdoc.org/Tutorial?propsemantics?[http://cds.omdoc.org/Tutorial?PropLogSyntax]/true?definition http://cds.omdoc.org/Tutorial?Booleans?boolean?type
+DependsOn http://cds.omdoc.org/Tutorial?propsemantics?[http://cds.omdoc.org/Tutorial?PropLogSyntax]/true?definition http://cds.omdoc.org/Tutorial?Booleans?btrue?type
+Declares http://cds.omdoc.org/Tutorial?propsemantics http://cds.omdoc.org/Tutorial?propsemantics?[http://cds.omdoc.org/Tutorial?PropLogSyntax]/not
+constant http://cds.omdoc.org/Tutorial?propsemantics?[http://cds.omdoc.org/Tutorial?PropLogSyntax]/not
+DependsOn http://cds.omdoc.org/Tutorial?propsemantics?[http://cds.omdoc.org/Tutorial?PropLogSyntax]/not?definition http://cds.omdoc.org/Tutorial?Booleans?boolean?type
+DependsOn http://cds.omdoc.org/Tutorial?propsemantics?[http://cds.omdoc.org/Tutorial?PropLogSyntax]/not?definition http://cds.omdoc.org/Tutorial?Booleans?not?type
+Declares http://cds.omdoc.org/Tutorial?propsemantics http://cds.omdoc.org/Tutorial?propsemantics?[http://cds.omdoc.org/Tutorial?PropLogSyntax]/and
+constant http://cds.omdoc.org/Tutorial?propsemantics?[http://cds.omdoc.org/Tutorial?PropLogSyntax]/and
+DependsOn http://cds.omdoc.org/Tutorial?propsemantics?[http://cds.omdoc.org/Tutorial?PropLogSyntax]/and?definition http://cds.omdoc.org/Tutorial?Booleans?boolean?type
+DependsOn http://cds.omdoc.org/Tutorial?propsemantics?[http://cds.omdoc.org/Tutorial?PropLogSyntax]/and?definition http://cds.omdoc.org/Tutorial?Booleans?and?type

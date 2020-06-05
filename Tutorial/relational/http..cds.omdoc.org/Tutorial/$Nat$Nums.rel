@@ -1,0 +1,72 @@
+datatypeconstructor http://cds.omdoc.org/Tutorial?NatNums?NaturalNumbers
+dataconstructor http://cds.omdoc.org/Tutorial?NatNums?zero
+dataconstructor http://cds.omdoc.org/Tutorial?NatNums?successor
+dataconstructor http://cds.omdoc.org/Tutorial?NatNums?one
+dataconstructor http://cds.omdoc.org/Tutorial?NatNums?D
+dataconstructor http://cds.omdoc.org/Tutorial?NatNums?P3
+dataconstructor http://cds.omdoc.org/Tutorial?NatNums?P4
+dataconstructor http://cds.omdoc.org/Tutorial?NatNums?P5
+theory http://cds.omdoc.org/Tutorial?NatNums
+HasMeta http://cds.omdoc.org/Tutorial?NatNums http://cds.omdoc.org/Tutorial?Meta
+Declares http://cds.omdoc.org/Tutorial?NatNums http://cds.omdoc.org/Tutorial?NatNums?NaturalNumbers
+constant http://cds.omdoc.org/Tutorial?NatNums?NaturalNumbers
+Declares http://cds.omdoc.org/Tutorial?NatNums http://cds.omdoc.org/Tutorial?NatNums?zero
+constant http://cds.omdoc.org/Tutorial?NatNums?zero
+DependsOn http://cds.omdoc.org/Tutorial?NatNums?zero?type http://cds.omdoc.org/Tutorial?NatNums?NaturalNumbers?type
+Declares http://cds.omdoc.org/Tutorial?NatNums http://cds.omdoc.org/Tutorial?NatNums?successor
+constant http://cds.omdoc.org/Tutorial?NatNums?successor
+DependsOn http://cds.omdoc.org/Tutorial?NatNums?successor?type http://cds.omdoc.org/Tutorial?NatNums?NaturalNumbers?type
+Declares http://cds.omdoc.org/Tutorial?NatNums http://cds.omdoc.org/Tutorial?NatNums?one
+constant http://cds.omdoc.org/Tutorial?NatNums?one
+DependsOn http://cds.omdoc.org/Tutorial?NatNums?one?type http://cds.omdoc.org/Tutorial?NatNums?NaturalNumbers?type
+DependsOn http://cds.omdoc.org/Tutorial?NatNums?one?definition http://cds.omdoc.org/Tutorial?NatNums?NaturalNumbers?type
+DependsOn http://cds.omdoc.org/Tutorial?NatNums?one?definition http://cds.omdoc.org/Tutorial?NatNums?successor?type
+DependsOn http://cds.omdoc.org/Tutorial?NatNums?one?definition http://cds.omdoc.org/Tutorial?NatNums?zero?type
+Declares http://cds.omdoc.org/Tutorial?NatNums http://cds.omdoc.org/Tutorial?NatNums?D
+constant http://cds.omdoc.org/Tutorial?NatNums?D
+DependsOn http://cds.omdoc.org/Tutorial?NatNums?D?type http://mathhub.info/MitM/Foundation?Logic?forall?type
+DependsOn http://cds.omdoc.org/Tutorial?NatNums?D?type http://cds.omdoc.org/Tutorial?NatNums?NaturalNumbers?type
+DependsOn http://cds.omdoc.org/Tutorial?NatNums?D?type http://mathhub.info/MitM/Foundation?Logic?exists?type
+DependsOn http://cds.omdoc.org/Tutorial?NatNums?D?type http://mathhub.info/MitM/Foundation?Logic?ded?type
+DependsOn http://cds.omdoc.org/Tutorial?NatNums?D?type http://mathhub.info/MitM/Foundation?Logic?prop?type
+DependsOn http://cds.omdoc.org/Tutorial?NatNums?D?type http://cds.omdoc.org/Tutorial?NatNums?successor?type
+DependsOn http://cds.omdoc.org/Tutorial?NatNums?D?type http://mathhub.info/MitM/Foundation?Logic?prop?definition
+DependsOn http://cds.omdoc.org/Tutorial?NatNums?D?type http://cds.omdoc.org/Tutorial?NatNums?zero?type
+DependsOn http://cds.omdoc.org/Tutorial?NatNums?D?type http://mathhub.info/MitM/Foundation?Logic?ded?definition
+DependsOn http://cds.omdoc.org/Tutorial?NatNums?D?type http://mathhub.info/MitM/Foundation?Logic?eq?type
+DependsOn http://cds.omdoc.org/Tutorial?NatNums?D?type http://mathhub.info/MitM/Foundation?Logic?or?type
+Declares http://cds.omdoc.org/Tutorial?NatNums http://cds.omdoc.org/Tutorial?NatNums?P3
+constant http://cds.omdoc.org/Tutorial?NatNums?P3
+DependsOn http://cds.omdoc.org/Tutorial?NatNums?P3?type http://mathhub.info/MitM/Foundation?Logic?ded?type
+DependsOn http://cds.omdoc.org/Tutorial?NatNums?P3?type http://cds.omdoc.org/Tutorial?NatNums?NaturalNumbers?type
+DependsOn http://cds.omdoc.org/Tutorial?NatNums?P3?type http://mathhub.info/MitM/Foundation?Logic?exists?type
+DependsOn http://cds.omdoc.org/Tutorial?NatNums?P3?type http://mathhub.info/MitM/Foundation?Logic?prop?type
+DependsOn http://cds.omdoc.org/Tutorial?NatNums?P3?type http://cds.omdoc.org/Tutorial?NatNums?successor?type
+DependsOn http://cds.omdoc.org/Tutorial?NatNums?P3?type http://cds.omdoc.org/Tutorial?NatNums?zero?type
+DependsOn http://cds.omdoc.org/Tutorial?NatNums?P3?type http://mathhub.info/MitM/Foundation?Logic?prop?definition
+DependsOn http://cds.omdoc.org/Tutorial?NatNums?P3?type http://mathhub.info/MitM/Foundation?Logic?not?type
+DependsOn http://cds.omdoc.org/Tutorial?NatNums?P3?type http://mathhub.info/MitM/Foundation?Logic?ded?definition
+DependsOn http://cds.omdoc.org/Tutorial?NatNums?P3?type http://mathhub.info/MitM/Foundation?Logic?eq?type
+Declares http://cds.omdoc.org/Tutorial?NatNums http://cds.omdoc.org/Tutorial?NatNums?P4
+constant http://cds.omdoc.org/Tutorial?NatNums?P4
+DependsOn http://cds.omdoc.org/Tutorial?NatNums?P4?type http://mathhub.info/MitM/Foundation?Logic?implies?type
+DependsOn http://cds.omdoc.org/Tutorial?NatNums?P4?type http://mathhub.info/MitM/Foundation?Logic?forall?type
+DependsOn http://cds.omdoc.org/Tutorial?NatNums?P4?type http://cds.omdoc.org/Tutorial?NatNums?NaturalNumbers?type
+DependsOn http://cds.omdoc.org/Tutorial?NatNums?P4?type http://mathhub.info/MitM/Foundation?Logic?ded?type
+DependsOn http://cds.omdoc.org/Tutorial?NatNums?P4?type http://mathhub.info/MitM/Foundation?Logic?prop?type
+DependsOn http://cds.omdoc.org/Tutorial?NatNums?P4?type http://mathhub.info/MitM/Foundation?Logic?prop?definition
+DependsOn http://cds.omdoc.org/Tutorial?NatNums?P4?type http://cds.omdoc.org/Tutorial?NatNums?successor?type
+DependsOn http://cds.omdoc.org/Tutorial?NatNums?P4?type http://mathhub.info/MitM/Foundation?Logic?ded?definition
+DependsOn http://cds.omdoc.org/Tutorial?NatNums?P4?type http://mathhub.info/MitM/Foundation?Logic?eq?type
+Declares http://cds.omdoc.org/Tutorial?NatNums http://cds.omdoc.org/Tutorial?NatNums?P5
+constant http://cds.omdoc.org/Tutorial?NatNums?P5
+DependsOn http://cds.omdoc.org/Tutorial?NatNums?P5?type http://mathhub.info/MitM/Foundation?Logic?implies?type
+DependsOn http://cds.omdoc.org/Tutorial?NatNums?P5?type http://mathhub.info/MitM/Foundation?Logic?forall?type
+DependsOn http://cds.omdoc.org/Tutorial?NatNums?P5?type http://cds.omdoc.org/Tutorial?NatNums?NaturalNumbers?type
+DependsOn http://cds.omdoc.org/Tutorial?NatNums?P5?type http://mathhub.info/MitM/Foundation?Logic?ded?type
+DependsOn http://cds.omdoc.org/Tutorial?NatNums?P5?type http://mathhub.info/MitM/Foundation?Logic?prop?type
+DependsOn http://cds.omdoc.org/Tutorial?NatNums?P5?type http://mathhub.info/MitM/Foundation?Logic?prop?definition
+DependsOn http://cds.omdoc.org/Tutorial?NatNums?P5?type http://cds.omdoc.org/Tutorial?NatNums?successor?type
+DependsOn http://cds.omdoc.org/Tutorial?NatNums?P5?type http://cds.omdoc.org/Tutorial?NatNums?zero?type
+DependsOn http://cds.omdoc.org/Tutorial?NatNums?P5?type http://mathhub.info/MitM/Foundation?Logic?ded?definition
+DependsOn http://cds.omdoc.org/Tutorial?NatNums?P5?type http://mathhub.info/MitM/Foundation?Logic?and?type

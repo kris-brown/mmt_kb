@@ -1,0 +1,28 @@
+datatypeconstructor http://cds.omdoc.org/Tutorial?BoolProofs?pseudoded
+datatypeconstructor http://cds.omdoc.org/Tutorial?BoolProofs?proofs
+datatypeconstructor http://cds.omdoc.org/Tutorial?BoolProofs?emptytype
+dataconstructor http://cds.omdoc.org/Tutorial?BoolProofs?proof
+dataconstructor http://cds.omdoc.org/Tutorial?BoolProofs?proof_irrelevance
+theory http://cds.omdoc.org/Tutorial?BoolProofs
+HasMeta http://cds.omdoc.org/Tutorial?BoolProofs http://cds.omdoc.org/Tutorial?Meta
+Includes http://cds.omdoc.org/Tutorial?BoolProofs http://cds.omdoc.org/Tutorial?Booleans
+Declares http://cds.omdoc.org/Tutorial?BoolProofs http://cds.omdoc.org/Tutorial?BoolProofs?pseudoded
+constant http://cds.omdoc.org/Tutorial?BoolProofs?pseudoded
+DependsOn http://cds.omdoc.org/Tutorial?BoolProofs?pseudoded?type http://cds.omdoc.org/Tutorial?Booleans?boolean?type
+Declares http://cds.omdoc.org/Tutorial?BoolProofs http://cds.omdoc.org/Tutorial?BoolProofs?proofs
+constant http://cds.omdoc.org/Tutorial?BoolProofs?proofs
+Declares http://cds.omdoc.org/Tutorial?BoolProofs http://cds.omdoc.org/Tutorial?BoolProofs?emptytype
+constant http://cds.omdoc.org/Tutorial?BoolProofs?emptytype
+Declares http://cds.omdoc.org/Tutorial?BoolProofs http://cds.omdoc.org/Tutorial?BoolProofs?proof
+constant http://cds.omdoc.org/Tutorial?BoolProofs?proof
+DependsOn http://cds.omdoc.org/Tutorial?BoolProofs?proof?type http://cds.omdoc.org/Tutorial?BoolProofs?proofs?type
+Declares http://cds.omdoc.org/Tutorial?BoolProofs http://cds.omdoc.org/Tutorial?BoolProofs?proof_irrelevance
+constant http://cds.omdoc.org/Tutorial?BoolProofs?proof_irrelevance
+DependsOn http://cds.omdoc.org/Tutorial?BoolProofs?proof_irrelevance?type http://mathhub.info/MitM/Foundation?Logic?forall?type
+DependsOn http://cds.omdoc.org/Tutorial?BoolProofs?proof_irrelevance?type http://mathhub.info/MitM/Foundation?Logic?ded?type
+DependsOn http://cds.omdoc.org/Tutorial?BoolProofs?proof_irrelevance?type http://mathhub.info/MitM/Foundation?Logic?prop?type
+DependsOn http://cds.omdoc.org/Tutorial?BoolProofs?proof_irrelevance?type http://mathhub.info/MitM/Foundation?Logic?prop?definition
+DependsOn http://cds.omdoc.org/Tutorial?BoolProofs?proof_irrelevance?type http://mathhub.info/MitM/Foundation?Logic?ded?definition
+DependsOn http://cds.omdoc.org/Tutorial?BoolProofs?proof_irrelevance?type http://cds.omdoc.org/Tutorial?BoolProofs?proofs?type
+DependsOn http://cds.omdoc.org/Tutorial?BoolProofs?proof_irrelevance?type http://mathhub.info/MitM/Foundation?Logic?eq?type
+DependsOn http://cds.omdoc.org/Tutorial?BoolProofs?proof_irrelevance?type http://cds.omdoc.org/Tutorial?BoolProofs?proof?type

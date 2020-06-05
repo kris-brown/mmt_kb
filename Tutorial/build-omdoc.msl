@@ -1,0 +1,19 @@
+// This build script only builds the parts of LATIN2 which can actually
+// be built successfully.
+
+server on 8090
+
+log console
+log html build.html
+log+ archive
+log+ mmt-omdoc
+
+mathpath archive ../MMT/urtheories
+mathpath archive ../MitM/Foundation
+mathpath archive .
+
+build MMT/TUTORIAL mmt-omdoc Algebra.mmt
+build MMT/TUTORIAL mmt-omdoc Logic.mmt
+build MMT/TUTORIAL mmt-omdoc Lambda.mmt
+build MMT/TUTORIAL mmt-omdoc Numbers.mmt
+build MMT/TUTORIAL mmt-omdoc Views.mmt

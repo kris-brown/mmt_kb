@@ -1,0 +1,25 @@
+datatypeconstructor http://cds.omdoc.org/Tutorial?SimplyTypedLambdaCalculus?tp
+dataconstructor http://cds.omdoc.org/Tutorial?SimplyTypedLambdaCalculus?arrow
+datatypeconstructor http://cds.omdoc.org/Tutorial?SimplyTypedLambdaCalculus?expression
+dataconstructor http://cds.omdoc.org/Tutorial?SimplyTypedLambdaCalculus?application
+dataconstructor http://cds.omdoc.org/Tutorial?SimplyTypedLambdaCalculus?lambda
+theory http://cds.omdoc.org/Tutorial?SimplyTypedLambdaCalculus
+HasMeta http://cds.omdoc.org/Tutorial?SimplyTypedLambdaCalculus http://mathhub.info/MitM/Foundation?Logic
+Declares http://cds.omdoc.org/Tutorial?SimplyTypedLambdaCalculus http://cds.omdoc.org/Tutorial?SimplyTypedLambdaCalculus?tp
+constant http://cds.omdoc.org/Tutorial?SimplyTypedLambdaCalculus?tp
+Declares http://cds.omdoc.org/Tutorial?SimplyTypedLambdaCalculus http://cds.omdoc.org/Tutorial?SimplyTypedLambdaCalculus?arrow
+constant http://cds.omdoc.org/Tutorial?SimplyTypedLambdaCalculus?arrow
+DependsOn http://cds.omdoc.org/Tutorial?SimplyTypedLambdaCalculus?arrow?type http://cds.omdoc.org/Tutorial?SimplyTypedLambdaCalculus?tp?type
+Declares http://cds.omdoc.org/Tutorial?SimplyTypedLambdaCalculus http://cds.omdoc.org/Tutorial?SimplyTypedLambdaCalculus?expression
+constant http://cds.omdoc.org/Tutorial?SimplyTypedLambdaCalculus?expression
+DependsOn http://cds.omdoc.org/Tutorial?SimplyTypedLambdaCalculus?expression?type http://cds.omdoc.org/Tutorial?SimplyTypedLambdaCalculus?tp?type
+Declares http://cds.omdoc.org/Tutorial?SimplyTypedLambdaCalculus http://cds.omdoc.org/Tutorial?SimplyTypedLambdaCalculus?application
+constant http://cds.omdoc.org/Tutorial?SimplyTypedLambdaCalculus?application
+DependsOn http://cds.omdoc.org/Tutorial?SimplyTypedLambdaCalculus?application?type http://cds.omdoc.org/Tutorial?SimplyTypedLambdaCalculus?tp?type
+DependsOn http://cds.omdoc.org/Tutorial?SimplyTypedLambdaCalculus?application?type http://cds.omdoc.org/Tutorial?SimplyTypedLambdaCalculus?arrow?type
+DependsOn http://cds.omdoc.org/Tutorial?SimplyTypedLambdaCalculus?application?type http://cds.omdoc.org/Tutorial?SimplyTypedLambdaCalculus?expression?type
+Declares http://cds.omdoc.org/Tutorial?SimplyTypedLambdaCalculus http://cds.omdoc.org/Tutorial?SimplyTypedLambdaCalculus?lambda
+constant http://cds.omdoc.org/Tutorial?SimplyTypedLambdaCalculus?lambda
+DependsOn http://cds.omdoc.org/Tutorial?SimplyTypedLambdaCalculus?lambda?type http://cds.omdoc.org/Tutorial?SimplyTypedLambdaCalculus?tp?type
+DependsOn http://cds.omdoc.org/Tutorial?SimplyTypedLambdaCalculus?lambda?type http://cds.omdoc.org/Tutorial?SimplyTypedLambdaCalculus?arrow?type
+DependsOn http://cds.omdoc.org/Tutorial?SimplyTypedLambdaCalculus?lambda?type http://cds.omdoc.org/Tutorial?SimplyTypedLambdaCalculus?expression?type

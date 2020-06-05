@@ -1,0 +1,13 @@
+document http://docs.omdoc.org/tutorial/Logic.omdoc
+Declares http://docs.omdoc.org/tutorial/Logic.omdoc http://cds.omdoc.org/Tutorial?PropLogSyntax
+Declares http://docs.omdoc.org/tutorial/Logic.omdoc http://cds.omdoc.org/Tutorial?PropLogNatDed
+Declares http://docs.omdoc.org/tutorial/Logic.omdoc http://cds.omdoc.org/Tutorial?Proofs
+Declares http://docs.omdoc.org/tutorial/Logic.omdoc http://cds.omdoc.org/Tutorial?FOLSyntax
+Declares http://docs.omdoc.org/tutorial/Logic.omdoc http://cds.omdoc.org/Tutorial?FOLEQSyntax
+Declares http://docs.omdoc.org/tutorial/Logic.omdoc http://cds.omdoc.org/Tutorial?FOLNatDed
+Declares http://docs.omdoc.org/tutorial/Logic.omdoc http://cds.omdoc.org/Tutorial?FOLEqNatDed
+Declares http://docs.omdoc.org/tutorial/Logic.omdoc http://cds.omdoc.org/Tutorial?Booleans
+Declares http://docs.omdoc.org/tutorial/Logic.omdoc http://cds.omdoc.org/Tutorial?BoolProofs
+Declares http://docs.omdoc.org/tutorial/Logic.omdoc http://cds.omdoc.org/Tutorial?TypedSets
+Declares http://docs.omdoc.org/tutorial/Logic.omdoc http://cds.omdoc.org/Tutorial?FOModels
+Declares http://docs.omdoc.org/tutorial/Logic.omdoc http://cds.omdoc.org/Tutorial?ZFC

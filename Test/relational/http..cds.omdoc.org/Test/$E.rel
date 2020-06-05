@@ -1,0 +1,5 @@
+datatypeconstructor http://cds.omdoc.org/Test?E?ESort
+theory http://cds.omdoc.org/Test?E
+HasMeta http://cds.omdoc.org/Test?E http://cds.omdoc.org/Test?Meta
+Declares http://cds.omdoc.org/Test?E http://cds.omdoc.org/Test?E?ESort
+constant http://cds.omdoc.org/Test?E?ESort

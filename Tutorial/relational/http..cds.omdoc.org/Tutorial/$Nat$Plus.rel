@@ -1,0 +1,79 @@
+dataconstructor http://cds.omdoc.org/Tutorial?NatPlus?plus
+dataconstructor http://cds.omdoc.org/Tutorial?NatPlus?plus_unit
+dataconstructor http://cds.omdoc.org/Tutorial?NatPlus?plus_def
+dataconstructor http://cds.omdoc.org/Tutorial?NatPlus?plus_assoc
+dataconstructor http://cds.omdoc.org/Tutorial?NatPlus?plus_com
+theory http://cds.omdoc.org/Tutorial?NatPlus
+HasMeta http://cds.omdoc.org/Tutorial?NatPlus http://cds.omdoc.org/Tutorial?Meta
+Includes http://cds.omdoc.org/Tutorial?NatPlus http://cds.omdoc.org/Tutorial?NatNums
+Declares http://cds.omdoc.org/Tutorial?NatPlus http://cds.omdoc.org/Tutorial?NatPlus?plus
+constant http://cds.omdoc.org/Tutorial?NatPlus?plus
+DependsOn http://cds.omdoc.org/Tutorial?NatPlus?plus?type http://cds.omdoc.org/Tutorial?NatNums?NaturalNumbers?type
+Includes http://cds.omdoc.org/Tutorial?NatPlus http://mathhub.info/MitM/Foundation?Strings
+Includes http://cds.omdoc.org/Tutorial?NatPlus http://mathhub.info/MitM/Foundation?InformalProofs
+Declares http://cds.omdoc.org/Tutorial?NatPlus http://cds.omdoc.org/Tutorial?NatPlus?plus_unit
+constant http://cds.omdoc.org/Tutorial?NatPlus?plus_unit
+DependsOn http://cds.omdoc.org/Tutorial?NatPlus?plus_unit?type http://cds.omdoc.org/Tutorial?NatPlus?plus?type
+DependsOn http://cds.omdoc.org/Tutorial?NatPlus?plus_unit?type http://mathhub.info/MitM/Foundation?Logic?forall?type
+DependsOn http://cds.omdoc.org/Tutorial?NatPlus?plus_unit?type http://cds.omdoc.org/Tutorial?NatNums?NaturalNumbers?type
+DependsOn http://cds.omdoc.org/Tutorial?NatPlus?plus_unit?type http://mathhub.info/MitM/Foundation?Logic?ded?type
+DependsOn http://cds.omdoc.org/Tutorial?NatPlus?plus_unit?type http://mathhub.info/MitM/Foundation?Logic?prop?type
+DependsOn http://cds.omdoc.org/Tutorial?NatPlus?plus_unit?type http://mathhub.info/MitM/Foundation?Logic?prop?definition
+DependsOn http://cds.omdoc.org/Tutorial?NatPlus?plus_unit?type http://cds.omdoc.org/Tutorial?NatNums?zero?type
+DependsOn http://cds.omdoc.org/Tutorial?NatPlus?plus_unit?type http://mathhub.info/MitM/Foundation?Logic?ded?definition
+DependsOn http://cds.omdoc.org/Tutorial?NatPlus?plus_unit?type http://mathhub.info/MitM/Foundation?Logic?eq?type
+Declares http://cds.omdoc.org/Tutorial?NatPlus http://cds.omdoc.org/Tutorial?NatPlus?plus_def
+constant http://cds.omdoc.org/Tutorial?NatPlus?plus_def
+DependsOn http://cds.omdoc.org/Tutorial?NatPlus?plus_def?type http://cds.omdoc.org/Tutorial?NatPlus?plus?type
+DependsOn http://cds.omdoc.org/Tutorial?NatPlus?plus_def?type http://mathhub.info/MitM/Foundation?Logic?forall?type
+DependsOn http://cds.omdoc.org/Tutorial?NatPlus?plus_def?type http://cds.omdoc.org/Tutorial?NatNums?NaturalNumbers?type
+DependsOn http://cds.omdoc.org/Tutorial?NatPlus?plus_def?type http://mathhub.info/MitM/Foundation?Logic?ded?type
+DependsOn http://cds.omdoc.org/Tutorial?NatPlus?plus_def?type http://mathhub.info/MitM/Foundation?Logic?prop?type
+DependsOn http://cds.omdoc.org/Tutorial?NatPlus?plus_def?type http://cds.omdoc.org/Tutorial?NatNums?successor?type
+DependsOn http://cds.omdoc.org/Tutorial?NatPlus?plus_def?type http://mathhub.info/MitM/Foundation?Logic?prop?definition
+DependsOn http://cds.omdoc.org/Tutorial?NatPlus?plus_def?type http://mathhub.info/MitM/Foundation?Logic?ded?definition
+DependsOn http://cds.omdoc.org/Tutorial?NatPlus?plus_def?type http://mathhub.info/MitM/Foundation?Logic?eq?type
+Declares http://cds.omdoc.org/Tutorial?NatPlus http://cds.omdoc.org/Tutorial?NatPlus?plus_assoc
+constant http://cds.omdoc.org/Tutorial?NatPlus?plus_assoc
+DependsOn http://cds.omdoc.org/Tutorial?NatPlus?plus_assoc?type http://cds.omdoc.org/Tutorial?NatPlus?plus?type
+DependsOn http://cds.omdoc.org/Tutorial?NatPlus?plus_assoc?type http://mathhub.info/MitM/Foundation?Logic?forall?type
+DependsOn http://cds.omdoc.org/Tutorial?NatPlus?plus_assoc?type http://cds.omdoc.org/Tutorial?NatNums?NaturalNumbers?type
+DependsOn http://cds.omdoc.org/Tutorial?NatPlus?plus_assoc?type http://mathhub.info/MitM/Foundation?Logic?ded?type
+DependsOn http://cds.omdoc.org/Tutorial?NatPlus?plus_assoc?type http://mathhub.info/MitM/Foundation?Logic?prop?type
+DependsOn http://cds.omdoc.org/Tutorial?NatPlus?plus_assoc?type http://mathhub.info/MitM/Foundation?Logic?prop?definition
+DependsOn http://cds.omdoc.org/Tutorial?NatPlus?plus_assoc?type http://mathhub.info/MitM/Foundation?Logic?ded?definition
+DependsOn http://cds.omdoc.org/Tutorial?NatPlus?plus_assoc?type http://mathhub.info/MitM/Foundation?Logic?eq?type
+DependsOn http://cds.omdoc.org/Tutorial?NatPlus?plus_assoc?definition http://cds.omdoc.org/urtheories?Bool?BOOL?type
+DependsOn http://cds.omdoc.org/Tutorial?NatPlus?plus_assoc?definition http://cds.omdoc.org/Tutorial?NatPlus?plus?type
+DependsOn http://cds.omdoc.org/Tutorial?NatPlus?plus_assoc?definition http://mathhub.info/MitM/Foundation?Logic?forall?type
+DependsOn http://cds.omdoc.org/Tutorial?NatPlus?plus_assoc?definition http://cds.omdoc.org/Tutorial?NatNums?NaturalNumbers?type
+DependsOn http://cds.omdoc.org/Tutorial?NatPlus?plus_assoc?definition http://mathhub.info/MitM/Foundation?Logic?ded?type
+DependsOn http://cds.omdoc.org/Tutorial?NatPlus?plus_assoc?definition http://mathhub.info/MitM/Foundation?Logic?prop?type
+DependsOn http://cds.omdoc.org/Tutorial?NatPlus?plus_assoc?definition http://mathhub.info/MitM/Foundation?Logic?prop?definition
+DependsOn http://cds.omdoc.org/Tutorial?NatPlus?plus_assoc?definition http://mathhub.info/MitM/Foundation?Logic?ded?definition
+DependsOn http://cds.omdoc.org/Tutorial?NatPlus?plus_assoc?definition http://mathhub.info/MitM/Foundation?InformalProofs?proofsketch?type
+DependsOn http://cds.omdoc.org/Tutorial?NatPlus?plus_assoc?definition http://cds.omdoc.org/urtheories?Ded?DED?type
+DependsOn http://cds.omdoc.org/Tutorial?NatPlus?plus_assoc?definition http://mathhub.info/MitM/Foundation?Logic?eq?type
+DependsOn http://cds.omdoc.org/Tutorial?NatPlus?plus_assoc?definition http://mathhub.info/MitM/Foundation?Strings?string?type
+Declares http://cds.omdoc.org/Tutorial?NatPlus http://cds.omdoc.org/Tutorial?NatPlus?plus_com
+constant http://cds.omdoc.org/Tutorial?NatPlus?plus_com
+DependsOn http://cds.omdoc.org/Tutorial?NatPlus?plus_com?type http://cds.omdoc.org/Tutorial?NatPlus?plus?type
+DependsOn http://cds.omdoc.org/Tutorial?NatPlus?plus_com?type http://mathhub.info/MitM/Foundation?Logic?forall?type
+DependsOn http://cds.omdoc.org/Tutorial?NatPlus?plus_com?type http://cds.omdoc.org/Tutorial?NatNums?NaturalNumbers?type
+DependsOn http://cds.omdoc.org/Tutorial?NatPlus?plus_com?type http://mathhub.info/MitM/Foundation?Logic?ded?type
+DependsOn http://cds.omdoc.org/Tutorial?NatPlus?plus_com?type http://mathhub.info/MitM/Foundation?Logic?prop?type
+DependsOn http://cds.omdoc.org/Tutorial?NatPlus?plus_com?type http://mathhub.info/MitM/Foundation?Logic?prop?definition
+DependsOn http://cds.omdoc.org/Tutorial?NatPlus?plus_com?type http://mathhub.info/MitM/Foundation?Logic?ded?definition
+DependsOn http://cds.omdoc.org/Tutorial?NatPlus?plus_com?type http://mathhub.info/MitM/Foundation?Logic?eq?type
+DependsOn http://cds.omdoc.org/Tutorial?NatPlus?plus_com?definition http://cds.omdoc.org/urtheories?Bool?BOOL?type
+DependsOn http://cds.omdoc.org/Tutorial?NatPlus?plus_com?definition http://cds.omdoc.org/Tutorial?NatPlus?plus?type
+DependsOn http://cds.omdoc.org/Tutorial?NatPlus?plus_com?definition http://mathhub.info/MitM/Foundation?Logic?forall?type
+DependsOn http://cds.omdoc.org/Tutorial?NatPlus?plus_com?definition http://cds.omdoc.org/Tutorial?NatNums?NaturalNumbers?type
+DependsOn http://cds.omdoc.org/Tutorial?NatPlus?plus_com?definition http://mathhub.info/MitM/Foundation?Logic?ded?type
+DependsOn http://cds.omdoc.org/Tutorial?NatPlus?plus_com?definition http://mathhub.info/MitM/Foundation?Logic?prop?type
+DependsOn http://cds.omdoc.org/Tutorial?NatPlus?plus_com?definition http://mathhub.info/MitM/Foundation?Logic?prop?definition
+DependsOn http://cds.omdoc.org/Tutorial?NatPlus?plus_com?definition http://mathhub.info/MitM/Foundation?Logic?ded?definition
+DependsOn http://cds.omdoc.org/Tutorial?NatPlus?plus_com?definition http://mathhub.info/MitM/Foundation?InformalProofs?proofsketch?type
+DependsOn http://cds.omdoc.org/Tutorial?NatPlus?plus_com?definition http://cds.omdoc.org/urtheories?Ded?DED?type
+DependsOn http://cds.omdoc.org/Tutorial?NatPlus?plus_com?definition http://mathhub.info/MitM/Foundation?Logic?eq?type
+DependsOn http://cds.omdoc.org/Tutorial?NatPlus?plus_com?definition http://mathhub.info/MitM/Foundation?Strings?string?type

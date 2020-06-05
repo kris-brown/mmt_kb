@@ -1,0 +1,8 @@
+dataconstructor http://cds.omdoc.org/Test?AisD?[http://cds.omdoc.org/Test?A]/ASort
+HasDomain http://cds.omdoc.org/Test?AisD http://cds.omdoc.org/Test?A
+HasCodomain http://cds.omdoc.org/Test?AisD http://cds.omdoc.org/Test?D
+view http://cds.omdoc.org/Test?AisD
+HasViewFrom http://cds.omdoc.org/Test?D http://cds.omdoc.org/Test?A
+Declares http://cds.omdoc.org/Test?AisD http://cds.omdoc.org/Test?AisD?[http://cds.omdoc.org/Test?A]/ASort
+constant http://cds.omdoc.org/Test?AisD?[http://cds.omdoc.org/Test?A]/ASort
+DependsOn http://cds.omdoc.org/Test?AisD?[http://cds.omdoc.org/Test?A]/ASort?type http://cds.omdoc.org/Test?D?DSort?type

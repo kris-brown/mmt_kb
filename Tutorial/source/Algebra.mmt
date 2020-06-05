@@ -1,0 +1,96 @@
+namespace Tutorial ❚
+
+import mitm http://mathhub.info/MitM/Foundation ❚
+
+theory Meta : mitm:?Logic =
+  include ☞mitm:?DescriptionOperator ❙
+  include ☞mitm:?Strings ❙
+  include ☞mitm:?InformalProofs ❙
+
+❚
+
+theory Magma :  ?Meta =
+	Domain : type ❘ # G ❙
+	op : G ⟶ G ⟶ G ❘ # 1 ∘ 2 ❙ // jcirc	❙
+❚
+
+theory SemiGroup : ?Meta =
+	include ?Magma ❙
+
+	assoc : ⊦ ∀[x] ∀[y] ∀[z] x ∘ (y ∘ z) ≐ (x ∘ y) ∘ z ❙
+❚
+
+theory Monoid : ?Meta =
+	include ?SemiGroup ❙
+	unit : G ❘ # e ❙
+    unit_axiom_r : ⊦ ∀[x] x ∘ e ≐ x ❙
+    unit_axiom_l : ⊦ ∀[x] e ∘ x ≐ x ❙
+❚
+
+theory NonGrpMon : ?Meta =
+    include ?Monoid ❙
+    grp_viol :  ⊦ ∃[x]∀[y] ¬(x ∘ y ≐ e) ❙
+❚
+
+theory Abelian : ?Meta =
+    include ?Magma ❙
+    abelian : ⊦ ∀[x] ∀[y] x ∘ y ≐ y ∘ x ❙
+❚
+
+
+theory Group : ?Meta =
+	include ?Monoid ❙
+	inverse_axiom : ⊦ ∀[x] ∃ [y] x ∘ y ≐ e ❙
+
+	inverse_thm : {x} ⊦ ∃![y] x ∘ y ≐ e ❘
+	   = [x] sketch "if there are two inverses: y and z, then
+	             y = y ∘ e = y ∘ (x ∘z) = (y ∘ x) ∘ z = e ∘z = z"  ❙
+
+	inverse : G ⟶ G ❘ = [x] ι [y] x ∘ y ≐ e ❘ # 1 ^-1 ❙
+❚
+
+theory CGroup : ?Meta =
+	include ?Group ❙
+	include ?Abelian ❙
+❚
+
+theory Ring : ?Meta =
+	structure a : ?CGroup =
+		Domain # R ❙
+		op # 1 + 2 prec 400 ❙
+		unit # %0 ❙
+		inverse # - 1 ❙
+	❚
+	structure m : ?Monoid =
+		Domain = R ❙
+		op # 1 ⋅ 2 prec 500 ❙
+		unit # %1 ❙
+	❚
+	distributive : ⊦ ∀[a: R]∀[b: R]∀[c: R] a ⋅ (b + c) ≐ a ⋅ b + a ⋅ c ❙
+❚
+
+//
+theory Category : ?Meta =
+  obj: type❙
+  hom: obj ⟶ obj ⟶ tp❙
+  Hom: obj ⟶ obj ⟶ type❘= [a,b] tm (hom a b)❙
+  id : {a} Hom a a❙
+  comp : {a,b,c} Hom a b ⟶ Hom b c ⟶ Hom a c❘# 4 ; 5 prec 50❙
+
+  neutLeft : {a,b,f:Hom a b} ⊦ (id a);f ≐ f❙
+  neutRight : {a,b,f:Hom a b} ⊦ f;(id b) ≐ f❙
+  assoc: {a,b,c,d, f:Hom a b, g:Hom b c, h:Hom c d} ⊦ f;(g;h) ≐ (f;g);h❙
+❚
+
+
+//
+theory PreOrder : ?NatDed =
+	o : sort ❙
+	order : tm o ⟶ tm o ⟶ prop ❘ # 1 ≤ 2 prec 50 ❙
+	reflexivity : {x} ⊢ x ≤ x ❙
+	transitivity : {x,y,z} ⊢ x ≤ y ⟶ ⊢ y ≤ z ⟶ ⊢ x ≤ z ❙
+
+	// We prove the ternary case of transitivity by chaining transitivity twice.❙
+	transitivity3: {w,x,y,z} ⊢ w ≤ x ⟶ ⊢ x ≤ y ⟶ ⊢ y ≤ z ⟶ ⊢ w ≤ z❘
+	      = [w,x,y,z,p,q,r] transitivity (transitivity p q) r❙
+❚
